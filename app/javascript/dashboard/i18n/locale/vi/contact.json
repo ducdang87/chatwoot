@@ -72,21 +72,21 @@
       "SUBMIT": "Nhập",
       "CANCEL": "Huỷ"
     },
-    "SUCCESS_MESSAGE": "You will be notified via email when the import is complete.",
+    "SUCCESS_MESSAGE": "Chúng tôi sẽ thông báo khi liên hệ đã được nhập thành công",
     "ERROR_MESSAGE": "Đã có lỗi, vui lòng thử lại"
   },
   "EXPORT_CONTACTS": {
-    "BUTTON_LABEL": "Export",
-    "TITLE": "Export Contacts",
-    "DESC": "Export contacts to a CSV file.",
-    "SUCCESS_MESSAGE": "Export is in progress, You will be notified via email when export file is ready to dowanlod.",
+    "BUTTON_LABEL": "Xuất",
+    "TITLE": "Xuất liên hệ",
+    "DESC": "Xuất tất cả liên hệ ra file CSV.",
+    "SUCCESS_MESSAGE": "Chúng tôi sẽ thông báo khi liên hệ đã được xuất thành công",
     "ERROR_MESSAGE": "Đã có lỗi, vui lòng thử lại",
     "CONFIRM": {
-      "TITLE": "Export Contacts",
-      "MESSAGE": "Are you sure you want to export all contacts?",
-      "FILTERED_MESSAGE": "Are you sure you want to export all the filtered contacts?",
-      "YES": "Yes, Export",
-      "NO": "No, Cancel"
+      "TITLE": "Xuất các liên hệ",
+      "MESSAGE": "Bạn có chắc chắn muốn xuất tất cả liên hệ?",
+      "FILTERED_MESSAGE": "Bạn có chắc chắn muốn xuất tất cả liên hệ đã lọc?",
+      "YES": "Có, Xuất",
+      "NO": "Không, giữ"
     }
   },
   "DELETE_NOTE": {

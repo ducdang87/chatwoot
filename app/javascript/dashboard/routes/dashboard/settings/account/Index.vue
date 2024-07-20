@@ -135,7 +135,7 @@ import alertMixin from 'shared/mixins/alertMixin';
 import configMixin from 'shared/mixins/configMixin';
 import accountMixin from '../../../../mixins/account';
 import { FEATURE_FLAGS } from '../../../../featureFlags';
-import semver from 'semver';
+// import semver from 'semver';
 import uiSettingsMixin from 'dashboard/mixins/uiSettings';
 import { getLanguageDirection } from 'dashboard/components/widgets/conversation/advancedFilterItems/languages';
 
@@ -180,14 +180,16 @@ export default {
       );
     },
     hasAnUpdateAvailable() {
-      if (!semver.valid(this.latestChatwootVersion)) {
-        return false;
-      }
+      return false;
 
-      return semver.lt(
-        this.globalConfig.appVersion,
-        this.latestChatwootVersion
-      );
+      // if (!semver.valid(this.latestChatwootVersion)) {
+      //   return false;
+      // }
+
+      // return semver.lt(
+      //   this.globalConfig.appVersion,
+      //   this.latestChatwootVersion
+      // );
     },
     languagesSortedByCode() {
       const enabledLanguages = [...this.enabledLanguages];

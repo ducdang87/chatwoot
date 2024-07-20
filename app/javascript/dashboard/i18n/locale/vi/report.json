@@ -44,7 +44,7 @@
         "DESC": "( Tổng cộng )"
       },
       "REPLY_TIME": {
-        "NAME": "Customer waiting time",
+        "NAME": "Thời gian khách đợi phản hồi",
         "TOOLTIP_TEXT": "Waiting time is %{metricValue} (based on %{conversationCount} replies)"
       }
     },
@@ -145,11 +145,11 @@
     }
   },
   "AGENT_REPORTS": {
-    "HEADER": "Tổng quan đại lý",
+    "HEADER": "Tổng quan nhân viên",
     "LOADING_CHART": "Đang tải các biểu đồ dữ liệu...",
     "NO_ENOUGH_DATA": "Chúng tôi không nhận được đủ điểm dữ liệu để tạo báo cáo, Vui lòng thử lại sau.",
-    "DOWNLOAD_AGENT_REPORTS": "Tải xuống báo cáo đại lý",
-    "FILTER_DROPDOWN_LABEL": "Chọn đại lý",
+    "DOWNLOAD_AGENT_REPORTS": "Tải xuống báo cáo nhân viên",
+    "FILTER_DROPDOWN_LABEL": "Chọn nhân viên",
     "METRICS": {
       "CONVERSATIONS": {
         "NAME": "Các cuộc hội thoại",
@@ -425,7 +425,7 @@
     "TABLE": {
       "HEADER": {
         "CONTACT_NAME": "Liên hệ",
-        "AGENT_NAME": "Đại lý được phân công",
+        "AGENT_NAME": "nhân viên được phân công",
         "RATING": "Đánh giá",
         "FEEDBACK_TEXT": "Bình luận phản hồi"
       }
@@ -488,7 +488,7 @@
       "LOADING_MESSAGE": "Đang tải chỉ số Nhân viên...",
       "NO_AGENTS": "Không có cuộc hội thoại nào của các Nhân viên",
       "TABLE_HEADER": {
-        "AGENT": "Nhà cung cấp",
+        "AGENT": "Nhân viên chat",
         "OPEN": "MỞ",
         "UNATTENDED": "Không giám sát",
         "STATUS": "Trạng thái"
@@ -532,7 +532,7 @@
       },
       "SLA": "SLA Policy",
       "INBOXES": "Hộp thư đến",
-      "AGENTS": "Nhà cung cấp",
+      "AGENTS": "Nhân viên chat",
       "LABELS": "Nhãn",
       "TEAMS": "Nhóm"
     },
@@ -554,7 +554,7 @@
       "HEADER": {
         "POLICY": "Policy",
         "CONVERSATION": "Cuộc hội thoại",
-        "AGENT": "Nhà cung cấp"
+        "AGENT": "Nhân viên chat"
       },
       "VIEW_DETAILS": "View Details"
     }

@@ -90,6 +90,7 @@ const settings = accountId => ({
       ),
       toStateName: 'attributes_list',
       featureFlag: FEATURE_FLAGS.CUSTOM_ATTRIBUTES,
+      hidden: true,
     },
     {
       icon: 'automation',
@@ -133,6 +134,7 @@ const settings = accountId => ({
       toState: frontendURL(`accounts/${accountId}/settings/integrations`),
       toStateName: 'settings_integrations',
       featureFlag: FEATURE_FLAGS.INTEGRATIONS,
+      hidden: true,
     },
     {
       icon: 'star-emphasis',
@@ -141,6 +143,7 @@ const settings = accountId => ({
       toState: frontendURL(`accounts/${accountId}/settings/applications`),
       toStateName: 'settings_applications',
       featureFlag: FEATURE_FLAGS.INTEGRATIONS,
+      hidden: true,
     },
     {
       icon: 'key',
@@ -151,6 +154,7 @@ const settings = accountId => ({
       isEnterpriseOnly: true,
       featureFlag: FEATURE_FLAGS.AUDIT_LOGS,
       beta: true,
+      hidden: true,
     },
     {
       icon: 'document-list-clock',
@@ -161,6 +165,7 @@ const settings = accountId => ({
       isEnterpriseOnly: true,
       featureFlag: FEATURE_FLAGS.SLA,
       beta: true,
+      hidden: true,
     },
     {
       icon: 'credit-card-person',
@@ -169,6 +174,7 @@ const settings = accountId => ({
       toState: frontendURL(`accounts/${accountId}/settings/billing`),
       toStateName: 'billing_settings_index',
       showOnlyOnCloud: true,
+      hidden: true,
     },
   ],
 });

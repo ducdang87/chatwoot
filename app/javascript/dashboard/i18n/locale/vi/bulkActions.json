@@ -7,7 +7,7 @@
     "GO_BACK_LABEL": "Trở về",
     "ASSIGN_LABEL": "Gán",
     "YES": "Có",
-    "ASSIGN_AGENT_TOOLTIP": "Gán Nhân viên",
+    "ASSIGN_AGENT_TOOLTIP": "Gán nhân viên",
     "ASSIGN_TEAM_TOOLTIP": "Gán nhóm",
     "ASSIGN_SUCCESFUL": "Cuộc hội thoại đã được phân công thành công.",
     "ASSIGN_FAILED": "Failed to assign conversations. Please try again.",
@@ -22,11 +22,11 @@
       "UPDATE_FAILED": "Failed to update conversations. Please try again."
     },
     "LABELS": {
-      "ASSIGN_LABELS": "Assign labels",
+      "ASSIGN_LABELS": "Gán nhãn",
       "NO_LABELS_FOUND": "Không tìm thấy nhãn nào cho",
       "ASSIGN_SELECTED_LABELS": "Gán các nhãn đã chọn",
       "ASSIGN_SUCCESFUL": "Các nhãn được gán thành công.",
-      "ASSIGN_FAILED": "Failed to assign labels. Please try again."
+      "ASSIGN_FAILED": "Lỗi khi gán nhãn. Vui lòng thử lại."
     },
     "TEAMS": {
       "TEAM_SELECT_LABEL": "Chọn nhóm",
@@ -34,7 +34,7 @@
       "NO_TEAMS_AVAILABLE": "Chưa có nhóm nào được thêm vào tài khoản này.",
       "ASSIGN_SELECTED_TEAMS": "Chỉ định nhóm đã chọn.",
       "ASSIGN_SUCCESFUL": "Các nhóm được chỉ định thành công.",
-      "ASSIGN_FAILED": "Failed to assign team. Please try again."
+      "ASSIGN_FAILED": "Lỗi khi chỉ định nhóm. Vui lòng thử lại."
     }
   }
 }

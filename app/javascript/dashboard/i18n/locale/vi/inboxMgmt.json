@@ -1,7 +1,7 @@
 {
   "INBOX_MGMT": {
     "HEADER": "Hộp thư đến",
-    "SIDEBAR_TXT": "<p><b>Hộp thư đến</b></p> <p> Khi bạn kết nối một trang web hoặc một Trang facebook với Chatwoot, nó được gọi là <b>Hộp thư đến</b>. Bạn có thể có hộp thư đến không giới hạn trong tài khoản Chatwoot của mình. </p><p> Click vào <b>Thêm hộp thư đến</b> để kết nối một trang web hoặc một Trang Facebook. </p><p> Trong Trang tổng quan, bạn có thể xem tất cả các cuộc hội thoại từ tất cả các hộp thư đến của mình ở một nơi duy nhất và trả lời chúng trong tab `Cuộc trò chuyện`. </p><p> Bạn cũng có thể xem các cuộc hội thoại dành riêng cho một hộp thư đến bằng cách nhấp vào tên hộp thư đến trên ngăn bên trái của trang tổng quan. </p>",
+    "SIDEBAR_TXT": "Để thêm shop, kênh chat mới (Fanpage, Shopee, Website,...) bạn hãy bấm nút <b>Thêm hộp thư đến</b> ở bên trên",
     "LIST": {
       "404": "Không có hộp thư đến nào được đính kèm với tài khoản này."
     },
@@ -9,22 +9,18 @@
       {
         "title": "Chọn kênh",
         "route": "settings_inbox_new",
-        "body": "Chọn nhà cung cấp bạn muốn tích hợp với Chatwoot."
+        "body": "Chọn nền tảng bạn muốn tích hợp với ShipXanh."
       },
       {
-        "title": "Tạo Hộp thư đến",
+        "title": "Liên kết tài khoản",
         "route": "settings_inboxes_page_channel",
         "body": "Xác thực tài khoản của bạn và tạo hộp thư đến."
       },
-      {
-        "title": "Thêm đại lý",
-        "route": "settings_inboxes_add_agents",
-        "body": "Thêm đại lý vào hộp thư đến đã tạo."
-      },
+
       {
         "title": "Voilà!",
         "route": "settings_inbox_finish",
-        "body": "Bạn đã sẵn sàng để đi!"
+        "body": "Sẵn sàng để CSHK!"
       }
     ],
     "ADD": {
@@ -38,7 +34,7 @@
         "PLACEHOLDER": "Nhập tên trang web của bạn (ví dụ: Acme Inc)"
       },
       "FB": {
-        "HELP": "Tái bút: Bằng cách đăng nhập, chúng tôi chỉ có quyền truy cập vào các tin nhắn trên Trang của bạn. Chatwoot không bao giờ có thể truy cập tin nhắn riêng tư của bạn.",
+        "HELP": "Tái bút: Bằng cách đăng nhập, chúng tôi chỉ có quyền truy cập vào các tin nhắn trên Trang của bạn. ShipXanh không bao giờ có thể truy cập tin nhắn riêng tư của bạn.",
         "CHOOSE_PAGE": "Chọn trang",
         "CHOOSE_PLACEHOLDER": "Chọn một trang từ danh sách",
         "INBOX_NAME": "Tên hộp thư đến",
@@ -160,7 +156,7 @@
         "TITLE": "Kênh SMS",
         "DESC": "Bắt đầu hỗ trợ khách hàng thông qua SMS.",
         "PROVIDERS": {
-          "LABEL": "Nhà cung cấp API",
+          "LABEL": "Nhân viên chat API",
           "TWILIO": "Twilio",
           "BANDWIDTH": "Bandwidth"
         },
@@ -212,7 +208,7 @@
         "TITLE": "Kênh WhatsApp",
         "DESC": "Bắt đầu hỗ trợ khách hàng thông qua WhatsApp.",
         "PROVIDERS": {
-          "LABEL": "Nhà cung cấp API",
+          "LABEL": "Nhân viên chat API",
           "TWILIO": "Twilio",
           "WHATSAPP_CLOUD": "Đám mây WhatsApp",
           "360_DIALOG": "360Dialog"
@@ -339,22 +335,22 @@
         }
       },
       "AUTH": {
-        "TITLE": "Chọn kênh",
-        "DESC": "Chatwoot hỗ trợ các tiện ích trò chuyện trực tiếp, Facebook Messenger, hồ sơ Twitter, WhatsApp, Email, v. v., dưới dạng các kênh. Nếu bạn muốn xây dựng một kênh tùy chỉnh, bạn có thể tạo kênh này bằng cách sử dụng kênh API. Để bắt đầu, hãy chọn một trong các kênh bên dưới."
+        "TITLE": "Tạo kênh chat",
+        "DESC": "Chọn nền tảng bạn muốn tạo kênh chat để bắt đầu nhắn tin với khách hàng của mình."
       },
       "AGENTS": {
-        "TITLE": "Nhà Cung Cấp",
-        "DESC": "Tại đây bạn có thể thêm các tác nhân để quản lý hộp thư đến mới tạo của mình. Chỉ những đại lý được chọn này mới có quyền truy cập vào hộp thư đến của bạn. Các nhân viên không thuộc hộp thư đến này sẽ không thể xem hoặc trả lời thư trong hộp thư đến này khi họ đăng nhập. <br> <b>PS:</b> Với tư cách là quản trị viên, nếu bạn cần quyền truy cập vào tất cả các hộp thư đến, bạn nên thêm mình làm đại lý cho tất cả các hộp thư đến mà bạn tạo.",
+        "TITLE": "Nhân viên chat",
+        "DESC": "Tại đây bạn có thể thêm các tác nhân để quản lý hộp thư đến mới tạo của mình. Chỉ những nhân viên được chọn này mới có quyền truy cập vào hộp thư đến của bạn. Các nhân viên không thuộc hộp thư đến này sẽ không thể xem hoặc trả lời thư trong hộp thư đến này khi họ đăng nhập. <br> <b>PS:</b> Với tư cách là quản trị viên, nếu bạn cần quyền truy cập vào tất cả các hộp thư đến, bạn nên thêm mình làm nhân viên cho tất cả các hộp thư đến mà bạn tạo.",
         "VALIDATION_ERROR": "Add at least one agent to your new Inbox",
-        "PICK_AGENTS": "Chọn đại lý cho hộp thư đến"
+        "PICK_AGENTS": "Chọn nhân viên cho hộp thư đến"
       },
       "DETAILS": {
         "TITLE": "Chi tiết Hộp thư đến",
-        "DESC": "Từ menu thả xuống bên dưới, chọn Trang Facebook bạn muốn kết nối với Chatwoot. Bạn cũng có thể đặt tên tùy chỉnh cho hộp thư đến của mình để nhận dạng tốt hơn."
+        "DESC": "Từ menu thả xuống bên dưới, chọn Trang Facebook bạn muốn kết nối với ShipXanh. Bạn cũng có thể đặt tên tùy chỉnh cho hộp thư đến của mình để nhận dạng tốt hơn."
       },
       "FINISH": {
         "TITLE": "Đúng rồi!",
-        "DESC": "Bạn đã tích hợp thành công Trang Facebook của mình với Chatwoot. Lần tới khi khách hàng nhắn tin cho Trang của bạn, cuộc trò chuyện sẽ tự động xuất hiện trong hộp thư đến của bạn.<br>Chúng tôi cũng đang cung cấp cho bạn tập lệnh widget mà bạn có thể dễ dàng thêm vào trang web của mình. Khi điều này xuất hiện trên trang web của bạn, khách hàng có thể nhắn tin cho bạn ngay từ trang web của bạn mà không cần sự trợ giúp của bất kỳ công cụ bên ngoài nào và cuộc trò chuyện sẽ xuất hiện ngay tại đây, trên Chatwoot.<br>Cool, huh? Well :)"
+        "DESC": "Bạn đã tích hợp thành công Trang Facebook của mình với ShipXanh. Lần tới khi khách hàng nhắn tin cho Trang của bạn, cuộc trò chuyện sẽ tự động xuất hiện trong hộp thư đến của bạn.<br>Chúng tôi cũng đang cung cấp cho bạn tập lệnh widget mà bạn có thể dễ dàng thêm vào trang web của mình. Khi điều này xuất hiện trên trang web của bạn, khách hàng có thể nhắn tin cho bạn ngay từ trang web của bạn mà không cần sự trợ giúp của bất kỳ công cụ bên ngoài nào và cuộc trò chuyện sẽ xuất hiện ngay tại đây, trên ShipXanh.<br>Cool, huh? Well :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -378,12 +374,12 @@
       "DESC": ""
     },
     "AGENTS": {
-      "BUTTON_TEXT": "Thêm các nhà cung cấp",
-      "ADD_AGENTS": "Thêm các nhà cung cấp vào hộp thư đến của bạn..."
+      "BUTTON_TEXT": "Thêm các nhân viên chat",
+      "ADD_AGENTS": "Thêm các nhân viên chat vào hộp thư đến của bạn..."
     },
     "FINISH": {
       "TITLE": "Hộp thư đến của bạn đã sẵn sàng!",
-      "MESSAGE": "Giờ đây, bạn có thể tương tác với khách hàng thông qua Kênh mới của mình. Chúc vui vẻ ủng hộ",
+      "MESSAGE": "Giờ đây, bạn có thể tương tác với khách hàng thông qua Kênh chat mới của mình. Chúc vui vẻ ủng hộ",
       "BUTTON_TEXT": "Đưa cho tôi",
       "MORE_SETTINGS": "Nhiều tuỳ chọn hơn",
       "WEBSITE_SUCCESS": "Bạn đã hoàn thành việc tạo kênh trang web thành công. Sao chép mã được hiển thị bên dưới và dán vào trang web của bạn. Lần tới khi khách hàng sử dụng cuộc trò chuyện trực tiếp, cuộc trò chuyện sẽ tự động xuất hiện trong hộp thư đến của bạn."
@@ -477,7 +473,7 @@
     "SETTINGS_POPUP": {
       "MESSENGER_HEADING": "Tập lệnh Messenger",
       "MESSENGER_SUB_HEAD": "Đặt nút này bên trong thẻ body của bạn",
-      "INBOX_AGENTS": "Nhà cung cấp",
+      "INBOX_AGENTS": "Nhân viên chat",
       "INBOX_AGENTS_SUB_TEXT": "Thêm hoặc xóa tác nhân khỏi hộp thư đến này",
       "AGENT_ASSIGNMENT": "Phân công cuộc trò chuyện",
       "AGENT_ASSIGNMENT_SUB_TEXT": "Cập nhật phân công cuộc trò chuyện",
@@ -728,8 +724,8 @@
         "USER_MESSAGE": "Xin chào",
         "AGENT_MESSAGE": "Xin chào"
       },
-      "BRANDING_TEXT": "CC bởi Chatwoot",
-      "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
+      "BRANDING_TEXT": "CC bởi ShipXanh",
+      "SCRIPT_SETTINGS": "\nwindow.ShipXanhSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

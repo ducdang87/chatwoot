@@ -12,9 +12,7 @@
         )
       "
     />
-    <div
-      class="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-0 max-w-3xl"
-    >
+    <div class="flex flex-wrap justify-between gap-4 mt-6 max-w-4xl">
       <channel-item
         v-for="channel in channelList"
         :key="channel.key"
@@ -49,20 +47,32 @@ export default {
       return this.$store.getters['accounts/getAccount'](this.accountId);
     },
     channelList() {
-      const { apiChannelName, apiChannelThumbnail } = this.globalConfig;
+      // const { apiChannelName, apiChannelThumbnail } = this.globalConfig;
       return [
-        { key: 'website', name: 'Website' },
-        { key: 'facebook', name: 'Messenger' },
-        { key: 'whatsapp', name: 'WhatsApp' },
-        { key: 'sms', name: 'SMS' },
-        { key: 'email', name: 'Email' },
+        // { key: 'website', name: 'Website' },
+        { key: 'facebook', name: 'Facebook' },
+        // { key: 'whatsapp', name: 'WhatsApp' },
+        // { key: 'sms', name: 'SMS' },
+        // { key: 'email', name: 'Email' },
+        // {
+        //   key: 'api',
+        //   name: apiChannelName || 'API',
+        //   thumbnail: apiChannelThumbnail,
+        // },
+        // { key: 'telegram', name: 'Telegram' },
+        // { key: 'line', name: 'Line' },
         {
-          key: 'api',
-          name: apiChannelName || 'API',
-          thumbnail: apiChannelThumbnail,
+          key: 'shopee',
+          name: 'Shopee',
         },
-        { key: 'telegram', name: 'Telegram' },
-        { key: 'line', name: 'Line' },
+        {
+          key: 'lazada',
+          name: 'Lazada',
+        },
+        {
+          key: 'tiktokshop',
+          name: 'Tiktok Shop',
+        },
       ];
     },
     ...mapGetters({

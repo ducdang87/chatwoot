@@ -9,11 +9,7 @@
       "404": "Không có nhãn nào có sẵn trong tài khoản này.",
       "TITLE": "Quản lý nhãn",
       "DESC": "Nhãn cho phép bạn nhóm các cuộc trò chuyện lại với nhau.",
-      "TABLE_HEADER": [
-        "Tên",
-        "Mô tả",
-        "Màu sắc"
-      ]
+      "TABLE_HEADER": ["Tên", "Mô tả", "Màu sắc"]
     },
     "FORM": {
       "NAME": {
@@ -53,7 +49,7 @@
     },
     "ADD": {
       "TITLE": "Thêm nhãn",
-      "DESC": "Nhãn cho phép bạn nhóm các cuộc trò chuyện lại với nhau.",
+      "DESC": "Nhãn cho phép bạn nhóm các cuộc trò chuyện lại với nhau. ví dụ: đơn_sỉ, chờ_thanh_toán,...",
       "API": {
         "SUCCESS_MESSAGE": "Thêm nhãn thành công",
         "ERROR_MESSAGE": "Đã có lỗi, vui lòng thử lại"
