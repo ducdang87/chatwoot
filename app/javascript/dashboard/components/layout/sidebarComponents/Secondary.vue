@@ -85,6 +85,7 @@ export default {
       }
       const menuItemsFilteredByRole = this.menuConfig.menuItems.filter(
         menuItem =>
+          !menuItem.hidden &&
           window.roleWiseRoutes[this.currentRole].indexOf(
             menuItem.toStateName
           ) > -1

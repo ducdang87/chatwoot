@@ -140,7 +140,7 @@
       "ENABLE_SIGN_TOOLTIP": "Bật chữ ký",
       "DISABLE_SIGN_TOOLTIP": "Tắt chữ ký",
       "MSG_INPUT": "Shift + enter cho dòng mới. Bắt đầu với '/' để chọn Câu trả lời soạn trước.",
-      "PRIVATE_MSG_INPUT": "Shift + enter cho dòng mới. Điều này sẽ chỉ hiển thị cho Đại lý",
+      "PRIVATE_MSG_INPUT": "Shift + enter cho dòng mới. Điều này sẽ chỉ hiển thị cho nhân viên",
       "MESSAGE_SIGNATURE_NOT_CONFIGURED": "Chứ ký cuối tin nhắn chưa được cài đặt, xin hãy cài đặt một chữ ký trong phần cài đặt hồ sơ.",
       "CLICK_HERE": "Bấm vào đây để cập nhật"
     },
@@ -308,20 +308,20 @@
     "SUBJECT": "Chủ đề"
   },
   "CONVERSATION_PARTICIPANTS": {
-    "SIDEBAR_MENU_TITLE": "Participating",
-    "SIDEBAR_TITLE": "Conversation participants",
+    "SIDEBAR_MENU_TITLE": "Thành viên tham gia",
+    "SIDEBAR_TITLE": "Thành viên tham gia",
     "NO_RECORDS_FOUND": "Không tìm thấy kết quả",
-    "ADD_PARTICIPANTS": "Select participants",
-    "REMANING_PARTICIPANTS_TEXT": "+%{count} others",
-    "REMANING_PARTICIPANT_TEXT": "+%{count} other",
-    "TOTAL_PARTICIPANTS_TEXT": "%{count} people are participating.",
-    "TOTAL_PARTICIPANT_TEXT": "%{count} person is participating.",
-    "NO_PARTICIPANTS_TEXT": "No one is participating!.",
-    "WATCH_CONVERSATION": "Join conversation",
-    "YOU_ARE_WATCHING": "You are participating",
+    "ADD_PARTICIPANTS": "Chọn thành viên",
+    "REMANING_PARTICIPANTS_TEXT": "+%{count} khác",
+    "REMANING_PARTICIPANT_TEXT": "+%{count} khác",
+    "TOTAL_PARTICIPANTS_TEXT": "%{count} thành viên",
+    "TOTAL_PARTICIPANT_TEXT": "%{count} thành viên tham gia.",
+    "NO_PARTICIPANTS_TEXT": "Không có ai tham gia!",
+    "WATCH_CONVERSATION": "Tham gia cuộc trò chuyện",
+    "YOU_ARE_WATCHING": "Bạn là thành viên rồi",
     "API": {
       "ERROR_MESSAGE": "Could not update, try again!",
-      "SUCCESS_MESSAGE": "Participants updated!"
+      "SUCCESS_MESSAGE": "Đã cập nhật!"
     }
   },
   "TRANSLATE_MODAL": {

@@ -2,7 +2,7 @@
   <main
     class="flex flex-col w-full min-h-screen py-20 bg-woot-25 sm:px-6 lg:px-8 dark:bg-slate-900"
   >
-    <section class="max-w-5xl mx-auto">
+    <section v-if="isDev" class="max-w-5xl mx-auto">
       <img
         :src="globalConfig.logo"
         :alt="globalConfig.installationName"
@@ -106,11 +106,23 @@ const ERROR_MESSAGES = {
 };
 import alertMixin from 'shared/mixins/alertMixin';
 
+if (process.env.NODE_ENV !== 'development') {
+  // eslint-disable-next-line no-console
+  window.open(
+    'https://app.shipxanh.com/login?redirect-to=/dashboard/connect/shops?open-chat=true&keep=true',
+    '_self'
+  );
+}
+
 export default {
   components: {
+    // eslint-disable-next-line vue/no-unused-components
     FormInput,
+    // eslint-disable-next-line vue/no-unused-components
     GoogleOAuthButton,
+    // eslint-disable-next-line vue/no-unused-components
     Spinner,
+    // eslint-disable-next-line vue/no-unused-components
     SubmitButton,
   },
   mixins: [globalConfigMixin, alertMixin],
@@ -156,6 +168,9 @@ export default {
     },
     showSignupLink() {
       return parseBoolean(window.chatwootConfig.signupEnabled);
+    },
+    isDev() {
+      return process.env.NODE_ENV === 'development';
     },
   },
   created() {

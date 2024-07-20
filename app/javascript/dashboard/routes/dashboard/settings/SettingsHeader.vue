@@ -25,9 +25,9 @@
     <router-link
       v-if="showNewButton && isAdmin"
       :to="buttonRoute"
-      class="button success button--fixed-top px-3.5 py-1 rounded-[5px] flex gap-2"
+      class="button bg-woot-500 button--fixed-top px-3.5 py-1 rounded-[5px] flex gap-2"
     >
-      <fluent-icon icon="add-circle" />
+      <fluent-icon icon="add" />
       <span class="button__content">
         {{ buttonText }}
       </span>

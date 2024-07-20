@@ -36,10 +36,10 @@
       }
     },
     "VIEW_FILTER": "Xem",
-    "SORT_TOOLTIP_LABEL": "Sort conversations",
+    "SORT_TOOLTIP_LABEL": "Sắp xếp các cuộc trò chuyện",
     "CHAT_SORT": {
       "STATUS": "Trạng thái",
-      "ORDER_BY": "Order by"
+      "ORDER_BY": "Thứ tự theo"
     },
     "CHAT_TIME_STAMP": {
       "CREATED": {
@@ -47,34 +47,34 @@
         "OLDEST": "Tạo vào lúc:"
       },
       "LAST_ACTIVITY": {
-        "NOT_ACTIVE": "Last activity:",
-        "ACTIVE": "Last activity"
+        "NOT_ACTIVE": "Không hoạt động",
+        "ACTIVE": "Hoạt động gần đây"
       }
     },
     "SORT_ORDER_ITEMS": {
       "last_activity_at_asc": {
-        "TEXT": "Last activity: Oldest first"
+        "TEXT": "Hoạt động gần đây: Cũ nhất trước"
       },
       "last_activity_at_desc": {
-        "TEXT": "Last activity: Newest first"
+        "TEXT": "Hoạt động gần đây: Mới nhất trước"
       },
       "created_at_desc": {
-        "TEXT": "Created at: Newest first"
+        "TEXT": "Thời gian tạo: Mới nhất trước"
       },
       "created_at_asc": {
-        "TEXT": "Created at: Oldest first"
+        "TEXT": "Thời gian tạo: Cũ nhất trước"
       },
       "priority_desc": {
-        "TEXT": "Priority: Highest first"
+        "TEXT": "Ưu tiên: Cao nhất trước"
       },
       "priority_asc": {
-        "TEXT": "Priority: Lowest first"
+        "TEXT": "Ưu tiên: Thấp nhất trước"
       },
       "waiting_since_asc": {
-        "TEXT": "Pending Response: Longest first"
+        "TEXT": "Chờ phản hồi: Lâu nhất trước"
       },
       "waiting_since_desc": {
-        "TEXT": "Pending Response: Shortest first"
+        "TEXT": "Chờ phản hồi: Gần nhất trước"
       }
     },
     "ATTACHMENTS": {
@@ -98,20 +98,20 @@
       }
     },
     "CHAT_SORT_BY_FILTER": {
-      "TITLE": "Sort conversation",
+      "TITLE": "Sắp xếp cuộc trò chuyện",
       "DROPDOWN_TITLE": "Sắp bởi",
       "ITEMS": {
         "LATEST": {
-          "NAME": "Last activity at",
-          "LABEL": "Last activity"
+          "NAME": "Mới nhất",
+          "LABEL": "Mới nhất"
         },
         "CREATED_AT": {
           "NAME": "Tạo vào lúc",
           "LABEL": "Tạo vào lúc"
         },
         "LAST_USER_MESSAGE_AT": {
-          "NAME": "Last user message at",
-          "LABEL": "Last message"
+          "NAME": "Khách nhắn cuối cùng",
+          "LABEL": "Khách nhắn cuối cùng"
         }
       }
     },
