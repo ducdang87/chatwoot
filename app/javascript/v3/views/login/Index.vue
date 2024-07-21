@@ -2,7 +2,7 @@
   <main
     class="flex flex-col w-full min-h-screen py-20 bg-woot-25 sm:px-6 lg:px-8 dark:bg-slate-900"
   >
-    <section v-if="isDev" class="max-w-5xl mx-auto">
+    <section class="max-w-5xl mx-auto">
       <img
         :src="globalConfig.logo"
         :alt="globalConfig.installationName"
@@ -39,8 +39,12 @@
       }"
     >
       <div v-if="!email">
-        <GoogleOAuthButton v-if="showGoogleOAuth" />
-        <form class="space-y-5" @submit.prevent="submitLogin">
+        <!-- <GoogleOAuthButton v-if="showGoogleOAuth" /> -->
+        <submit-button
+          :button-text="$t('LOGIN.SUBMIT')"
+          @click="openShipXanhLogin"
+        />
+        <form v-if="isDev" class="space-y-5" @submit.prevent="submitLogin">
           <form-input
             v-model.trim="credentials.email"
             name="email_address"
@@ -106,14 +110,6 @@ const ERROR_MESSAGES = {
 };
 import alertMixin from 'shared/mixins/alertMixin';
 
-if (process.env.NODE_ENV !== 'development') {
-  // eslint-disable-next-line no-console
-  window.open(
-    'https://app.shipxanh.com/login?redirect-to=/dashboard/connect/shops?open-chat=true&keep=true',
-    '_self'
-  );
-}
-
 export default {
   components: {
     // eslint-disable-next-line vue/no-unused-components
@@ -169,9 +165,6 @@ export default {
     showSignupLink() {
       return parseBoolean(window.chatwootConfig.signupEnabled);
     },
-    isDev() {
-      return process.env.NODE_ENV === 'development';
-    },
   },
   created() {
     if (this.ssoAuthToken) {
@@ -189,6 +182,15 @@ export default {
     }
   },
   methods: {
+    isDev() {
+      return process.env.NODE_ENV === 'development';
+    },
+    openShipXanhLogin() {
+      window.open(
+        'https://app.shipxanh.com/login?redirect-to=/dashboard/connect/shops?open-chat=true&keep=true',
+        '_self'
+      );
+    },
     // TODO: Remove this when Safari gets wider support
     // Ref: https://caniuse.com/requestidlecallback
     //
