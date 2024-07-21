@@ -32,9 +32,9 @@ export default {
       if (key === 'website') {
         return this.enabledFeatures.channel_website;
       }
-      // if (key === 'facebook') {
-      //   return this.enabledFeatures.channel_facebook && this.hasFbConfigured;
-      // }
+      if (key === 'facebook') {
+        return this.enabledFeatures.channel_facebook && this.hasFbConfigured;
+      }
       if (key === 'email') {
         return this.enabledFeatures.channel_email;
       }
@@ -50,7 +50,6 @@ export default {
         'shopee',
         'lazada',
         'tiktokshop',
-        'fanpage',
       ].includes(key);
     },
   },
