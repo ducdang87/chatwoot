@@ -9,7 +9,7 @@
     >
       <div class="w-full text-center">
         <router-link
-          class="button success nice rounded"
+          class="button bg-woot-500 nice rounded"
           :to="{
             name: 'settings_teams_list',
           }"

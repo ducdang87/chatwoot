@@ -27,7 +27,7 @@
         </woot-button>
         <woot-button
           variant="link"
-          icon="dismiss-circle"
+          icon="dismiss"
           size="small"
           color-scheme="secondary"
           @click="$emit('delete', campaign)"

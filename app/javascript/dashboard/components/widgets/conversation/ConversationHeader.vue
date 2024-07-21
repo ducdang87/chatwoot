@@ -12,11 +12,13 @@
           :back-url="backButtonUrl"
           class="ltr:ml-0 rtl:mr-0 rtl:ml-4"
         />
+        <!-- SX_TODO: If no thumbnail will be shown, show the shopType icon -->
         <Thumbnail
-          :src="currentContact.thumbnail"
+          :src="currentContact.thumbnail || shopTypeImage"
           :badge="inboxBadge"
           :username="currentContact.name"
           :status="currentContact.availability_status"
+          :variant="shopTypeImage ? 'square' : 'circle'"
         />
         <div
           class="flex flex-col items-start min-w-0 ml-2 overflow-hidden rtl:ml-0 rtl:mr-2 w-fit"
@@ -48,6 +50,9 @@
           <div
             class="flex items-center gap-2 overflow-hidden text-xs conversation--header--actions text-ellipsis whitespace-nowrap"
           >
+            <span class="text-xs">
+              {{ shopName }}
+            </span>
             <inbox-name v-if="hasMultipleInboxes" :inbox="inbox" />
             <span
               v-if="isSnoozed"
@@ -55,14 +60,6 @@
             >
               {{ snoozedDisplayText }}
             </span>
-            <woot-button
-              class="p-0"
-              size="small"
-              variant="link"
-              @click="$emit('contact-panel-toggle')"
-            >
-              {{ contactPanelToggleText }}
-            </woot-button>
           </div>
         </div>
       </div>
@@ -198,6 +195,15 @@ export default {
         this.accountId,
         FEATURE_FLAGS.LINEAR
       );
+    },
+    shopName() {
+      return this.currentContact?.custom_attributes?.shopName || '';
+    },
+    shopTypeImage() {
+      if (this.currentContact.custom_attributes?.shopType) {
+        return `/assets/images/dashboard/channels/${this.currentContact.custom_attributes.shopType}.png`;
+      }
+      return undefined;
     },
   },
 

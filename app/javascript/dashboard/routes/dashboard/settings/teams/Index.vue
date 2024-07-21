@@ -44,7 +44,7 @@
                     variant="smooth"
                     color-scheme="alert"
                     size="tiny"
-                    icon="dismiss-circle"
+                    icon="dismiss"
                     class-names="grey-btn"
                     :is-loading="loading[item.id]"
                     @click="openDelete(item)"

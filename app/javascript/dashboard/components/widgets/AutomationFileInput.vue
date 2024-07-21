@@ -17,7 +17,7 @@
     />
     <fluent-icon
       v-if="uploadState === 'failed'"
-      icon="dismiss-circle"
+      icon="dismiss"
       type="outline"
       class="error-icon"
     />

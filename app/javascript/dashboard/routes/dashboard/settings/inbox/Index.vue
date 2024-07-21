@@ -88,7 +88,7 @@
                     size="tiny"
                     class-names="grey-btn"
                     :is-loading="loading[item.id]"
-                    icon="dismiss-circle"
+                    icon="dismiss"
                     @click="openDelete(item)"
                   />
                 </div>

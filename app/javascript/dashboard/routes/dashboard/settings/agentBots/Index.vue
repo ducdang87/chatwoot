@@ -30,7 +30,7 @@
     <woot-button
       color-scheme="success"
       class-names="button--fixed-top"
-      icon="add-circle"
+      icon="add"
     >
       <router-link :to="newAgentBotsURL" class="white-text">
         {{ $t('AGENT_BOTS.ADD.TITLE') }}

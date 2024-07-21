@@ -75,7 +75,7 @@ const hasAppliedFiltersOrActiveFolders = computed(() => {
           size="tiny"
           variant="smooth"
           color-scheme="alert"
-          icon="dismiss-circle"
+          icon="dismiss"
           @click="emits('reset-filters')"
         />
       </div>

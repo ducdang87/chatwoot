@@ -42,7 +42,7 @@
           class="macros__action-button"
           color-scheme="success"
           variant="smooth"
-          icon="add-circle"
+          icon="add"
           @click="$emit('addNewNode')"
         >
           {{ $t('MACROS.EDITOR.ADD_BTN_TOOLTIP') }}

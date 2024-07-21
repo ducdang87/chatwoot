@@ -24,7 +24,7 @@
         variant="smooth"
         color-scheme="alert"
         size="tiny"
-        icon="dismiss-circle"
+        icon="dismiss"
         @click="$emit('delete', agentBot, index)"
       />
     </td>

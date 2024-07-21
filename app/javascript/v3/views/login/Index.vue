@@ -44,6 +44,7 @@
           :button-text="$t('LOGIN.SUBMIT')"
           @click="openShipXanhLogin"
         />
+
         <form v-if="isDev" class="space-y-5" @submit.prevent="submitLogin">
           <form-input
             v-model.trim="credentials.email"
@@ -144,6 +145,7 @@ export default {
         hasErrored: false,
       },
       error: '',
+      isDev: process.env.NODE_ENV === 'development',
     };
   },
   validations: {
@@ -182,9 +184,6 @@ export default {
     }
   },
   methods: {
-    isDev() {
-      return process.env.NODE_ENV === 'development';
-    },
     openShipXanhLogin() {
       window.open(
         'https://app.shipxanh.com/login?redirect-to=/dashboard/connect/shops?open-chat=true&keep=true',
