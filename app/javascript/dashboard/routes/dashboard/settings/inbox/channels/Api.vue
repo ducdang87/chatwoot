@@ -23,7 +23,7 @@
           }}</span>
         </label>
       </div>
-
+      <!-- SX_TODO: Off config webhook URL  -->
       <!-- <div class="w-[65%] flex-shrink-0 flex-grow-0 max-w-[65%]">
         <label :class="{ error: $v.webhookUrl.$error }">
           {{ $t('INBOX_MGMT.ADD.API_CHANNEL.WEBHOOK_URL.LABEL') }}

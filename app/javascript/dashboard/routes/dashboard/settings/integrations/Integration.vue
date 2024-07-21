@@ -49,7 +49,7 @@
         </div>
       </router-link>
       <div v-if="!integrationEnabled">
-        <a :href="integrationAction" class="button success nice rounded">
+        <a :href="integrationAction" class="button bg-woot-500 nice rounded">
           {{ $t('INTEGRATION_SETTINGS.CONNECT.BUTTON_TEXT') }}
         </a>
       </div>

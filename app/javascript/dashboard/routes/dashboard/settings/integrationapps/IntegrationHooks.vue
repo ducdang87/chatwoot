@@ -4,7 +4,7 @@
       v-if="showAddButton"
       color-scheme="success"
       class-names="button--fixed-top"
-      icon="add-circle"
+      icon="add"
       @click="openAddHookModal"
     >
       {{ $t('INTEGRATION_APPS.ADD_BUTTON') }}

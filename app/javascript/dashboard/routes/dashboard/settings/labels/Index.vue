@@ -1,9 +1,8 @@
 <template>
   <div class="flex-1 overflow-auto">
     <woot-button
-      color-scheme="success"
       class-names="button--fixed-top"
-      icon="add-circle"
+      icon="add"
       @click="openAddPopup"
     >
       {{ $t('LABEL_MGMT.HEADER_BTN_TXT') }}
@@ -62,7 +61,7 @@
                   variant="smooth"
                   color-scheme="alert"
                   size="tiny"
-                  icon="dismiss-circle"
+                  icon="dismiss"
                   class-names="grey-btn"
                   :is-loading="loading[label.id]"
                   @click="openDeletePopup(label, index)"

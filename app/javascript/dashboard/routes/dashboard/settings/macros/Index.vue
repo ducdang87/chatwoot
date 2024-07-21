@@ -2,9 +2,9 @@
   <div class="flex-1 overflow-auto">
     <router-link
       :to="addAccountScoping('settings/macros/new')"
-      class="button success button--fixed-top button success button--fixed-top px-3.5 py-1 rounded-[5px] flex gap-2"
+      class="button bg-woot-500 button--fixed-top px-3.5 py-1 rounded-[5px] flex gap-2"
     >
-      <fluent-icon icon="add-circle" />
+      <fluent-icon icon="add" />
       <span class="button__content">
         {{ $t('MACROS.HEADER_BTN_TXT') }}
       </span>

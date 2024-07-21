@@ -3,7 +3,7 @@
     <woot-button
       color-scheme="success"
       class-names="button--fixed-top"
-      icon="add-circle"
+      icon="add"
       @click="openCreatePopup"
     >
       {{ $t('INTEGRATION_SETTINGS.DASHBOARD_APPS.HEADER_BTN_TXT') }}

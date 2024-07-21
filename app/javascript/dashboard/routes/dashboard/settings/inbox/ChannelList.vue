@@ -47,6 +47,8 @@ export default {
       return this.$store.getters['accounts/getAccount'](this.accountId);
     },
     channelList() {
+      // SX_TODO: Add more marketplace channels
+
       // const { apiChannelName, apiChannelThumbnail } = this.globalConfig;
       return [
         // { key: 'website', name: 'Website' },

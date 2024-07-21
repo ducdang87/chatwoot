@@ -16,13 +16,14 @@
       icon="speaker-1"
       @click="unmute"
     />
-    <woot-button
+    <!-- SX_TODO: Off send email conversation -->
+    <!-- <woot-button
       v-tooltip="$t('CONTACT_PANEL.SEND_TRANSCRIPT')"
       variant="clear"
       color-scheme="secondary"
       icon="share"
       @click="toggleEmailActionsModal"
-    />
+    /> -->
     <resolve-action
       :conversation-id="currentChat.id"
       :status="currentChat.status"

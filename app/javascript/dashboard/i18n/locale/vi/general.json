@@ -1,6 +1,6 @@
 {
   "GENERAL": {
-    "SHOWING_RESULTS": "Showing {firstIndex}-{lastIndex} of {totalCount} items",
+    "SHOWING_RESULTS": "Hiển thị {firstIndex}-{lastIndex} của {totalCount}",
     "STOP": "Tạm dừng"
   }
 }

@@ -25,7 +25,7 @@
         variant="smooth"
         color-scheme="alert"
         size="tiny"
-        icon="dismiss-circle"
+        icon="dismiss"
         class-names="grey-btn"
         @click="$emit('delete', app)"
       />

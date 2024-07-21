@@ -30,7 +30,7 @@
         v-if="hasCloseButton"
         size="tiny"
         :color-scheme="colorScheme"
-        icon="dismiss-circle"
+        icon="dismiss"
         class-names="banner-action__button"
         @click="onClickClose"
       >

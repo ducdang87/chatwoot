@@ -10,7 +10,7 @@
     >
       <div class="w-full text-center">
         <router-link
-          class="rounded button success nice"
+          class="rounded button bg-woot-500 nice"
           :to="{
             name: 'list_all_portals',
           }"

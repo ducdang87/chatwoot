@@ -51,7 +51,8 @@
           "
           @blur="$v.selectedInboxName.$touch"
         />
-        <woot-input
+        <!-- SX_TODO: Off config webhook URL  -->
+        <!-- <woot-input
           v-if="isAPIInbox"
           v-model.trim="webhookUrl"
           class="w-3/4 pb-4"
@@ -68,7 +69,7 @@
               : ''
           "
           @blur="$v.webhookUrl.$touch"
-        />
+        /> -->
         <woot-input
           v-if="isAWebWidgetInbox"
           v-model.trim="channelWebsiteUrl"

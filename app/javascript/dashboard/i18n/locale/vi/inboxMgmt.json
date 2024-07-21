@@ -16,7 +16,11 @@
         "route": "settings_inboxes_page_channel",
         "body": "Xác thực tài khoản của bạn và tạo hộp thư đến."
       },
-
+      {
+        "title": "Chọn nhân viên",
+        "route": "settings_inboxes_add_agents",
+        "body": "Gán nhân viên chăm sóc cho kênh chat"
+      },
       {
         "title": "Voilà!",
         "route": "settings_inbox_finish",
