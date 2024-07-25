@@ -15,8 +15,7 @@ export default {
   mounted() {
     this.setColorTheme();
     this.listenToThemeChanges();
-    // this.setLocale(window.chatwootConfig.selectedLocale);
-    this.setLocale('vi');
+    this.setLocale(window.chatwootConfig.selectedLocale);
   },
   methods: {
     setColorTheme() {

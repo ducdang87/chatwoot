@@ -80,7 +80,8 @@
                     />
                   </router-link>
 
-                  <woot-button
+                  <!-- SX_TODO: Hide the delete button inbox message -->
+                  <!-- <woot-button
                     v-if="isAdmin"
                     v-tooltip.top="$t('INBOX_MGMT.DELETE.BUTTON_TEXT')"
                     variant="smooth"
@@ -90,7 +91,7 @@
                     :is-loading="loading[item.id]"
                     icon="dismiss"
                     @click="openDelete(item)"
-                  />
+                  /> -->
                 </div>
               </td>
             </tr>
