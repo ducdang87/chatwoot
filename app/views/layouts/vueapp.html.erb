@@ -5,12 +5,19 @@
     <title>
       Chat ShipXanh
     </title>
+    <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P3K3RZTN');</script>
+    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"/>
     <% if @global_config['DISPLAY_MANIFEST'] %>
       <meta name="msapplication-TileColor" content="#4952ff">
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
       <meta name="theme-color" content="#4952ff">
-      <meta name="description" content="Chatwoot is a customer support solution that helps companies engage customers over Messenger, Twitter, Telegram, WeChat, Whatsapp. Simply connect your channels and converse with your customers from a single place. Easily add new agents to your system and have them own and resolve conversations with customers.Chatwoot also gives you real-time reports to measure your team's performance, canned responses to easily respond to frequently asked questions and private notes for agents to collaborate among themselves.">
+      <meta name="description" content="Ship Xanh là giải pháp hỗ trợ khách hàng giúp thu hút khách hàng qua Shopee, Lazada, Tiktok, Facebook, Zalo, Twitter, Telegram, WeChat, Whatsapp. Chỉ cần kết nối các kênh của bạn và trò chuyện với khách hàng từ một nơi duy nhất. Dễ dàng thêm tổng đài viên mới vào hệ thống của bạn và để họ chậm sóc khách hàng. Ship Xanh cũng cung cấp cho bạn các báo cáo theo thời gian thực để đo lường hiệu suất của tổng đài viên, các câu trả lời soạn sẵn để dễ dàng trả lời các câu hỏi thường gặp và ghi chú riêng để các tổng đài viên cộng tác với nhau.">
       <% if ENV['IOS_APP_IDENTIFIER'].present? %>
         <meta name="apple-itunes-app" content='app-id=<%= ENV['IOS_APP_IDENTIFIER'] %>'>
       <% end %>
@@ -68,6 +75,10 @@
     <%= stylesheet_pack_tag @application_pack %>
   </head>
   <body class="text-slate-600">
+  <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3K3RZTN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <div id="app"></div>
     <noscript id="noscript">This app works best with JavaScript enabled.</noscript>
     <%= yield %>
