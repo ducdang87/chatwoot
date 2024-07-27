@@ -9,11 +9,7 @@
       "404": "Šioje paskyroje nėra galimų etikečių.",
       "TITLE": "Tvarkyti etiketes",
       "DESC": "Etiketės leidžia grupuoti pokalbius kartu.",
-      "TABLE_HEADER": [
-        "Vardas",
-        "Aprašymas",
-        "Spalva"
-      ]
+      "TABLE_HEADER": ["Vardas", "Aprašymas", "Spalva"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Panaikinti pažymėjimą",
         "DISMISS": "Atmesti pasiūlymą"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Atsisakyti",
       "ADD_SELECTED_LABELS": "Pridėti pažymėtas etiketes",
       "ADD_SELECTED_LABEL": "Pridėti pažymėtą etiketę",

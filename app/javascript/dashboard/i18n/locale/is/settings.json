@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "Availability",
-        "STATUSES_LIST": [
-          "Online",
-          "Upptekinn",
-          "Offline"
-        ],
+        "STATUSES_LIST": ["Online", "Upptekinn", "Offline"],
         "SET_AVAILABILITY_SUCCESS": "Availability has been set successfully",
         "SET_AVAILABILITY_ERROR": "Couldn't set availability, please try again"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "Verið er að stilla innheimtureikninginn þinn. Endurnýjaðu síðuna og reyndu aftur."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh ó! Við fundum enga Chatwoot reikninga. Vinsamlegast búðu til nýjan reikning til að halda áfram.",
+    "NO_ACCOUNT_WARNING": "Uh ó! Við fundum enga ShipXanh Chat reikninga. Vinsamlegast búðu til nýjan reikning til að halda áfram.",
     "NEW_ACCOUNT": "New Account",
     "SELECTOR_SUBTITLE": "Stofna nýjan aðgang",
     "API": {

@@ -9,11 +9,7 @@
       "404": "Engar merkingar eru tiltækir á þessum reikningi.",
       "TITLE": "Manage labels",
       "DESC": "Merkingar gera þér kleift að flokka samtölin saman.",
-      "TABLE_HEADER": [
-        "Nafn",
-        "Description",
-        "Color"
-      ]
+      "TABLE_HEADER": ["Nafn", "Description", "Color"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

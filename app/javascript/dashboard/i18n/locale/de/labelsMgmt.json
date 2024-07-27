@@ -9,11 +9,7 @@
       "404": "In diesem Konto sind keine Labels verfügbar.",
       "TITLE": "Labels verwalten",
       "DESC": "Mit Labels lassen sich Unterhaltungen zusammenfassen.",
-      "TABLE_HEADER": [
-        "Name",
-        "Beschreibung",
-        "Farbe"
-      ]
+      "TABLE_HEADER": ["Name", "Beschreibung", "Farbe"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Verwerfen",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

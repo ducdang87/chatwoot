@@ -9,11 +9,7 @@
       "404": "Der er ingen tilgængelige etiketter på denne konto.",
       "TITLE": "Administrer etiketter",
       "DESC": "Etiketter lader dig gruppere samtalerne sammen.",
-      "TABLE_HEADER": [
-        "Navn",
-        "Beskrivelse",
-        "Farve"
-      ]
+      "TABLE_HEADER": ["Navn", "Beskrivelse", "Farve"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

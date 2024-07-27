@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "זמינות",
-        "STATUSES_LIST": [
-          "מחובר",
-          "עסוק",
-          "לא מחובר"
-        ],
+        "STATUSES_LIST": ["מחובר", "עסוק", "לא מחובר"],
         "SET_AVAILABILITY_SUCCESS": "זמינות הוגדרה בהצלחה",
         "SET_AVAILABILITY_ERROR": "לא ניתן להגדיר זמינות, אנא נסה שנית"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "חשבון החיוב שלך מוגדר. אנא רענן את הדף ונסה שוב."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "אה הו! לא הצלחנו למצוא חשבונות Chatwoot. נא ליצור חשבון חדש כדי להמשיך.",
+    "NO_ACCOUNT_WARNING": "אה הו! לא הצלחנו למצוא חשבונות ShipXanh Chat. נא ליצור חשבון חדש כדי להמשיך.",
     "NEW_ACCOUNT": "חשבון חדש",
     "SELECTOR_SUBTITLE": "צור חשבון חדש",
     "API": {

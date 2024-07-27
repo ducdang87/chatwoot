@@ -9,11 +9,7 @@
       "404": "Nu există răspunsuri predefinite disponibile în acest cont.",
       "TITLE": "Gestionați etichetele",
       "DESC": "Etichetele vă permit să grupați conversațiile împreună.",
-      "TABLE_HEADER": [
-        "Nume",
-        "Descriere",
-        "Culoare"
-      ]
+      "TABLE_HEADER": ["Nume", "Descriere", "Culoare"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

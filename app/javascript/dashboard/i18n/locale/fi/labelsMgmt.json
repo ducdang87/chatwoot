@@ -9,11 +9,7 @@
       "404": "Tällä tilillä ei ole tunnisteita.",
       "TITLE": "Hallitse tunnisteita",
       "DESC": "Tunnisteiden avulla voit ryhmitellä keskustelut yhteen.",
-      "TABLE_HEADER": [
-        "Nimi",
-        "Kuvaus",
-        "Väri"
-      ]
+      "TABLE_HEADER": ["Nimi", "Kuvaus", "Väri"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

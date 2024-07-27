@@ -4,16 +4,12 @@
     "HEADER_BTN_TXT": "Audit-Protokolle hinzufügen",
     "LOADING": "Audit-Protokolle abrufen",
     "SEARCH_404": "Es gibt keine Elemente, die dieser Abfrage entsprechen",
-    "SIDEBAR_TXT": "<p><b>Auditprotokolle</b> </p><p> Auditprotokolle sind Spuren für Ereignisse und Aktionen in einem Chatwoot-System. </p>",
+    "SIDEBAR_TXT": "<p><b>Auditprotokolle</b> </p><p> Auditprotokolle sind Spuren für Ereignisse und Aktionen in einem ShipXanh Chat-System. </p>",
     "LIST": {
       "404": "Es gibt keine Audit-Protokolle in diesem Konto.",
       "TITLE": "Audit-Protokolle verwalten",
-      "DESC": "Auditprotokolle sind Spuren für Ereignisse und Aktionen in einem Chatwoot-System.",
-      "TABLE_HEADER": [
-        "User",
-        "Action",
-        "IP-Adresse"
-      ]
+      "DESC": "Auditprotokolle sind Spuren für Ereignisse und Aktionen in einem ShipXanh Chat-System.",
+      "TABLE_HEADER": ["User", "Action", "IP-Adresse"]
     },
     "API": {
       "SUCCESS_MESSAGE": "Audit-Protokolle erfolgreich abgerufen",

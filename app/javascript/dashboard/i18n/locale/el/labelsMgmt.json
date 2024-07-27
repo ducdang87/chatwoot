@@ -9,11 +9,7 @@
       "404": "Δεν υπάρχουν ετικέτες διαθέσιμες σε αυτόν τον λογαριασμό.",
       "TITLE": "Διαχείριση Ετικετών",
       "DESC": "Οι ετικέτες σάς επιτρέπουν να ομαδοποιήσετε τις συνομιλίες.",
-      "TABLE_HEADER": [
-        "Όνομα",
-        "Περιγραφή",
-        "Χρώμα"
-      ]
+      "TABLE_HEADER": ["Όνομα", "Περιγραφή", "Χρώμα"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

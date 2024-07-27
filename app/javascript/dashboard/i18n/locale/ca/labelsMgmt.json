@@ -9,11 +9,7 @@
       "404": "No hi ha etiquetes disponibles en aquest compte.",
       "TITLE": "Gestiona les etiquetes",
       "DESC": "Les etiquetes et permeten agrupar les converses.",
-      "TABLE_HEADER": [
-        "Nom",
-        "Descripció",
-        "Color"
-      ]
+      "TABLE_HEADER": ["Nom", "Descripció", "Color"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Descartar",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

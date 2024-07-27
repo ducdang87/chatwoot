@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "Pieejamība",
-        "STATUSES_LIST": [
-          "Tiešsaistē",
-          "Aizņemts",
-          "Bezsaistē"
-        ],
+        "STATUSES_LIST": ["Tiešsaistē", "Aizņemts", "Bezsaistē"],
         "SET_AVAILABILITY_SUCCESS": "Pieejamība ir veiksmīgi iestatīta",
         "SET_AVAILABILITY_ERROR": "Nevarēja iestatīt pieejamību. Lūdzu, mēģiniet vēlreiz"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "Jūsu norēķinu konts tiek konfigurēts. Lūdzu, atsvaidziniet lapu un mēģiniet vēlreiz."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Ak, vai! Mēs nevarējām atrast nevienu chatwoot kontu. Lūdzu, izveidojiet jaunu kontu, lai turpinātu.",
+    "NO_ACCOUNT_WARNING": "Ak, vai! Mēs nevarējām atrast nevienu ShipXanh Chat kontu. Lūdzu, izveidojiet jaunu kontu, lai turpinātu.",
     "NEW_ACCOUNT": "Jauns Konts",
     "SELECTOR_SUBTITLE": "Izveidot jaunu kontu",
     "API": {

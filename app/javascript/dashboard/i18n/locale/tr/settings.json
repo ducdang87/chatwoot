@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "Uygunluk",
-        "STATUSES_LIST": [
-          "Çevrimiçi",
-          "Meşgul",
-          "Çevrimdışı"
-        ],
+        "STATUSES_LIST": ["Çevrimiçi", "Meşgul", "Çevrimdışı"],
         "SET_AVAILABILITY_SUCCESS": "Uygunluk başarıyla ayarlandı",
         "SET_AVAILABILITY_ERROR": "Uygunluk ayarlanamadı, lütfen tekrar deneyin"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "Fatura hesabınız yapılandırılıyor. Lütfen sayfayı yenileyip tekrar deneyin."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Eyvah! Hiçbir Chatwoot hesabı bulunamadı. Devam etmek için yeni bir hesap oluşturun.",
+    "NO_ACCOUNT_WARNING": "Eyvah! Hiçbir ShipXanh Chat hesabı bulunamadı. Devam etmek için yeni bir hesap oluşturun.",
     "NEW_ACCOUNT": "Yeni hesap",
     "SELECTOR_SUBTITLE": "Yeni bir hesap oluştur",
     "API": {

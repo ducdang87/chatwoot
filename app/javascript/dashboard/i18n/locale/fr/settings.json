@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "Disponibilité",
-        "STATUSES_LIST": [
-          "En ligne",
-          "Occupé(e)",
-          "Hors-ligne"
-        ],
+        "STATUSES_LIST": ["En ligne", "Occupé(e)", "Hors-ligne"],
         "SET_AVAILABILITY_SUCCESS": "La disponibilité a bien été définie",
         "SET_AVAILABILITY_ERROR": "Impossible de définir la disponibilité, veuillez réessayer"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "Votre compte de facturation est en cours de configuration. Veuillez actualiser la page et réessayer."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Oh oh ! Nous n'avons pas trouvé de compte Chatwoot. Veuillez créer un nouveau compte pour continuer.",
+    "NO_ACCOUNT_WARNING": "Oh oh ! Nous n'avons pas trouvé de compte ShipXanh Chat. Veuillez créer un nouveau compte pour continuer.",
     "NEW_ACCOUNT": "Nouveau compte",
     "SELECTOR_SUBTITLE": "Créer un nouveau compte",
     "API": {

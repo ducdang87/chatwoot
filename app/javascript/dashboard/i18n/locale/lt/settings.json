@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "Prieinamumas",
-        "STATUSES_LIST": [
-          "Prisijungęs",
-          "Užimta",
-          "Atsijungęs"
-        ],
+        "STATUSES_LIST": ["Prisijungęs", "Užimta", "Atsijungęs"],
         "SET_AVAILABILITY_SUCCESS": "Pasiekiamumas nustatytas sėkmingai",
         "SET_AVAILABILITY_ERROR": "Nepavyko nustatyti pasiekiamumo, bandykite dar kartą"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "Jūsų atsiskaitomoji sąskaita konfigūruojama. Atnaujinkite puslapį ir bandykite dar kartą."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Oi! Nepavyko rasti jokių Chatwoot paskyrų. Jei norite tęsti, susikurkite naują paskyrą.",
+    "NO_ACCOUNT_WARNING": "Oi! Nepavyko rasti jokių ShipXanh Chat paskyrų. Jei norite tęsti, susikurkite naują paskyrą.",
     "NEW_ACCOUNT": "Nauja Paskyra",
     "SELECTOR_SUBTITLE": "Sukurti naują paskyrą",
     "API": {

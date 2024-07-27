@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "Ketersediaan",
-        "STATUSES_LIST": [
-          "Online",
-          "Sibuk",
-          "Offline"
-        ],
+        "STATUSES_LIST": ["Online", "Sibuk", "Offline"],
         "SET_AVAILABILITY_SUCCESS": "Ketersediaan berhasil diatur",
         "SET_AVAILABILITY_ERROR": "Tidak dapat mengatur ketersediaan, silakan coba lagi"
       },
@@ -314,7 +310,7 @@
     "NO_BILLING_USER": "Akun pembayaran Anda sedang dikonfigurasi. Silakan segarkan halaman dan coba lagi."
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! Kami tidak dapat menemukan akun Chatwoot apa pun. Harap buat akun baru untuk melanjutkan.",
+    "NO_ACCOUNT_WARNING": "Uh oh! Kami tidak dapat menemukan akun ShipXanh Chat apa pun. Harap buat akun baru untuk melanjutkan.",
     "NEW_ACCOUNT": "Akun Baru",
     "SELECTOR_SUBTITLE": "Buat akun baru",
     "API": {

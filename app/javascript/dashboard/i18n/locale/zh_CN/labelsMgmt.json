@@ -9,11 +9,7 @@
       "404": "此帐户中没有可用的标签。",
       "TITLE": "管理标签",
       "DESC": "标记可以让您将对话集中起来。",
-      "TABLE_HEADER": [
-        "姓名：",
-        "描述信息",
-        "颜色"
-      ]
+      "TABLE_HEADER": ["姓名：", "描述信息", "颜色"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "取消",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

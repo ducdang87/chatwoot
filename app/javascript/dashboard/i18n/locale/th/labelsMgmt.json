@@ -9,11 +9,7 @@
       "404": "ไม่มีป้ายกำกับในบัญชีนี้",
       "TITLE": "จัดการป้ายกำกับ",
       "DESC": "ป้ายกำกับช่วยให้คุณจัดกลุ่มการสนทนาได้",
-      "TABLE_HEADER": [
-        "ชื่อ",
-        "คำอธิบาย",
-        "สี"
-      ]
+      "TABLE_HEADER": ["ชื่อ", "คำอธิบาย", "สี"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

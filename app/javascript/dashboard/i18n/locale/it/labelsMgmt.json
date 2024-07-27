@@ -9,11 +9,7 @@
       "404": "Non ci sono etichette disponibili in questo account.",
       "TITLE": "Gestisci etichette",
       "DESC": "Le etichette consentono di raggruppare le conversazioni insieme.",
-      "TABLE_HEADER": [
-        "Nome",
-        "Descrizione",
-        "Colore"
-      ]
+      "TABLE_HEADER": ["Nome", "Descrizione", "Colore"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

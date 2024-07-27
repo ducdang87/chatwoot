@@ -9,11 +9,7 @@
       "404": "Não há etiquetas disponíveis nesta conta.",
       "TITLE": "Gerir etiquetas",
       "DESC": "Etiquetas permitem que você agrupe as conversas juntos.",
-      "TABLE_HEADER": [
-        "Nome:",
-        "Descrição",
-        "Cor"
-      ]
+      "TABLE_HEADER": ["Nome:", "Descrição", "Cor"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Desmarcar etiqueta",
         "DISMISS": "Descartar sugestão"
       },
-      "POWERED_BY": "Chatwoot IA",
+      "POWERED_BY": "ShipXanh Chat IA",
       "DISMISS": "Descartar",
       "ADD_SELECTED_LABELS": "Adicionar etiquetas selecionadas",
       "ADD_SELECTED_LABEL": "Adicionar etiqueta selecionada",

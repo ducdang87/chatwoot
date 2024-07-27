@@ -57,7 +57,7 @@
       },
       "ACCESS_TOKEN": {
         "TITLE": "رمز المصادقة",
-        "NOTE": "يمكن استخدام هذا رمز المصادقة إذا كنت تبني تطبيقات API للتكامل مع Chatwoot",
+        "NOTE": "يمكن استخدام هذا رمز المصادقة إذا كنت تبني تطبيقات API للتكامل مع ShipXanh Chat",
         "COPY": "نسخ"
       },
       "AUDIO_NOTIFICATIONS_SECTION": {
@@ -145,11 +145,7 @@
       },
       "AVAILABILITY": {
         "LABEL": "التوفر",
-        "STATUSES_LIST": [
-          "متصل",
-          "مشغول",
-          "غير متصل"
-        ],
+        "STATUSES_LIST": ["متصل", "مشغول", "غير متصل"],
         "SET_AVAILABILITY_SUCCESS": "تم تعيين التوافر بنجاح",
         "SET_AVAILABILITY_ERROR": "تعذر تعيين التوافر، الرجاء المحاولة مرة أخرى"
       },

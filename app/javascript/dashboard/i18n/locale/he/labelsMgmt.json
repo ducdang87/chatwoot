@@ -9,11 +9,7 @@
       "404": "אין תוויות זמינות בחשבון זה.",
       "TITLE": "נהל תוויות",
       "DESC": "תוויות מאפשרות לך לקבץ את השיחות יחד.",
-      "TABLE_HEADER": [
-        "שם",
-        "תיאור",
-        "צֶבַע"
-      ]
+      "TABLE_HEADER": ["שם", "תיאור", "צֶבַע"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",

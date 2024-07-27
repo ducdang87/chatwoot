@@ -9,11 +9,7 @@
       "404": "Tidak ada label yang tersedia di akun ini.",
       "TITLE": "Kelola label",
       "DESC": "Label memungkinkan Anda mengelompokkan percakapan menjadi satu.",
-      "TABLE_HEADER": [
-        "Nama",
-        "Deskripsi",
-        "Warna"
-      ]
+      "TABLE_HEADER": ["Nama", "Deskripsi", "Warna"]
     },
     "FORM": {
       "NAME": {
@@ -45,7 +41,7 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
+      "POWERED_BY": "ShipXanh Chat AI",
       "DISMISS": "Tutup",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",
