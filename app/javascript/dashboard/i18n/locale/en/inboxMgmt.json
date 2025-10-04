@@ -429,6 +429,18 @@
         "TITLE_NEXT": "Complete the setup",
         "TITLE_FINISH": "Voilà!",
         "CHANNEL": {
+          "SHOPEE": {
+            "TITLE": "Shopee",
+            "DESCRIPTION": "Connect your Shopee shop"
+          },
+          "LAZADA": {
+            "TITLE": "Lazada",
+            "DESCRIPTION": "Connect your Lazada shop"
+          },
+          "TIKTOK_SHOP": {
+            "TITLE": "Tiktokshop",
+            "DESCRIPTION": "Connect your Tiktokshop"
+          },
           "WEBSITE": {
             "TITLE": "Website",
             "DESCRIPTION": "Create a live-chat widget"

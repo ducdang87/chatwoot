@@ -427,6 +427,18 @@
         "TITLE_NEXT": "Hoàn tất thiết lập",
         "TITLE_FINISH": "Voilà!",
         "CHANNEL": {
+          "SHOPEE": {
+            "TITLE": "Shopee",
+            "DESCRIPTION": "Kết nối shop Shopee của bạn"
+          },
+          "LAZADA": {
+            "TITLE": "Lazada",
+            "DESCRIPTION": "Kết nối shop Lazada của bạn"
+          },
+          "TIKTOK_SHOP": {
+            "TITLE": "Tiktokshop",
+            "DESCRIPTION": "Kết nối Tiktokshop của bạn"
+          },
           "WEBSITE": {
             "TITLE": "Website",
             "DESCRIPTION": "Tạo widget trò chuyện trực tiếp"
