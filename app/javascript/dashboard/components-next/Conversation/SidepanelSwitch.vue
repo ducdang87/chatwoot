@@ -56,9 +56,14 @@ useKeyboardEvents(keyboardEvents);
 
 <template>
   <div
-    class="flex flex-col justify-center items-center absolute top-36 xl:top-24 ltr:right-2 rtl:left-2 bg-n-solid-2 border border-n-weak rounded-full gap-2 p-1"
+    class="flex flex-col justify-center items-center absolute top-9 ltr:right-2 rtl:left-2 bg-n-solid-2 border rounded-full gap-2 p-1"
+    :class="{
+      'border-n-brand': !isContactSidebarOpen,
+      'border-n-weak': isContactSidebarOpen,
+    }"
   >
     <Button
+      v-if="!isContactSidebarOpen"
       v-tooltip.top="$t('CONVERSATION.SIDEBAR.CONTACT')"
       ghost
       slate
@@ -67,7 +72,7 @@ useKeyboardEvents(keyboardEvents);
       :class="{
         'bg-n-alpha-2': isContactSidebarOpen,
       }"
-      icon="i-ph-user-bold"
+      icon="lucide:user-round"
       @click="handleConversationSidebarToggle"
     />
     <Button

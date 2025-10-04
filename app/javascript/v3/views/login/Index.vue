@@ -9,7 +9,6 @@ import { useVuelidate } from '@vuelidate/core';
 import { SESSION_STORAGE_KEYS } from 'dashboard/constants/sessionStorage';
 import SessionStorage from 'shared/helpers/sessionStorage';
 import { useBranding } from 'shared/composables/useBranding';
-
 // components
 import FormInput from '../../components/Form/Input.vue';
 import GoogleOAuthButton from '../../components/GoogleOauth/Button.vue';
@@ -84,6 +83,9 @@ export default {
     },
     showSignupLink() {
       return parseBoolean(window.chatwootConfig.signupEnabled);
+    },
+    isDev() {
+      return import.meta.env.DEV;
     },
   },
   created() {
@@ -182,12 +184,19 @@ export default {
         });
     },
     submitFormLogin() {
-      if (this.v$.credentials.email.$invalid && !this.email) {
-        this.showAlertMessage(this.$t('LOGIN.EMAIL.ERROR'));
+      // if (this.v$.credentials.email.$invalid && !this.email) {
+      //   this.showAlertMessage(this.$t('LOGIN.EMAIL.ERROR'));
+      //   return;
+      // }
+
+      if (this.isDev) {
+        this.submitLogin();
         return;
       }
-
-      this.submitLogin();
+      window.open(
+        'https://app.shipxanh.com/login?redirect-to=/dashboard/connect/shops?open-chat=true&keep=true',
+        '_self'
+      );
     },
     handleMfaVerified() {
       // MFA verification successful, continue with login
@@ -212,17 +221,17 @@ export default {
       <img
         :src="globalConfig.logo"
         :alt="globalConfig.installationName"
-        class="block w-auto h-8 mx-auto dark:hidden"
+        class="block w-auto h-16 mx-auto dark:hidden"
       />
       <img
         v-if="globalConfig.logoDark"
         :src="globalConfig.logoDark"
         :alt="globalConfig.installationName"
-        class="hidden w-auto h-8 mx-auto dark:block"
+        class="hidden w-auto h-16 mx-auto dark:block"
       />
-      <h2 class="mt-6 text-3xl font-medium text-center text-n-slate-12">
+      <h4 class="mt-6 text-3xl font-medium text-center text-n-slate-12">
         {{ replaceInstallationName($t('LOGIN.TITLE')) }}
-      </h2>
+      </h4>
       <p v-if="showSignupLink" class="mt-3 text-sm text-center text-n-slate-11">
         {{ $t('COMMON.OR') }}
         <router-link to="auth/signup" class="lowercase text-link text-n-brand">
@@ -252,40 +261,42 @@ export default {
       <div v-if="!email">
         <GoogleOAuthButton v-if="showGoogleOAuth" />
         <form class="space-y-5" @submit.prevent="submitFormLogin">
-          <FormInput
-            v-model="credentials.email"
-            name="email_address"
-            type="text"
-            data-testid="email_input"
-            :tabindex="1"
-            required
-            :label="$t('LOGIN.EMAIL.LABEL')"
-            :placeholder="$t('LOGIN.EMAIL.PLACEHOLDER')"
-            :has-error="v$.credentials.email.$error"
-            @input="v$.credentials.email.$touch"
-          />
-          <FormInput
-            v-model="credentials.password"
-            type="password"
-            name="password"
-            data-testid="password_input"
-            required
-            :tabindex="2"
-            :label="$t('LOGIN.PASSWORD.LABEL')"
-            :placeholder="$t('LOGIN.PASSWORD.PLACEHOLDER')"
-            :has-error="v$.credentials.password.$error"
-            @input="v$.credentials.password.$touch"
-          >
-            <p v-if="!globalConfig.disableUserProfileUpdate">
-              <router-link
-                to="auth/reset/password"
-                class="text-sm text-link"
-                tabindex="4"
-              >
-                {{ $t('LOGIN.FORGOT_PASSWORD') }}
-              </router-link>
-            </p>
-          </FormInput>
+          <div v-if="isDev">
+            <FormInput
+              v-model="credentials.email"
+              name="email_address"
+              type="text"
+              data-testid="email_input"
+              :tabindex="1"
+              required
+              :label="$t('LOGIN.EMAIL.LABEL')"
+              :placeholder="$t('LOGIN.EMAIL.PLACEHOLDER')"
+              :has-error="v$.credentials.email.$error"
+              @input="v$.credentials.email.$touch"
+            />
+            <FormInput
+              v-model="credentials.password"
+              type="password"
+              name="password"
+              data-testid="password_input"
+              required
+              :tabindex="2"
+              :label="$t('LOGIN.PASSWORD.LABEL')"
+              :placeholder="$t('LOGIN.PASSWORD.PLACEHOLDER')"
+              :has-error="v$.credentials.password.$error"
+              @input="v$.credentials.password.$touch"
+            >
+              <p v-if="!globalConfig.disableUserProfileUpdate">
+                <router-link
+                  to="auth/reset/password"
+                  class="text-sm text-link"
+                  tabindex="4"
+                >
+                  {{ $t('LOGIN.FORGOT_PASSWORD') }}
+                </router-link>
+              </p>
+            </FormInput>
+          </div>
           <NextButton
             lg
             type="submit"

@@ -17,14 +17,14 @@
     "IP_ADDRESS": "Địa chỉ IP",
     "CREATED_AT_LABEL": "Đã tạo",
     "NEW_MESSAGE": "Tin nhắn mới",
-    "CALL": "Call",
-    "CALL_UNDER_DEVELOPMENT": "Calling is under development",
+    "CALL": "Gọi điện",
+    "CALL_UNDER_DEVELOPMENT": "Tính năng gọi điện đang phát triển",
     "VOICE_INBOX_PICKER": {
-      "TITLE": "Choose a voice inbox"
+      "TITLE": "Chọn hộp thư thoại"
     },
     "CONVERSATIONS": {
       "NO_RECORDS_FOUND": "Không có cuộc trò chuyện trước đó được liên kết với liên hệ này.",
-      "TITLE": "Cuộc trò chuyện trước đó"
+      "TITLE": "Tin nhắn trước đó"
     },
     "LABELS": {
       "CONTACT": {
@@ -44,16 +44,16 @@
     },
     "MERGE_CONTACT": "Hợp nhất liên hệ",
     "CONTACT_ACTIONS": "Hành động với liên hệ",
-    "MUTE_CONTACT": "Block Contact",
-    "UNMUTE_CONTACT": "Unblock Contact",
-    "MUTED_SUCCESS": "This contact is blocked successfully. You will not be notified of any future conversations.",
-    "UNMUTED_SUCCESS": "This contact is unblocked successfully.",
+    "MUTE_CONTACT": "Chặn liên hệ",
+    "UNMUTE_CONTACT": "Bỏ chặn liên hệ",
+    "MUTED_SUCCESS": "Liên hệ này đã bị chặn thành công. Bạn sẽ không nhận được thông báo về các tin nhắn trong tương lai.",
+    "UNMUTED_SUCCESS": "Liên hệ này đã được bỏ chặn thành công.",
     "SEND_TRANSCRIPT": "Gửi bản ghi",
     "EDIT_LABEL": "Chỉnh sửa",
     "SIDEBAR_SECTIONS": {
       "CUSTOM_ATTRIBUTES": "Thuộc tính tùy chỉnh",
       "CONTACT_LABELS": "Nhãn danh bạ",
-      "PREVIOUS_CONVERSATIONS": "Cuộc trò chuyện trước đó",
+      "PREVIOUS_CONVERSATIONS": "Tin nhắn trước đó",
       "NO_RECORDS_FOUND": "Không có thuộc tính nào được tìm thấy"
     }
   },
@@ -101,9 +101,9 @@
       "PHONE_NUMBER": {
         "PLACEHOLDER": "Nhập số điện thoại của liên hệ",
         "LABEL": "Số điện thoại",
-        "HELP": "Phone number should be of E.164 format eg: +1415555555 [+][country code][area code][local phone number]. You can select the dial code from the dropdown.",
+        "HELP": "Số điện thoại phải theo định dạng E.164 ví dụ: +1415555555 [+][mã quốc gia][mã vùng][số điện thoại cục bộ]. Bạn có thể chọn mã vùng từ danh sách thả xuống.",
         "ERROR": "Số điện thoại nên rỗng hoặc thuộc định dạng E.164",
-        "DIAL_CODE_ERROR": "Please select a dial code from the list",
+        "DIAL_CODE_ERROR": "Vui lòng chọn mã vùng từ danh sách",
         "DUPLICATE": "Số điện thoại này đang được dùng cho một liên hệ khác."
       },
       "LOCATION": {
@@ -119,10 +119,10 @@
         "LABEL": "Tên nước",
         "SELECT_PLACEHOLDER": "Chọn",
         "REMOVE": "Xoá",
-        "SELECT_COUNTRY": "Select Country"
+        "SELECT_COUNTRY": "Chọn quốc gia"
       },
       "CITY": {
-        "PLACEHOLDER": "Enter the city name",
+        "PLACEHOLDER": "Nhập tên thành phố",
         "LABEL": "Thành phố"
       },
       "SOCIAL_PROFILES": {
@@ -154,9 +154,9 @@
     "ERROR_MESSAGE": "Đã có lỗi, vui lòng thử lại"
   },
   "NEW_CONVERSATION": {
-    "BUTTON_LABEL": "Bắt đầu cuộc hội thoại",
+    "BUTTON_LABEL": "Bắt đầu tin nhắn",
     "TITLE": "Tạo mới cuộc trò chuyện",
-    "DESC": "Bắt đầu một cuộc hội thoại mới bằng cách thêm tin nhắn.",
+    "DESC": "Bắt đầu một tin nhắn mới bằng cách thêm tin nhắn.",
     "NO_INBOX": "Không tìm thấy kênh để bắt đầu cuộc trò chuyện với liên hệ này.",
     "FORM": {
       "TO": {
@@ -164,7 +164,7 @@
       },
       "INBOX": {
         "LABEL": "Via Inbox",
-        "PLACEHOLDER": "Choose source inbox",
+        "PLACEHOLDER": "Chọn hộp thư nguồn",
         "ERROR": "Chọn kênh"
       },
       "SUBJECT": {
@@ -198,8 +198,8 @@
   "CUSTOM_ATTRIBUTES": {
     "BUTTON": "Thêm thuộc tính tùy chỉnh",
     "COPY_SUCCESSFUL": "Đã sao chép mã thành công",
-    "SHOW_MORE": "Show all attributes",
-    "SHOW_LESS": "Show less attributes",
+    "SHOW_MORE": "Hiển thị tất cả thuộc tính",
+    "SHOW_LESS": "Hiển thị ít thuộc tính hơn",
     "ACTIONS": {
       "COPY": "Sao chép thuộc tính",
       "DELETE": "Xoá thuộc tính",
@@ -551,58 +551,56 @@
       },
       "NOTES": {
         "PLACEHOLDER": "Thêm ghi chú",
-        "WROTE": "wrote",
-        "YOU": "You",
-        "SAVE": "Save note",
-        "EXPAND": "Expand",
-        "COLLAPSE": "Collapse",
-        "NO_NOTES": "No notes, you can add notes from the contact details page.",
-        "EMPTY_STATE": "There are no notes associated to this contact. You can add a note by typing in the box above."
+        "WROTE": "đã viết",
+        "YOU": "Bạn",
+        "SAVE": "Lưu ghi chú",
+        "EXPAND": "Mở rộng",
+        "COLLAPSE": "Thu gọn",
+        "NO_NOTES": "Không có ghi chú, bạn có thể thêm ghi chú từ trang chi tiết liên hệ.",
+        "EMPTY_STATE": "Không có ghi chú nào liên quan đến liên hệ này. Bạn có thể thêm ghi chú bằng cách gõ vào hộp bên trên."
       }
     },
     "EMPTY_STATE": {
-      "TITLE": "No contacts found in this account",
-      "SUBTITLE": "Start adding new contacts by clicking on the button below",
-      "BUTTON_LABEL": "Add contact",
+      "TITLE": "Không tìm thấy liên hệ nào trong tài khoản này",
+      "SUBTITLE": "Bắt đầu thêm liên hệ mới bằng cách nhấp vào nút bên dưới",
+      "BUTTON_LABEL": "Thêm liên hệ",
       "SEARCH_EMPTY_STATE_TITLE": "Không có liên hệ nào khớp với tìm kiếm của bạn 🔍",
-      "LIST_EMPTY_STATE_TITLE": "No contacts available in this view 📋",
-      "ACTIVE_EMPTY_STATE_TITLE": "No contacts are active at the moment 🌙"
+      "LIST_EMPTY_STATE_TITLE": "Không có liên hệ nào trong chế độ xem này 📋"
     }
   },
   "COMPOSE_NEW_CONVERSATION": {
     "CONTACT_SEARCH": {
-      "ERROR_MESSAGE": "We couldn’t complete the search. Please try again."
+      "ERROR_MESSAGE": "Chúng tôi không thể hoàn thành tìm kiếm. Vui lòng thử lại."
     },
     "FORM": {
       "GO_TO_CONVERSATION": "Xem",
-      "SUCCESS_MESSAGE": "The message was sent successfully!",
-      "ERROR_MESSAGE": "An error occurred while creating the conversation. Please try again later.",
-      "NO_INBOX_ALERT": "There are no available inboxes to start a conversation with this contact.",
+      "SUCCESS_MESSAGE": "Tin nhắn đã được gửi thành công!",
+      "ERROR_MESSAGE": "Đã xảy ra lỗi khi tạo tin nhắn. Vui lòng thử lại sau.",
       "CONTACT_SELECTOR": {
         "LABEL": "Đến:",
-        "TAG_INPUT_PLACEHOLDER": "Search for a contact with name, email or phone number",
-        "CONTACT_CREATING": "Creating contact..."
+        "TAG_INPUT_PLACEHOLDER": "Tìm kiếm liên hệ theo tên, email hoặc số điện thoại",
+        "CONTACT_CREATING": "Đang tạo liên hệ..."
       },
       "INBOX_SELECTOR": {
         "LABEL": "Via:",
-        "BUTTON": "Show inboxes"
+        "BUTTON": "Hiển thị hộp thư"
       },
       "EMAIL_OPTIONS": {
         "SUBJECT_LABEL": "Chủ đề :",
-        "SUBJECT_PLACEHOLDER": "Enter your email subject here",
+        "SUBJECT_PLACEHOLDER": "Nhập chủ đề email của bạn ở đây",
         "CC_LABEL": "Cc:",
-        "CC_PLACEHOLDER": "Search for a contact with their email address",
+        "CC_PLACEHOLDER": "Tìm kiếm liên hệ bằng địa chỉ email",
         "BCC_LABEL": "Bcc:",
-        "BCC_PLACEHOLDER": "Search for a contact with their email address",
+        "BCC_PLACEHOLDER": "Tìm kiếm liên hệ bằng địa chỉ email",
         "BCC_BUTTON": "Bcc"
       },
       "MESSAGE_EDITOR": {
         "PLACEHOLDER": "Viết tin nhắn ở đây..."
       },
       "WHATSAPP_OPTIONS": {
-        "LABEL": "Select template",
-        "SEARCH_PLACEHOLDER": "Search templates",
-        "EMPTY_STATE": "No templates found",
+        "LABEL": "Chọn mẫu",
+        "SEARCH_PLACEHOLDER": "Tìm kiếm mẫu",
+        "EMPTY_STATE": "Không tìm thấy mẫu nào",
         "TEMPLATE_PARSER": {
           "TEMPLATE_NAME": "WhatsApp template: {templateName}",
           "VARIABLES": "Biến",
@@ -611,17 +609,17 @@
         }
       },
       "TWILIO_OPTIONS": {
-        "LABEL": "Select template",
-        "SEARCH_PLACEHOLDER": "Search templates",
-        "EMPTY_STATE": "No templates found",
+        "LABEL": "Chọn mẫu",
+        "SEARCH_PLACEHOLDER": "Tìm kiếm mẫu",
+        "EMPTY_STATE": "Không tìm thấy mẫu nào",
         "TEMPLATE_PARSER": {
           "BACK": "Trở về",
           "SEND_MESSAGE": "Gửi tin nhắn"
         }
       },
       "ACTION_BUTTONS": {
-        "DISCARD": "Discard",
-        "SEND": "Send ({keyCode})"
+        "DISCARD": "Hủy bỏ",
+        "SEND": "Gửi ({keyCode})"
       }
     }
   }

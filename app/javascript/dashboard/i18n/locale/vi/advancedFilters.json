@@ -1,6 +1,6 @@
 {
   "FILTER": {
-    "TITLE": "Lọc cuộc hội thoại",
+    "TITLE": "Lọc tin nhắn",
     "SUBTITLE": "Thêm các bộ lọc của bạn bên dưới và nhấn \"Áp dụng bộ lọc\", để loại bỏ các cuộc trò chuyện lộn xộn.",
     "EDIT_CUSTOM_FILTER": "Sửa Thư Mục",
     "CUSTOM_VIEWS_SUBTITLE": "Thêm hoặc xóa bộ lọc và cập nhật thư mục của bạn.",
@@ -13,7 +13,7 @@
     "FOLDER_LABEL": "Tên Thư Mục",
     "FOLDER_QUERY_LABEL": "Truy vấn Thư mục",
     "EMPTY_VALUE_ERROR": "Giá trị bắt buộc có.",
-    "TOOLTIP_LABEL": "Lọc cuộc hội thoại",
+    "TOOLTIP_LABEL": "Lọc tin nhắn",
     "QUERY_DROPDOWN_LABELS": {
       "AND": "VÀ",
       "OR": "HOẶC"
@@ -49,7 +49,7 @@
       "ASSIGNEE_NAME": "Tên người được phân công",
       "INBOX_NAME": "Tên kênh",
       "TEAM_NAME": "Tên nhóm",
-      "CONVERSATION_IDENTIFIER": "Định danh cuộc hội thoại",
+      "CONVERSATION_IDENTIFIER": "Định danh tin nhắn",
       "CAMPAIGN_NAME": "Tên chiến dịch",
       "LABELS": "Nhãn",
       "BROWSER_LANGUAGE": "Ngôn ngữ của trình duyệt",

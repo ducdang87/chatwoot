@@ -4,11 +4,11 @@
     "LOAD_MORE_CONVERSATIONS": "Tải thêm các cuộc trò chuyện",
     "EOF": "Tất cả các cuộc trò chuyện đã được tải 🎉",
     "LIST": {
-      "404": "Không có bất kì hoạt động trò chuyện nào trong nhóm."
+      "404": "Chưa có tin nhắn"
     },
     "FAILED_TO_SEND": "Failed to send",
-    "TAB_HEADING": "Các cuộc hội thoại",
-    "MENTION_HEADING": "Nhắn đến",
+    "TAB_HEADING": "Các tin nhắn",
+    "MENTION_HEADING": "Trao đổi thêm",
     "UNATTENDED_HEADING": "Không giám sát",
     "SEARCH": {
       "INPUT": "Tìm kiếm cho người, đoạn chat, lưu trữ trả lời .."

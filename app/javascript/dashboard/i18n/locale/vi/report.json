@@ -1,6 +1,6 @@
 {
   "REPORT": {
-    "HEADER": "Các cuộc hội thoại",
+    "HEADER": "Các tin nhắn",
     "LOADING_CHART": "Đang tải các biểu đồ dữ liệu...",
     "NO_ENOUGH_DATA": "Chúng tôi không nhận được đủ điểm dữ liệu để tạo báo cáo, Vui lòng thử lại sau.",
     "DOWNLOAD_AGENT_REPORTS": "Tải xuống báo cáo tổng đài viên",
@@ -22,13 +22,13 @@
       "FIRST_RESPONSE_TIME": {
         "NAME": "Thời gian phản hồi đầu tiên",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
-        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} cuộc hội thoại)"
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
+        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} tin nhắn)"
       },
       "RESOLUTION_TIME": {
         "NAME": "Thời gian giải quyết",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
         "TOOLTIP_TEXT": "Thời gian giải quyết là {metricValue} (dựa trên {conversationCount} hội thoại)"
       },
       "RESOLUTION_COUNT": {
@@ -132,7 +132,7 @@
     "FILTER_DROPDOWN_LABEL": "Chọn đại lý",
     "METRICS": {
       "CONVERSATIONS": {
-        "NAME": "Các cuộc hội thoại",
+        "NAME": "Các tin nhắn",
         "DESC": "( Tổng cộng )"
       },
       "INCOMING_MESSAGES": {
@@ -146,13 +146,13 @@
       "FIRST_RESPONSE_TIME": {
         "NAME": "Thời gian phản hồi đầu tiên",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
-        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} cuộc hội thoại)"
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
+        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} tin nhắn)"
       },
       "RESOLUTION_TIME": {
         "NAME": "Thời gian giải quyết",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
         "TOOLTIP_TEXT": "Thời gian giải quyết là {metricValue} (dựa trên {conversationCount} hội thoại)"
       },
       "RESOLUTION_COUNT": {
@@ -200,7 +200,7 @@
     "FILTER_DROPDOWN_LABEL": "Chọn Nhãn",
     "METRICS": {
       "CONVERSATIONS": {
-        "NAME": "Các cuộc hội thoại",
+        "NAME": "Các tin nhắn",
         "DESC": "( Tổng cộng )"
       },
       "INCOMING_MESSAGES": {
@@ -214,13 +214,13 @@
       "FIRST_RESPONSE_TIME": {
         "NAME": "Thời gian phản hồi đầu tiên",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
-        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} cuộc hội thoại)"
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
+        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} tin nhắn)"
       },
       "RESOLUTION_TIME": {
         "NAME": "Thời gian giải quyết",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
         "TOOLTIP_TEXT": "Thời gian giải quyết là {metricValue} (dựa trên {conversationCount} hội thoại)"
       },
       "RESOLUTION_COUNT": {
@@ -268,7 +268,7 @@
     "FILTER_DROPDOWN_LABEL": "Chọn Hộp thư đến",
     "METRICS": {
       "CONVERSATIONS": {
-        "NAME": "Các cuộc hội thoại",
+        "NAME": "Các tin nhắn",
         "DESC": "( Tổng cộng )"
       },
       "INCOMING_MESSAGES": {
@@ -282,13 +282,13 @@
       "FIRST_RESPONSE_TIME": {
         "NAME": "Thời gian phản hồi đầu tiên",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
-        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} cuộc hội thoại)"
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
+        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} tin nhắn)"
       },
       "RESOLUTION_TIME": {
         "NAME": "Thời gian giải quyết",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
         "TOOLTIP_TEXT": "Thời gian giải quyết là {metricValue} (dựa trên {conversationCount} hội thoại)"
       },
       "RESOLUTION_COUNT": {
@@ -336,7 +336,7 @@
     "FILTER_DROPDOWN_LABEL": "Chọn nhóm",
     "METRICS": {
       "CONVERSATIONS": {
-        "NAME": "Các cuộc hội thoại",
+        "NAME": "Các tin nhắn",
         "DESC": "( Tổng cộng )"
       },
       "INCOMING_MESSAGES": {
@@ -350,13 +350,13 @@
       "FIRST_RESPONSE_TIME": {
         "NAME": "Thời gian phản hồi đầu tiên",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
-        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} cuộc hội thoại)"
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
+        "TOOLTIP_TEXT": "Thời gian phản hồi đầu tiên là {metricValue} (dựa trên {conversationCount} tin nhắn)"
       },
       "RESOLUTION_TIME": {
         "NAME": "Thời gian giải quyết",
         "DESC": "( Trung bình )",
-        "INFO_TEXT": "Tổng số cuộc hội thoại được sử dụng để tính toán:",
+        "INFO_TEXT": "Tổng số tin nhắn được sử dụng để tính toán:",
         "TOOLTIP_TEXT": "Thời gian giải quyết là {metricValue} (dựa trên {conversationCount} hội thoại)"
       },
       "RESOLUTION_COUNT": {
@@ -451,10 +451,10 @@
   },
   "OVERVIEW_REPORTS": {
     "HEADER": "Tổng quan",
-    "LIVE": "Trực tuyến",
+    "LIVE": "Online",
     "ACCOUNT_CONVERSATIONS": {
-      "HEADER": "Mở cuộc hội thoại",
-      "LOADING_MESSAGE": "Đang tải số liệu cuộc hội thoại...",
+      "HEADER": "Mở tin nhắn",
+      "LOADING_MESSAGE": "Đang tải số liệu tin nhắn...",
       "OPEN": "Mở",
       "UNATTENDED": "Không giám sát",
       "UNASSIGNED": "Chưa được phân công",
@@ -470,7 +470,7 @@
     "AGENT_CONVERSATIONS": {
       "HEADER": "Cuộc hội thoại của các tổng đài viên",
       "LOADING_MESSAGE": "Đang tải chỉ số tổng đài viên...",
-      "NO_AGENTS": "Không có cuộc hội thoại nào của các tổng đài viên",
+      "NO_AGENTS": "Không có tin nhắn nào của các tổng đài viên",
       "TABLE_HEADER": {
         "AGENT": "Nhà cung cấp",
         "OPEN": "Mở",
@@ -492,9 +492,9 @@
     },
     "AGENT_STATUS": {
       "HEADER": "Trạng thái tổng đài viên",
-      "ONLINE": "Trực Tuyến",
+      "ONLINE": "Online",
       "BUSY": "Bận",
-      "OFFLINE": "Không Trực Tuyến"
+      "OFFLINE": "Offline"
     }
   },
   "DAYS_OF_WEEK": {

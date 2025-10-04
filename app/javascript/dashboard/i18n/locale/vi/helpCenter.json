@@ -758,7 +758,7 @@
           "EDIT_BUTTON": "Chỉnh sửa",
           "ADD_BUTTON": "Add custom domain",
           "STATUS": {
-            "LIVE": "Trực tuyến",
+            "LIVE": "Online",
             "PENDING": "Awaiting verification",
             "ERROR": "Verification failed"
           },

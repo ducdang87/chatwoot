@@ -1,17 +1,17 @@
 {
   "INBOX_MGMT": {
     "HEADER": "Hộp thư đến",
-    "DESCRIPTION": "A channel is the mode of communication your customer chooses to interact with you. An inbox is where you manage interactions for a specific channel. It can include communications from various sources such as email, live chat, and social media.",
-    "LEARN_MORE": "Learn more about inboxes",
-    "RECONNECTION_REQUIRED": "Your inbox is disconnected. You won't receive new messages until you reauthorize it.",
-    "CLICK_TO_RECONNECT": "Click here to reconnect.",
+    "DESCRIPTION": "Kênh là phương thức giao tiếp mà khách hàng của bạn chọn để tương tác với bạn. Hộp thư đến là nơi bạn quản lý các tương tác cho một kênh cụ thể. Nó có thể bao gồm các giao tiếp từ nhiều nguồn khác nhau như email, trò chuyện trực tiếp và mạng xã hội.",
+    "LEARN_MORE": "Tìm hiểu thêm về hộp thư đến",
+    "RECONNECTION_REQUIRED": "Hộp thư đến của bạn đã bị ngắt kết nối. Bạn sẽ không nhận được tin nhắn mới cho đến khi bạn ủy quyền lại.",
+    "CLICK_TO_RECONNECT": "Nhấp vào đây để kết nối lại.",
     "LIST": {
       "404": "Không có hộp thư đến nào được đính kèm với tài khoản này."
     },
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Chọn kênh",
-        "BODY": "Chọn nhà cung cấp bạn muốn tích hợp với Chatwoot."
+        "BODY": "Chọn nhà cung cấp bạn muốn tích hợp với ShipXanh Chat."
       },
       "INBOX": {
         "TITLE": "Tạo Hộp thư đến",
@@ -37,23 +37,22 @@
         "PLACEHOLDER": "Nhập tên trang web của bạn (ví dụ: Acme Inc)"
       },
       "FB": {
-        "HELP": "Tái bút: Bằng cách đăng nhập, chúng tôi chỉ có quyền truy cập vào các tin nhắn trên Trang của bạn. Chatwoot không bao giờ có thể truy cập tin nhắn riêng tư của bạn.",
+        "HELP": "Tái bút: Bằng cách đăng nhập, chúng tôi chỉ có quyền truy cập vào các tin nhắn trên Trang của bạn. ShipXanh Chat không bao giờ có thể truy cập tin nhắn riêng tư của bạn.",
         "CHOOSE_PAGE": "Chọn trang",
         "CHOOSE_PLACEHOLDER": "Chọn một trang từ danh sách",
         "INBOX_NAME": "Tên hộp thư đến",
-        "ADD_NAME": "Thêm tên cho hộp thư đến của bạn",
-        "PICK_NAME": "Pick a Name for your Inbox",
+        "PICK_NAME": "Chọn tên cho hộp thư đến của bạn",
         "PICK_A_VALUE": "Chọn một giá trị",
         "CREATE_INBOX": "Tạo Hộp thư đến"
       },
       "INSTAGRAM": {
-        "CONTINUE_WITH_INSTAGRAM": "Continue with Instagram",
-        "CONNECT_YOUR_INSTAGRAM_PROFILE": "Connect your Instagram Profile",
-        "HELP": "To add your Instagram profile as a channel, you need to authenticate your Instagram Profile by clicking on 'Continue with Instagram' ",
-        "ERROR_MESSAGE": "There was an error connecting to Instagram, please try again",
-        "ERROR_AUTH": "There was an error connecting to Instagram, please try again",
-        "NEW_INBOX_SUGGESTION": "This Instagram account was previously linked to a different inbox and has now been migrated here. All new messages will appear here. The old inbox will no longer be able to send or receive messages for this account.",
-        "DUPLICATE_INBOX_BANNER": "This Instagram account was migrated to the new Instagram channel inbox. You won’t be able to send/receive Instagram messages from this inbox anymore."
+        "CONTINUE_WITH_INSTAGRAM": "Tiếp tục với Instagram",
+        "CONNECT_YOUR_INSTAGRAM_PROFILE": "Kết nối hồ sơ Instagram của bạn",
+        "HELP": "Để thêm hồ sơ Instagram của bạn làm kênh, bạn cần xác thực hồ sơ Instagram của mình bằng cách nhấp vào 'Tiếp tục với Instagram' ",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi kết nối với Instagram, vui lòng thử lại",
+        "ERROR_AUTH": "Đã xảy ra lỗi khi kết nối với Instagram, vui lòng thử lại",
+        "NEW_INBOX_SUGGESTION": "Tài khoản Instagram này trước đây đã được liên kết với hộp thư đến khác và bây giờ đã được chuyển đến đây. Tất cả tin nhắn mới sẽ xuất hiện ở đây. Hộp thư đến cũ sẽ không thể gửi hoặc nhận tin nhắn cho tài khoản này nữa.",
+        "DUPLICATE_INBOX_BANNER": "Tài khoản Instagram này đã được chuyển sang hộp thư đến kênh Instagram mới. Bạn sẽ không thể gửi/nhận tin nhắn Instagram từ hộp thư đến này nữa."
       },
       "TWITTER": {
         "HELP": "Để thêm hồ sơ Twitter của bạn làm kênh, bạn cần xác thực Hồ sơ Twitter của mình bằng cách nhấp vào 'Đăng nhập bằng Twitter",
@@ -71,7 +70,7 @@
         },
         "CHANNEL_WEBHOOK_URL": {
           "LABEL": "Webhook URL",
-          "PLACEHOLDER": "Please enter your Webhook URL",
+          "PLACEHOLDER": "Vui lòng nhập Webhook URL của bạn",
           "ERROR": "Vui lòng nhập một URL hợp lệ"
         },
         "CHANNEL_DOMAIN": {
@@ -121,14 +120,14 @@
           "ERROR": "Trường này là bắt buộc"
         },
         "API_KEY": {
-          "USE_API_KEY": "Use API Key Authentication",
+          "USE_API_KEY": "Sử dụng xác thực API Key",
           "LABEL": "API Key SID",
-          "PLACEHOLDER": "Please enter your API Key SID",
+          "PLACEHOLDER": "Vui lòng nhập API Key SID của bạn",
           "ERROR": "Trường này là bắt buộc"
         },
         "API_KEY_SECRET": {
           "LABEL": "API Key Secret",
-          "PLACEHOLDER": "Please enter your API Key Secret",
+          "PLACEHOLDER": "Vui lòng nhập API Key Secret của bạn",
           "ERROR": "Trường này là bắt buộc"
         },
         "MESSAGING_SERVICE_SID": {
@@ -184,12 +183,12 @@
           },
           "API_KEY": {
             "LABEL": "Khoá API",
-            "PLACEHOLDER": "Please enter your Bandwidth API Key",
+            "PLACEHOLDER": "Vui lòng nhập Bandwidth API Key của bạn",
             "ERROR": "Trường này là bắt buộc"
           },
           "API_SECRET": {
             "LABEL": "Bí mật API",
-            "PLACEHOLDER": "Please enter your Bandwidth API Secret",
+            "PLACEHOLDER": "Vui lòng nhập Bandwidth API Secret của bạn",
             "ERROR": "Trường này là bắt buộc"
           },
           "APPLICATION_ID": {
@@ -225,13 +224,13 @@
           "WHATSAPP_EMBEDDED": "WhatsApp Business",
           "TWILIO": "Twilio",
           "WHATSAPP_CLOUD": "Đám mây WhatsApp",
-          "WHATSAPP_CLOUD_DESC": "Quick setup through Meta",
-          "TWILIO_DESC": "Connect via Twilio credentials",
+          "WHATSAPP_CLOUD_DESC": "Thiết lập nhanh qua Meta",
+          "TWILIO_DESC": "Kết nối qua thông tin xác thực Twilio",
           "360_DIALOG": "360Dialog"
         },
         "SELECT_PROVIDER": {
-          "TITLE": "Select your API provider",
-          "DESCRIPTION": "Choose your WhatsApp provider. You can connect directly through Meta which requires no setup, or connect through Twilio using your account credentials."
+          "TITLE": "Chọn nhà cung cấp API của bạn",
+          "DESCRIPTION": "Chọn nhà cung cấp WhatsApp của bạn. Bạn có thể kết nối trực tiếp qua Meta không cần thiết lập, hoặc kết nối qua Twilio sử dụng thông tin xác thực tài khoản của bạn."
         },
         "INBOX_NAME": {
           "LABEL": "Tên hộp thư đến",
@@ -255,7 +254,7 @@
         },
         "WEBHOOK_VERIFY_TOKEN": {
           "LABEL": "Token xác thực Webhook",
-          "PLACEHOLDER": "Enter a verify token which you want to configure for Facebook webhooks.",
+          "PLACEHOLDER": "Nhập token xác minh mà bạn muốn cấu hình cho webhook Facebook.",
           "ERROR": "Vui lòng điền giá trị hợp lệ."
         },
         "API_KEY": {
@@ -272,75 +271,75 @@
         },
         "SUBMIT_BUTTON": "Tạo kênh WhatsApp",
         "EMBEDDED_SIGNUP": {
-          "TITLE": "Quick Setup with Meta",
-          "DESC": "You will be redirected to Meta to log into your WhatsApp Business account. Having admin access will help make the setup smooth and easy.",
+          "TITLE": "Thiết lập nhanh với Meta",
+          "DESC": "Bạn sẽ được chuyển hướng đến Meta để đăng nhập vào tài khoản WhatsApp Business của bạn. Việc có quyền quản trị sẽ giúp quá trình thiết lập diễn ra suôn sẻ và dễ dàng.",
           "BENEFITS": {
-            "TITLE": "Benefits of Embedded Signup:",
-            "EASY_SETUP": "No manual configuration required",
-            "SECURE_AUTH": "Secure OAuth based authentication",
-            "AUTO_CONFIG": "Automatic webhook and phone number configuration"
+            "TITLE": "Lợi ích của Đăng ký Nhúng:",
+            "EASY_SETUP": "Không cần cấu hình thủ công",
+            "SECURE_AUTH": "Xác thực dựa trên OAuth bảo mật",
+            "AUTO_CONFIG": "Tự động cấu hình webhook và số điện thoại"
           },
           "LEARN_MORE": {
-            "TEXT": "To learn more about integrated signup, pricing, and limitations, visit",
-            "LINK_TEXT": "this link.",
+            "TEXT": "Để tìm hiểu thêm về đăng ký tích hợp, giá cả và giới hạn, hãy truy cập",
+            "LINK_TEXT": "liên kết này.",
             "LINK_URL": "https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/onboarding-business-app-users#limitations"
           },
-          "SUBMIT_BUTTON": "Connect with WhatsApp Business",
-          "AUTH_PROCESSING": "Authenticating with Meta",
-          "WAITING_FOR_BUSINESS_INFO": "Please complete business setup in the Meta window...",
-          "PROCESSING": "Setting up your WhatsApp Business Account",
-          "LOADING_SDK": "Loading Facebook SDK...",
-          "CANCELLED": "WhatsApp Signup was cancelled",
-          "SUCCESS_TITLE": "WhatsApp Business Account Connected!",
-          "WAITING_FOR_AUTH": "Waiting for authentication...",
-          "INVALID_BUSINESS_DATA": "Invalid business data received from Facebook. Please try again.",
-          "SIGNUP_ERROR": "Signup error occurred",
-          "AUTH_NOT_COMPLETED": "Authentication not completed. Please restart the process.",
-          "SUCCESS_FALLBACK": "WhatsApp Business Account has been successfully configured"
+          "SUBMIT_BUTTON": "Kết nối với WhatsApp Business",
+          "AUTH_PROCESSING": "Đang xác thực với Meta",
+          "WAITING_FOR_BUSINESS_INFO": "Vui lòng hoàn tất thiết lập doanh nghiệp trong cửa sổ Meta...",
+          "PROCESSING": "Đang thiết lập tài khoản WhatsApp Business của bạn",
+          "LOADING_SDK": "Đang tải Facebook SDK...",
+          "CANCELLED": "Đăng ký WhatsApp đã bị hủy",
+          "SUCCESS_TITLE": "Tài khoản WhatsApp Business đã kết nối!",
+          "WAITING_FOR_AUTH": "Đang chờ xác thực...",
+          "INVALID_BUSINESS_DATA": "Dữ liệu doanh nghiệp không hợp lệ nhận từ Facebook. Vui lòng thử lại.",
+          "SIGNUP_ERROR": "Đã xảy ra lỗi đăng ký",
+          "AUTH_NOT_COMPLETED": "Xác thực chưa hoàn tất. Vui lòng khởi động lại quá trình.",
+          "SUCCESS_FALLBACK": "Tài khoản WhatsApp Business đã được cấu hình thành công"
         },
         "API": {
           "ERROR_MESSAGE": "Chúng tôi không thể lưu kênh WhatsApp"
         }
       },
       "VOICE": {
-        "TITLE": "Voice Channel",
-        "DESC": "Integrate Twilio Voice and start supporting your customers via phone calls.",
+        "TITLE": "Kênh thoại",
+        "DESC": "Tích hợp Twilio Voice và bắt đầu hỗ trợ khách hàng của bạn qua cuộc gọi điện thoại.",
         "PHONE_NUMBER": {
           "LABEL": "Số điện thoại",
-          "PLACEHOLDER": "Enter your phone number (e.g. +1234567890)",
-          "ERROR": "Please provide a valid phone number in E.164 format (e.g. +1234567890)"
+          "PLACEHOLDER": "Nhập số điện thoại của bạn (ví dụ: +1234567890)",
+          "ERROR": "Vui lòng cung cấp số điện thoại hợp lệ theo định dạng E.164 (ví dụ: +1234567890)"
         },
         "TWILIO": {
           "ACCOUNT_SID": {
             "LABEL": "Tài khoản SID",
-            "PLACEHOLDER": "Enter your Twilio Account SID",
-            "REQUIRED": "Account SID is required"
+            "PLACEHOLDER": "Nhập Twilio Account SID của bạn",
+            "REQUIRED": "Account SID là bắt buộc"
           },
           "AUTH_TOKEN": {
             "LABEL": "Token xác thực",
-            "PLACEHOLDER": "Enter your Twilio Auth Token",
-            "REQUIRED": "Auth Token is required"
+            "PLACEHOLDER": "Nhập Twilio Auth Token của bạn",
+            "REQUIRED": "Auth Token là bắt buộc"
           },
           "API_KEY_SID": {
             "LABEL": "API Key SID",
-            "PLACEHOLDER": "Enter your Twilio API Key SID",
-            "REQUIRED": "API Key SID is required"
+            "PLACEHOLDER": "Nhập Twilio API Key SID của bạn",
+            "REQUIRED": "API Key SID là bắt buộc"
           },
           "API_KEY_SECRET": {
             "LABEL": "API Key Secret",
-            "PLACEHOLDER": "Enter your Twilio API Key Secret",
-            "REQUIRED": "API Key Secret is required"
+            "PLACEHOLDER": "Nhập Twilio API Key Secret của bạn",
+            "REQUIRED": "API Key Secret là bắt buộc"
           }
         },
         "CONFIGURATION": {
           "TWILIO_VOICE_URL_TITLE": "Twilio Voice URL",
-          "TWILIO_VOICE_URL_SUBTITLE": "Configure this URL as the Voice URL on your Twilio phone number and TwiML App.",
+          "TWILIO_VOICE_URL_SUBTITLE": "Cấu hình URL này làm Voice URL trên số điện thoại Twilio và TwiML App của bạn.",
           "TWILIO_STATUS_URL_TITLE": "Twilio Status Callback URL",
-          "TWILIO_STATUS_URL_SUBTITLE": "Configure this URL as the Status Callback URL on your Twilio phone number."
+          "TWILIO_STATUS_URL_SUBTITLE": "Cấu hình URL này làm Status Callback URL trên số điện thoại Twilio của bạn."
         },
-        "SUBMIT_BUTTON": "Create Voice Channel",
+        "SUBMIT_BUTTON": "Tạo kênh thoại",
         "API": {
-          "ERROR_MESSAGE": "We were not able to create the voice channel"
+          "ERROR_MESSAGE": "Chúng tôi không thể tạo kênh thoại"
         }
       },
       "API_CHANNEL": {
@@ -353,7 +352,7 @@
         },
         "WEBHOOK_URL": {
           "LABEL": "Webhook URL",
-          "SUBTITLE": "Configure the URL where you want to receive callbacks on events.",
+          "SUBTITLE": "Cấu hình URL nơi bạn muốn nhận callback trên các sự kiện.",
           "PLACEHOLDER": "Webhook URL"
         },
         "SUBMIT_BUTTON": "Tạo kênh API",
@@ -363,7 +362,7 @@
       },
       "EMAIL_CHANNEL": {
         "TITLE": "Kênh Email",
-        "DESC": "Integrate your email inbox.",
+        "DESC": "Tích hợp hộp thư đến email của bạn.",
         "CHANNEL_NAME": {
           "LABEL": "Tên kênh",
           "PLACEHOLDER": "Vui lòng nhập tên kênh",
@@ -371,7 +370,7 @@
         },
         "EMAIL": {
           "LABEL": "Email",
-          "SUBTITLE": "Provide the email address where your customers send support requests.",
+          "SUBTITLE": "Cung cấp địa chỉ email nơi khách hàng gửi yêu cầu hỗ trợ.",
           "PLACEHOLDER": "Email"
         },
         "SUBMIT_BUTTON": "Tạo kênh Email",
@@ -424,83 +423,83 @@
       },
       "AUTH": {
         "TITLE": "Chọn kênh",
-        "DESC": "Chatwoot hỗ trợ các tiện ích trò chuyện trực tiếp, Facebook Messenger, hồ sơ Twitter, WhatsApp, Email, v. v., dưới dạng các kênh. Nếu bạn muốn xây dựng một kênh tùy chỉnh, bạn có thể tạo kênh này bằng cách sử dụng kênh API. Để bắt đầu, hãy chọn một trong các kênh bên dưới.",
-        "TITLE_NEXT": "Complete the setup",
+        "DESC": "ShipXanh Chat hỗ trợ các tiện ích trò chuyện trực tiếp, Facebook Messenger, hồ sơ Twitter, WhatsApp, Email, v. v., dưới dạng các kênh. Nếu bạn muốn xây dựng một kênh tùy chỉnh, bạn có thể tạo kênh này bằng cách sử dụng kênh API. Để bắt đầu, hãy chọn một trong các kênh bên dưới.",
+        "TITLE_NEXT": "Hoàn tất thiết lập",
         "TITLE_FINISH": "Voilà!",
         "CHANNEL": {
           "WEBSITE": {
             "TITLE": "Website",
-            "DESCRIPTION": "Create a live-chat widget"
+            "DESCRIPTION": "Tạo widget trò chuyện trực tiếp"
           },
           "FACEBOOK": {
             "TITLE": "Facebook",
-            "DESCRIPTION": "Connect your Facebook page"
+            "DESCRIPTION": "Kết nối trang Facebook của bạn"
           },
           "WHATSAPP": {
             "TITLE": "WhatsApp",
-            "DESCRIPTION": "Support your customers on WhatsApp"
+            "DESCRIPTION": "Hỗ trợ khách hàng của bạn trên WhatsApp"
           },
           "EMAIL": {
             "TITLE": "Email",
-            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+            "DESCRIPTION": "Kết nối với Gmail, Outlook hoặc các nhà cung cấp khác"
           },
           "SMS": {
             "TITLE": "SMS",
-            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+            "DESCRIPTION": "Tích hợp kênh SMS với Twilio hoặc bandwidth"
           },
           "API": {
             "TITLE": "API",
-            "DESCRIPTION": "Make a custom channel using our API"
+            "DESCRIPTION": "Tạo kênh tùy chỉnh sử dụng API của chúng tôi"
           },
           "TELEGRAM": {
             "TITLE": "Telegram",
-            "DESCRIPTION": "Configure Telegram channel using Bot token"
+            "DESCRIPTION": "Cấu hình kênh Telegram sử dụng Bot token"
           },
           "LINE": {
             "TITLE": "Line",
-            "DESCRIPTION": "Integrate your Line channel"
+            "DESCRIPTION": "Tích hợp kênh Line của bạn"
           },
           "INSTAGRAM": {
             "TITLE": "Instagram",
-            "DESCRIPTION": "Connect your instagram account"
+            "DESCRIPTION": "Kết nối tài khoản Instagram của bạn"
           },
           "VOICE": {
             "TITLE": "Voice",
-            "DESCRIPTION": "Integrate with Twilio Voice"
+            "DESCRIPTION": "Tích hợp với Twilio Voice"
           }
         }
       },
       "AGENTS": {
         "TITLE": "Nhà Cung Cấp",
         "DESC": "Tại đây bạn có thể thêm các tác nhân để quản lý hộp thư đến mới tạo của mình. Chỉ những đại lý được chọn này mới có quyền truy cập vào hộp thư đến của bạn. Các nhân viên không thuộc hộp thư đến này sẽ không thể xem hoặc trả lời thư trong hộp thư đến này khi họ đăng nhập. <br> <b>PS:</b> Với tư cách là quản trị viên, nếu bạn cần quyền truy cập vào tất cả các hộp thư đến, bạn nên thêm mình làm đại lý cho tất cả các hộp thư đến mà bạn tạo.",
-        "VALIDATION_ERROR": "Add at least one agent to your new Inbox",
+        "VALIDATION_ERROR": "Thêm ít nhất một tổng đài viên vào hộp thư đến mới của bạn",
         "PICK_AGENTS": "Chọn đại lý cho hộp thư đến"
       },
       "DETAILS": {
         "TITLE": "Chi tiết Hộp thư đến",
-        "DESC": "Từ menu thả xuống bên dưới, chọn Trang Facebook bạn muốn kết nối với Chatwoot. Bạn cũng có thể đặt tên tùy chỉnh cho hộp thư đến của mình để nhận dạng tốt hơn."
+        "DESC": "Từ menu thả xuống bên dưới, chọn Trang Facebook bạn muốn kết nối với ShipXanh Chat. Bạn cũng có thể đặt tên tùy chỉnh cho hộp thư đến của mình để nhận dạng tốt hơn."
       },
       "FINISH": {
         "TITLE": "Đúng rồi!",
-        "DESC": "Bạn đã tích hợp thành công Trang Facebook của mình với Chatwoot. Lần tới khi khách hàng nhắn tin cho Trang của bạn, cuộc trò chuyện sẽ tự động xuất hiện trong hộp thư đến của bạn.<br>Chúng tôi cũng đang cung cấp cho bạn tập lệnh widget mà bạn có thể dễ dàng thêm vào trang web của mình. Khi điều này xuất hiện trên trang web của bạn, khách hàng có thể nhắn tin cho bạn ngay từ trang web của bạn mà không cần sự trợ giúp của bất kỳ công cụ bên ngoài nào và cuộc trò chuyện sẽ xuất hiện ngay tại đây, trên Chatwoot.<br>Cool, huh? Well :)"
+        "DESC": "Bạn đã tích hợp thành công Trang Facebook của mình với ShipXanh Chat. Lần tới khi khách hàng nhắn tin cho Trang của bạn, cuộc trò chuyện sẽ tự động xuất hiện trong hộp thư đến của bạn.<br>Chúng tôi cũng đang cung cấp cho bạn tập lệnh widget mà bạn có thể dễ dàng thêm vào trang web của mình. Khi điều này xuất hiện trên trang web của bạn, khách hàng có thể nhắn tin cho bạn ngay từ trang web của bạn mà không cần sự trợ giúp của bất kỳ công cụ bên ngoài nào và cuộc trò chuyện sẽ xuất hiện ngay tại đây, trên ShipXanh Chat.<br>Cool, huh? Well :)"
       },
       "EMAIL_PROVIDER": {
-        "TITLE": "Select your email provider",
-        "DESCRIPTION": "Select an email provider from the list below. If you don't see your email provider in the list, you can select the other provider option and provide the IMAP and SMTP Credentials."
+        "TITLE": "Chọn nhà cung cấp email của bạn",
+        "DESCRIPTION": "Chọn nhà cung cấp email từ danh sách bên dưới. Nếu bạn không thấy nhà cung cấp email của mình trong danh sách, bạn có thể chọn tùy chọn nhà cung cấp khác và cung cấp thông tin xác thực IMAP và SMTP."
       },
       "MICROSOFT": {
         "TITLE": "Microsoft Email",
-        "DESCRIPTION": "Click on the Sign in with Microsoft button to get started. You will redirected to the email sign in page. Once you accept the requested permissions, you would be redirected back to the inbox creation step.",
-        "EMAIL_PLACEHOLDER": "Enter email address",
-        "SIGN_IN": "Sign in with Microsoft",
-        "ERROR_MESSAGE": "There was an error connecting to Microsoft, please try again"
+        "DESCRIPTION": "Nhấp vào nút Đăng nhập bằng Microsoft để bắt đầu. Bạn sẽ được chuyển hướng đến trang đăng nhập email. Khi bạn chấp nhận các quyền được yêu cầu, bạn sẽ được chuyển hướng trở lại bước tạo hộp thư đến.",
+        "EMAIL_PLACEHOLDER": "Nhập địa chỉ email",
+        "SIGN_IN": "Đăng nhập bằng Microsoft",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi kết nối với Microsoft, vui lòng thử lại"
       },
       "GOOGLE": {
         "TITLE": "Google Email",
-        "DESCRIPTION": "Click on the Sign in with Google button to get started. You will redirected to the email sign in page. Once you accept the requested permissions, you would be redirected back to the inbox creation step.",
-        "SIGN_IN": "Sign in with Google",
-        "EMAIL_PLACEHOLDER": "Enter email address",
-        "ERROR_MESSAGE": "There was an error connecting to Google, please try again"
+        "DESCRIPTION": "Nhấp vào nút Đăng nhập bằng Google để bắt đầu. Bạn sẽ được chuyển hướng đến trang đăng nhập email. Khi bạn chấp nhận các quyền được yêu cầu, bạn sẽ được chuyển hướng trở lại bước tạo hộp thư đến.",
+        "SIGN_IN": "Đăng nhập bằng Google",
+        "EMAIL_PLACEHOLDER": "Nhập địa chỉ email",
+        "ERROR_MESSAGE": "Đã xảy ra lỗi khi kết nối với Google, vui lòng thử lại"
       }
     },
     "DETAILS": {
@@ -628,12 +627,12 @@
       "SENDER_NAME_SECTION": "Enable Agent Name in Email",
       "SENDER_NAME_SECTION_TEXT": "Enable/Disable showing Agent's name in email, if disabled it will show business name",
       "ENABLE_CONTINUITY_VIA_EMAIL": "Bật tiếp tục cuộc trò chuyện qua email",
-      "ENABLE_CONTINUITY_VIA_EMAIL_SUB_TEXT": "Cuộc trò chuyện sẽ tiếp tục qua email nếu có địa chỉ email liên lạc.",
+      "ENABLE_CONTINUITY_VIA_EMAIL_SUB_TEXT": "Tin nhắn sẽ tiếp tục qua email nếu có địa chỉ email liên lạc.",
       "LOCK_TO_SINGLE_CONVERSATION": "Khóa cuộc trò chuyện duy nhất",
       "LOCK_TO_SINGLE_CONVERSATION_SUB_TEXT": "Bật hoặc tắt nhiều cuộc trò chuyện cho cùng một liên hệ trong hộp thư đến này",
       "INBOX_UPDATE_TITLE": "Cài đặt Hộp thư đến",
       "INBOX_UPDATE_SUB_TEXT": "Cập nhật cài đặt hộp thư đến của bạn",
-      "AUTO_ASSIGNMENT_SUB_TEXT": "Bật hoặc tắt tính năng tự động gán các cuộc hội thoại mới cho các tác nhân được thêm vào hộp thư đến này.",
+      "AUTO_ASSIGNMENT_SUB_TEXT": "Bật hoặc tắt tính năng tự động gán các tin nhắn mới cho các tác nhân được thêm vào hộp thư đến này.",
       "HMAC_VERIFICATION": "Xác thực danh tính người dùng",
       "HMAC_DESCRIPTION": "With this key you can generate a secret token that can be used to verify the identity of your users.",
       "HMAC_LINK_TO_DOCS": "You can read more here.",
@@ -911,8 +910,8 @@
         "USER_MESSAGE": "Xin chào",
         "AGENT_MESSAGE": "Xin chào"
       },
-      "BRANDING_TEXT": "CC bởi Chatwoot",
-      "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
+      "BRANDING_TEXT": "CC bởi ShipXanh Chat",
+      "SCRIPT_SETTINGS": "\nwindow.ShipXanh ChatSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": {
