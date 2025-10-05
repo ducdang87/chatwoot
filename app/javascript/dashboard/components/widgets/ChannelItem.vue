@@ -28,6 +28,15 @@ const isActive = computed(() => {
   if (Object.keys(props.enabledFeatures).length === 0) {
     return false;
   }
+  if (key === 'shopee') {
+    return true;
+  }
+  if (key === 'lazada') {
+    return true;
+  }
+  if (key === 'tiktokshop') {
+    return true;
+  }
   if (key === 'website') {
     return props.enabledFeatures.channel_website;
   }

@@ -22,10 +22,16 @@ const channelList = computed(() => {
       icon: 'i-woot-shopee',
     },
     {
-      key: 'facebook',
-      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.TITLE'),
-      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.DESCRIPTION'),
-      icon: 'i-woot-messenger',
+      key: 'lazada',
+      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LAZADA.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.LAZADA.DESCRIPTION'),
+      icon: 'i-woot-lazada',
+    },
+    {
+      key: 'tiktokshop',
+      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TIKTOK_SHOP.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TIKTOK_SHOP.DESCRIPTION'),
+      icon: 'i-woot-tiktokshop',
     },
     {
       key: 'telegram',
@@ -33,6 +39,13 @@ const channelList = computed(() => {
       description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.TELEGRAM.DESCRIPTION'),
       icon: 'i-woot-telegram',
     },
+    {
+      key: 'facebook',
+      title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.TITLE'),
+      description: t('INBOX_MGMT.ADD.AUTH.CHANNEL.FACEBOOK.DESCRIPTION'),
+      icon: 'i-woot-messenger',
+    },
+
     {
       key: 'instagram',
       title: t('INBOX_MGMT.ADD.AUTH.CHANNEL.INSTAGRAM.TITLE'),
