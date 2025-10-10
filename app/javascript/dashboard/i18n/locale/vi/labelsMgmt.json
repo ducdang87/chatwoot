@@ -41,17 +41,17 @@
     },
     "SUGGESTIONS": {
       "TOOLTIP": {
-        "SINGLE_SUGGESTION": "Add label to conversation",
-        "MULTIPLE_SUGGESTION": "Select this label",
-        "DESELECT": "Deselect label",
-        "DISMISS": "Dismiss suggestion"
+        "SINGLE_SUGGESTION": "Thêm nhãn vào cuộc trò chuyện",
+        "MULTIPLE_SUGGESTION": "Chọn nhãn này",
+        "DESELECT": "Bỏ chọn nhãn",
+        "DISMISS": "Bỏ qua gợi ý"
       },
       "POWERED_BY": "Chatwoot AI",
-      "DISMISS": "Dismiss",
-      "ADD_SELECTED_LABELS": "Add selected labels",
-      "ADD_SELECTED_LABEL": "Add selected label",
-      "ADD_ALL_LABELS": "Add all labels",
-      "SUGGESTED_LABELS": "Suggested labels"
+      "DISMISS": "Bỏ qua",
+      "ADD_SELECTED_LABELS": "Thêm các nhãn đã chọn",
+      "ADD_SELECTED_LABEL": "Thêm nhãn đã chọn",
+      "ADD_ALL_LABELS": "Thêm tất cả nhãn",
+      "SUGGESTED_LABELS": "Nhãn được gợi ý"
     },
     "ADD": {
       "TITLE": "Thêm nhãn",
