@@ -1,8 +1,8 @@
 {
   "HELP_CENTER": {
-    "TITLE": "Help Center",
+    "TITLE": "Trung tâm trợ giúp",
     "NEW_PAGE": {
-      "DESCRIPTION": "Create self-service help center portals for your customers. Help them find answers quickly, without waiting. Streamline inquiries, boost agent efficiency, and elevate customer support.",
+      "DESCRIPTION": "Tạo cổng thông tin trung tâm trợ giúp tự phục vụ cho khách hàng của bạn. Giúp họ tìm câu trả lời nhanh chóng mà không cần chờ đợi. Tối ưu hóa các yêu cầu, tăng hiệu quả nhân viên và nâng cao hỗ trợ khách hàng.",
       "CREATE_PORTAL_BUTTON": "Tạo cổng"
     },
     "HEADER": {
@@ -23,10 +23,10 @@
         "ARCHIVED": "Các bài lưu"
       },
       "LOCALE_SELECT": {
-        "TITLE": "Select locale",
-        "PLACEHOLDER": "Select locale",
-        "NO_RESULT": "No locale found",
-        "SEARCH_PLACEHOLDER": "Search locale"
+        "TITLE": "Chọn ngôn ngữ",
+        "PLACEHOLDER": "Chọn ngôn ngữ",
+        "NO_RESULT": "Không tìm thấy ngôn ngữ",
+        "SEARCH_PLACEHOLDER": "Tìm kiếm ngôn ngữ"
       }
     },
     "EDIT_HEADER": {
@@ -46,7 +46,7 @@
         "UPLOADING": "Đang tải lên...",
         "SUCCESS": "Ảnh tải lên thành công",
         "ERROR": "Lỗi khi tải ảnh lên",
-        "UN_AUTHORIZED_ERROR": "You are not authorized to upload images",
+        "UN_AUTHORIZED_ERROR": "Bạn không có quyền tải lên hình ảnh",
         "ERROR_FILE_SIZE": "Kích thước ảnh phải nhỏ hơn {size}MB",
         "ERROR_FILE_FORMAT": "Ảnh phải có định dạng jpg, jpeg hoặc png",
         "ERROR_FILE_DIMENSIONS": "Kích thước ảnh phải nhỏ hơn 2000 x 2000"

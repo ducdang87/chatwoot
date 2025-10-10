@@ -3,8 +3,8 @@
     "HEADER": "Nhãn",
     "HEADER_BTN_TXT": "Thêm nhãn",
     "LOADING": "Tải về các nhãn",
-    "DESCRIPTION": "Labels help you categorize and prioritize conversations and leads. You can assign a label to a conversation or contact using the side panel.",
-    "LEARN_MORE": "Learn more about labels",
+    "DESCRIPTION": "Nhãn giúp bạn phân loại và ưu tiên hóa các cuộc trò chuyện và khách hàng tiềm năng. Bạn có thể gán nhãn cho cuộc trò chuyện hoặc liên hệ bằng cách sử dụng bảng bên.",
+    "LEARN_MORE": "Tìm hiểu thêm về nhãn",
     "SEARCH_404": "Không có kết quả nào phù hợp",
     "LIST": {
       "404": "Không có nhãn nào có sẵn trong tài khoản này.",
