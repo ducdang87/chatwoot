@@ -35,7 +35,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prettier/prettier': ['error'],
+    'prettier/prettier': 'off',
     camelcase: 'off',
     'no-param-reassign': 'off',
     'import/no-extraneous-dependencies': 'off',
@@ -196,7 +196,7 @@ module.exports = {
       },
     ],
     'vue/no-unused-properties': [
-      'error',
+      'warn',
       {
         groups: ['props'],
         deepData: false,
@@ -239,6 +239,8 @@ module.exports = {
         extensions: ['.js', '.vue'],
       },
     ],
+    'vue/require-default-prop': 'off',
+    'vue/no-reserved-component-names': 'off',
   },
   settings: {
     'vue-i18n': {

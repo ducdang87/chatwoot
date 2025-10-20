@@ -13,7 +13,7 @@ const {
   violetDark,
 } = require('@radix-ui/colors');
 
-export const colors = {
+const colors = {
   woot: {
     25: blue.blue2,
     50: blue.blue3,
@@ -237,3 +237,5 @@ export const colors = {
     'blue-text': 'rgba(var(--text-blue))',
   },
 };
+
+module.exports = { colors };

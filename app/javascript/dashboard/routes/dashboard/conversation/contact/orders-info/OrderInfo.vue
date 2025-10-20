@@ -2,12 +2,22 @@
 import Icon from 'next/icon/Icon.vue';
 import OrderItems from './OrderItems.vue';
 import shipxanhAPI from 'dashboard/api/shipxanhAPI';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from 'dashboard/components-shadcn/components/ui/tabs';
 
 export default {
   name: 'OrderInfo',
   components: {
     Icon,
     OrderItems,
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
   },
   data() {
     return {
@@ -77,7 +87,17 @@ export default {
       <span class="text-sm text-n-slate-11">{{ $t('Trạng thái') }}</span>
       <span class="text-sm">{{ orderInfo?.orderStatus }}</span>
     </div>
-
-    <OrderItems :items="orderInfo?.itemList" />
+    <Tabs default-value="items">
+      <TabsList class="w-full justify-between bg-n-slate-3">
+        <TabsTrigger value="items" class="flex-1">{{ $t('Hàng') }}</TabsTrigger>
+        <TabsTrigger value="payment">{{ $t('Thanh toán') }}</TabsTrigger>
+        <TabsTrigger value="logistics">{{ $t('Vận chuyển') }}</TabsTrigger>
+      </TabsList>
+      <TabsContent value="items">
+        <OrderItems :items="orderInfo?.itemList" />
+      </TabsContent>
+      <TabsContent value="payment" />
+      <TabsContent value="logistics" />
+    </Tabs>
   </div>
 </template>

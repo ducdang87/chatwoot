@@ -1,6 +1,6 @@
 const { slateDark } = require('@radix-ui/colors');
-import { colors } from './theme/colors';
-import { icons } from './theme/icons';
+const { colors } = require('./theme/colors');
+const { icons } = require('./theme/icons');
 const defaultTheme = require('tailwindcss/defaultTheme');
 const {
   iconsPlugin,
@@ -33,6 +33,7 @@ const tailwindConfig = {
     './app/javascript/dashboard/helper/**/*.js',
     './app/javascript/dashboard/components-next/**/*.js',
     './app/javascript/dashboard/routes/dashboard/**/**/*.js',
+    './app/javascript/dashboard/components-shadcn/**/*.{vue,js,ts}',
     './app/views/**/*.html.erb',
   ],
   theme: {
