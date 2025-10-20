@@ -91,7 +91,11 @@ export default {
     </div>
     <Tabs default-value="items">
       <TabsList class="w-full justify-between bg-n-slate-3">
-        <TabsTrigger value="items" class="flex-1">{{ $t('Hàng') }}</TabsTrigger>
+        <TabsTrigger value="items" class="flex-1">
+{{
+          $t('Mặt hàng')
+        }}
+</TabsTrigger>
         <TabsTrigger value="payment">{{ $t('Thanh toán') }}</TabsTrigger>
         <TabsTrigger value="logistics">{{ $t('Vận chuyển') }}</TabsTrigger>
       </TabsList>
