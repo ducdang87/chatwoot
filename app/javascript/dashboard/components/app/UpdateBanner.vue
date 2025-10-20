@@ -39,7 +39,8 @@ export default {
         this.globalConfig.displayManifest &&
         this.updateAvailable &&
         !this.isVersionNotificationDismissed(this.latestChatwootVersion) &&
-        this.isAdmin
+        this.isAdmin &&
+        import.meta.env.DEV
       );
     },
   },
@@ -73,7 +74,7 @@ export default {
     v-if="shouldShowBanner"
     color-scheme="primary"
     :banner-message="bannerMessage"
-    href-link="https://github.com/chatwoot/chatwoot/releases"
+    href-link="https://shipxanh.com"
     :href-link-text="$t('GENERAL_SETTINGS.LEARN_MORE')"
     has-close-button
     @close="dismissUpdateBanner"

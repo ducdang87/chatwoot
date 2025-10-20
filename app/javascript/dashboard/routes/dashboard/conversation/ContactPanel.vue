@@ -149,8 +149,23 @@ onMounted(() => {
         @end="onDragEnd"
       >
         <template #item="{ element }">
+          <div v-if="element.name === 'conversation_info'">
+            <AccordionItem
+              :title="$t('CONVERSATION_SIDEBAR.ACCORDION.CONVERSATION_INFO')"
+              :is-open="isContactSidebarItemOpen('is_conv_details_open')"
+              compact
+              @toggle="
+                value => toggleSidebarUIState('is_conv_details_open', value)
+              "
+            >
+              <ConversationInfo
+                :conversation-attributes="conversationAdditionalAttributes"
+                :contact-attributes="contactAdditionalAttributes"
+              />
+            </AccordionItem>
+          </div>
           <div
-            v-if="element.name === 'conversation_actions'"
+            v-else-if="element.name === 'conversation_actions'"
             class="conversation--actions"
           >
             <AccordionItem
@@ -184,21 +199,7 @@ onMounted(() => {
               />
             </AccordionItem>
           </div>
-          <div v-else-if="element.name === 'conversation_info'">
-            <AccordionItem
-              :title="$t('CONVERSATION_SIDEBAR.ACCORDION.CONVERSATION_INFO')"
-              :is-open="isContactSidebarItemOpen('is_conv_details_open')"
-              compact
-              @toggle="
-                value => toggleSidebarUIState('is_conv_details_open', value)
-              "
-            >
-              <ConversationInfo
-                :conversation-attributes="conversationAdditionalAttributes"
-                :contact-attributes="contactAdditionalAttributes"
-              />
-            </AccordionItem>
-          </div>
+
           <div v-else-if="element.name === 'contact_attributes'">
             <AccordionItem
               :title="$t('CONVERSATION_SIDEBAR.ACCORDION.CONTACT_ATTRIBUTES')"

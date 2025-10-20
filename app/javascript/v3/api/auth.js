@@ -23,6 +23,9 @@ export const login = async ({
       };
     }
 
+    // eslint-disable-next-line no-console
+    console.log(response.data);
+
     setAuthCredentials(response);
     clearLocalStorageOnLogout();
     window.location = getLoginRedirectURL({

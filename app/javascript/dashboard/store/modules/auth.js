@@ -1,9 +1,11 @@
 import types from '../mutation-types';
+import shipxanhAuthAPI from '../../api/shipxanhAuth';
 import authAPI from '../../api/auth';
 
 import { setUser, clearCookiesOnLogout } from '../utils/api';
 import SessionStorage from 'shared/helpers/sessionStorage';
 import { SESSION_STORAGE_KEYS } from 'dashboard/constants/sessionStorage';
+import shipxanhTokenScheduler from 'dashboard/helper/shipxanhTokenScheduler';
 
 const initialState = {
   currentUser: {
@@ -107,6 +109,9 @@ export const actions = {
       const currentUser = response.data.payload.data;
       setUser(currentUser);
       context.commit(types.SET_CURRENT_USER, currentUser);
+
+      // Tự động start ShipXanh auth khi user đã login (cho trường hợp refresh page)
+      context.dispatch('autoStartShipXanhAuth');
     } catch (error) {
       if (error?.response?.status === 401) {
         clearCookiesOnLogout();
@@ -116,18 +121,92 @@ export const actions = {
   async setUser({ commit, dispatch }) {
     if (authAPI.hasAuthCookie()) {
       await dispatch('validityCheck');
+      // Khởi động ShipXanh auth khi user đã login
+      dispatch('autoStartShipXanhAuth');
     } else {
       commit(types.CLEAR_USER);
     }
     commit(types.SET_CURRENT_USER_UI_FLAGS, { isFetching: false });
   },
-  logout({ commit }) {
+  logout({ commit, dispatch }) {
+    dispatch('stopShipXanhAuth');
     commit(types.CLEAR_USER);
+  },
+
+  clearCustomToken: () => {
+    shipxanhAuthAPI.clearToken();
+  },
+
+  startShipXanhAuth: ({ shipxanhUserId, captchaToken = '' }) => {
+    shipxanhTokenScheduler.start(shipxanhUserId, captchaToken);
+  },
+
+  stopShipXanhAuth: () => {
+    shipxanhTokenScheduler.stop();
+  },
+
+  getShipXanhToken: () => {
+    return shipxanhAuthAPI.getToken();
+  },
+
+  // Tự động start ShipXanh auth khi login
+  autoStartShipXanhAuth: async ({ getters: storeGetters, dispatch }) => {
+    // Lấy shipxanhUserId từ custom_attributes của current user
+    const currentUser = storeGetters.getCurrentUser;
+
+    const shipxanhUserId =
+      currentUser.custom_attributes?.shipxanhUserId ||
+      currentUser.id ||
+      currentUser.email ||
+      'default';
+
+    try {
+      // Lấy reCAPTCHA token (invisible)
+      const captchaToken = await dispatch('getCaptchaToken');
+      shipxanhTokenScheduler.start(shipxanhUserId.toString(), captchaToken);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.warn('reCAPTCHA failed, starting without token:', error);
+      // Fallback: start without captcha token
+      shipxanhTokenScheduler.start(shipxanhUserId.toString(), '');
+    }
+  },
+
+  // Lấy Google reCAPTCHA token (invisible)
+  getCaptchaToken: () => {
+    return new Promise((resolve, reject) => {
+      // Kiểm tra xem grecaptcha có sẵn không
+      if (typeof window.grecaptcha === 'undefined') {
+        reject(new Error('Google reCAPTCHA not loaded'));
+        return;
+      }
+
+      // Kiểm tra xem grecaptcha đã ready chưa
+      window.grecaptcha.ready(() => {
+        // Thực hiện reCAPTCHA invisible
+        window.grecaptcha
+          .execute(window.RECAPTCHA_SITE_KEY || '', {
+            action: 'shipxanh_auth',
+          })
+          .then(token => {
+            if (token) {
+              resolve(token);
+            } else {
+              reject(new Error('Failed to get reCAPTCHA token'));
+            }
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
+    });
   },
 
   updateProfile: async ({ commit }, params) => {
     // eslint-disable-next-line no-useless-catch
     try {
+      // eslint-disable-next-line no-console
+      console.log('Updating profile:', params);
       const response = await authAPI.profileUpdate(params);
       commit(types.SET_CURRENT_USER, response.data);
     } catch (error) {

@@ -4,7 +4,7 @@ import { useAlert } from 'dashboard/composables';
 import { dynamicTime } from 'shared/helpers/timeHelper';
 import { useAdmin } from 'dashboard/composables/useAdmin';
 import ContactInfoRow from './ContactInfoRow.vue';
-import Avatar from 'next/avatar/Avatar.vue';
+// import Avatar from 'next/avatar/Avatar.vue';
 import SocialIcons from './SocialIcons.vue';
 import EditContact from './EditContact.vue';
 import ContactMergeModal from 'dashboard/modules/contact/ContactMergeModal.vue';
@@ -25,7 +25,7 @@ export default {
     NextButton,
     ContactInfoRow,
     EditContact,
-    Avatar,
+    // Avatar,
     ComposeConversation,
     SocialIcons,
     ContactMergeModal,
@@ -180,7 +180,7 @@ export default {
 <template>
   <div class="relative items-center w-full p-4">
     <div class="flex flex-col w-full gap-2 text-left rtl:text-right">
-      <div class="flex flex-row justify-between">
+      <!-- <div class="flex flex-row justify-between">
         <Avatar
           v-if="showAvatar"
           :src="contact.thumbnail"
@@ -190,7 +190,7 @@ export default {
           hide-offline-status
           rounded-full
         />
-      </div>
+      </div> -->
 
       <div class="flex flex-col items-start gap-1.5 min-w-0 w-full">
         <div v-if="showAvatar" class="flex items-center w-full min-w-0 gap-3">
