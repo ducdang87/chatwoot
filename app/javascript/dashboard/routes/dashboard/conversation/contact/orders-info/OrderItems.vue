@@ -58,7 +58,7 @@ export default {
       <div
         v-for="item in items"
         :key="item.id"
-        class="flex gap-2 p-2 rounded-sm bg-n-slate-2"
+        class="flex gap-2 p-2 rounded-md bg-n-slate-2"
       >
         <!-- Ảnh sản phẩm -->
         <img
