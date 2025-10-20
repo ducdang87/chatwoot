@@ -65,8 +65,16 @@ export default {
   <!-- Order info content -->
   <div v-else-if="orderInfo" class="space-y-3">
     <div class="flex justify-between items-center">
-      <span class="text-sm text-n-slate-11">{{ $t('Mã đơn') }}</span>
-      <span class="text-sm">{{ orderInfo?.orderSn }}</span>
+      <span class="text-sm text-n-slate-11">{{ $t('ORDER.ORDER_ID') }}</span>
+      <a
+        :href="`https://app.shipxanh.com/dashboard/orders-sell/order-detail/${orderInfo?.id}`"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="text-sm text-blue-600 underline">{{
+          orderInfo?.orderSn
+        }}</span>
+      </a>
     </div>
 
     <div class="flex justify-between items-center">
