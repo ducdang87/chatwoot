@@ -81,13 +81,7 @@ export default {
       <span class="text-sm text-n-slate-11">{{ $t('Shop') }}</span>
       <div class="flex items-center gap-1">
         <span class="text-sm">{{ orderInfo?.shopName }}</span>
-        <Icon
-          :icon="
-            orderInfo?.shopType === 'tiktok'
-              ? 'i-woot-tiktokshop'
-              : `i-woot-${orderInfo?.shopType}`
-          "
-        />
+        <Icon :icon="`i-woot-${orderInfo?.shopType}`" />
       </div>
     </div>
 

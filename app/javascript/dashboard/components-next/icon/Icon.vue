@@ -7,20 +7,25 @@ const props = defineProps({
 });
 
 const renderIcon = () => {
-  if (!props.icon) return null;
+  let icon = props.icon;
+  if (!icon) return null;
+
+  if (icon.includes('tiktok')) {
+    icon = 'i-woot-tiktokshop';
+  }
 
   // Handle function or VNode icons
-  if (typeof props.icon === 'function' || isVNode(props.icon)) {
-    return props.icon;
+  if (typeof icon === 'function' || isVNode(icon)) {
+    return icon;
   }
 
   // Handle Iconify icons (format: "prefix:icon-name")
-  if (typeof props.icon === 'string' && props.icon.includes(':')) {
-    return h(IconifyIcon, { icon: props.icon });
+  if (typeof icon === 'string' && icon.includes(':')) {
+    return h(IconifyIcon, { icon: icon });
   }
 
   // Handle CSS class icons (existing behavior)
-  return h('span', { class: props.icon });
+  return h('span', { class: icon });
 };
 </script>
 
