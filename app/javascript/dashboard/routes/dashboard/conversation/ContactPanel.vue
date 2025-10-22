@@ -94,6 +94,7 @@ const contact = computed(() => contactGetter.value(contactId.value));
 const contactAdditionalAttributes = computed(
   () => contact.value.additional_attributes || {}
 );
+const customAttributes = computed(() => contact.value.custom_attributes || {});
 
 const getContactDetails = () => {
   if (contactId.value) {
@@ -136,7 +137,11 @@ onMounted(() => {
       :title="$t('CONVERSATION.SIDEBAR.CONTACT')"
       @close="closeContactPanel"
     />
-    <ContactInfo :contact="contact" :channel-type="channelType" />
+    <ContactInfo
+      :contact="contact"
+      :channel-type="channelType"
+      :show-avatar="false"
+    />
     <div class="pb-8 list-group px-2">
       <Draggable
         :list="conversationSidebarItems"
@@ -161,6 +166,7 @@ onMounted(() => {
               <ConversationInfo
                 :conversation-attributes="conversationAdditionalAttributes"
                 :contact-attributes="contactAdditionalAttributes"
+                :contact-custom-attributes="customAttributes"
               />
             </AccordionItem>
           </div>

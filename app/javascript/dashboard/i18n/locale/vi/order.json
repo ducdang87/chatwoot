@@ -1,5 +1,51 @@
 {
-	"ORDER": {
-		"ORDER_ID": "Mã đơn"
-	}
+  "ORDER": {
+    "ORDER_ID": "Mã đơn",
+    "STATUS": {
+      "ADVANCE_FULFILMENT": "Gói sẵn giao nhanh",
+      "ADVANCE_FULFILMENT_SHIPPED": "Đơn gói sẵn giao nhanh",
+      "ALL": "Tất cả",
+      "ALL_CANCELED": "Tất cả đơn huỷ",
+      "ALL_CANCELLED": "Tất cả đơn huỷ",
+      "CANCELLED": "Đã huỷ",
+      "COMPLETED": "Hoàn thành",
+      "DRAFT": "Đơn nháp",
+      "FAILED_DELIVERY": "Giao không thành công",
+      "FULFILED_BY_PLATFORM": "Xử lý bởi SÀN",
+      "IN_CANCEL": "Yêu cầu huỷ",
+      "IN_EXCHANGE": "Đổi / trả hàng",
+      "LOGISTICS_DELIVERY_DONE": "Đã giao",
+      "LOGISTICS_DELIVERY_FAILED": "Đang hoàn",
+      "LOGISTICS_IN_RETURN": "Khách trả, đang hoàn",
+      "LOGISTICS_INVALID": "Đã huỷ",
+      "LOGISTICS_LOST": "Thất lạc",
+      "LOGISTICS_NOT_PACKAGED": "Chưa đóng gói",
+      "LOGISTICS_NOT_START": "Chưa sẵn sàng",
+      "LOGISTICS_PACKAGED": "Đã đóng gói",
+      "LOGISTICS_PENDING_ARRANGE": "Chưa xử lý",
+      "LOGISTICS_PICKUP_DONE": "Đang giao",
+      "LOGISTICS_PICKUP_FAILED": "Lấy hàng thất bại",
+      "LOGISTICS_PICKUP_RETRY": "Lấy hàng không thành công",
+      "LOGISTICS_READY": "Chờ sàn xử lý",
+      "LOGISTICS_REQUEST_CANCELED": "Cần xác nhận đã hoàn",
+      "LOGISTICS_REQUEST_CREATED": "Đã xử lý",
+      "LOGISTICS_RETURN_PACKAGE_RECEIVED": "Đã nhận đơn hoàn",
+      "LOGISTICS_RETURNED_BY_SHIPPER": "Shipper đã trả hàng",
+      "MATCH_FAILED": "Ghép lỗi",
+      "MATCH_PENDING": "Chờ ghép",
+      "MATCH_SUCCESSFUL": "Đã ghép",
+      "MATCHED": "Đã GHÉP (gói sẵn giao nhanh)",
+      "NORMAL_SHIPPED": "Đơn thường",
+      "PROCESSED": "Chờ lấy hàng",
+      "READY_TO_SHIP": "Chờ lấy hàng",
+      "RETRY_SHIP": "Lấy hàng không thành công",
+      "SHIPPED": "Đang giao",
+      "TO_CONFIRM_RECEIVE": "Đã giao",
+      "TO_RETURN": "Trả hàng / hoàn tiền",
+      "TO_RETURN_PROCESSING": "Yêu cầu trả hàng",
+      "TO_RETURN_REQUESTED": "Yêu cầu trả hàng",
+      "unknown": "Không xác định",
+      "UNPAID": "Chờ thanh toán"
+    }
+  }
 }

@@ -38,8 +38,8 @@ export default {
 
     const customToken = response.data.data;
     if (!customToken) {
-      // eslint-disable-next-line no-alert
-      alert(response.data?.message || 'Failed to get custom token');
+      // eslint-disable-next-line no-console
+      console.error(response.data?.message || 'Failed to get custom token');
       return null;
     }
 

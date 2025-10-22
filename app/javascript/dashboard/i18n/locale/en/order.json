@@ -1,5 +1,51 @@
 {
-	"ORDER": {
-		"ORDER_ID": "Order ID"
-	}
+  "ORDER": {
+    "ORDER_ID": "Order ID"
+  },
+  "STATUS": {
+    "ADVANCE_FULFILMENT": "Advance delivery package",
+    "ADVANCE_FULFILMENT_SHIPPED": "Advance delivery order",
+    "ALL": "All",
+    "ALL_CANCELED": "All canceled orders",
+    "ALL_CANCELLED": "All canceled orders",
+    "CANCELLED": "Canceled",
+    "COMPLETED": "Completed",
+    "DRAFT": "Draft order",
+    "FAILED_DELIVERY": "Delivery failed",
+    "FULFILED_BY_PLATFORM": "Processed by SÀN",
+    "IN_CANCEL": "Cancel request",
+    "IN_EXCHANGE": "Exchange / refund",
+    "LOGISTICS_DELIVERY_DONE": "Delivered",
+    "LOGISTICS_DELIVERY_FAILED": "Returning",
+    "LOGISTICS_IN_RETURN": "Customer returning, currently returning",
+    "LOGISTICS_INVALID": "Canceled",
+    "LOGISTICS_LOST": "Lost",
+    "LOGISTICS_NOT_PACKAGED": "Not packaged",
+    "LOGISTICS_NOT_START": "Not ready",
+    "LOGISTICS_PACKAGED": "Packed",
+    "LOGISTICS_PENDING_ARRANGE": "Not processed",
+    "LOGISTICS_PICKUP_DONE": "Delivering",
+    "LOGISTICS_PICKUP_FAILED": "Pickup failed",
+    "LOGISTICS_PICKUP_RETRY": "Pickup failed",
+    "LOGISTICS_READY": "Waiting for SÀN to process",
+    "LOGISTICS_REQUEST_CANCELED": "Need to confirm return",
+    "LOGISTICS_REQUEST_CREATED": "Processed",
+    "LOGISTICS_RETURN_PACKAGE_RECEIVED": "Received return order",
+    "LOGISTICS_RETURNED_BY_SHIPPER": "Shipper has returned",
+    "MATCH_FAILED": "Match failed",
+    "MATCH_PENDING": "Waiting for match",
+    "MATCH_SUCCESSFUL": "Matched",
+    "MATCHED": "Matched (advance delivery package)",
+    "NORMAL_SHIPPED": "Normal order",
+    "PROCESSED": "Waiting for pickup",
+    "READY_TO_SHIP": "Waiting for pickup",
+    "RETRY_SHIP": "Shipment failed",
+    "SHIPPED": "Shipping",
+    "TO_CONFIRM_RECEIVE": "Delivered",
+    "TO_RETURN": "Return / refund",
+    "TO_RETURN_PROCESSING": "Return request",
+    "TO_RETURN_REQUESTED": "Return request",
+    "unknown": "Unknown",
+    "UNPAID": "Waiting for payment"
+  }
 }

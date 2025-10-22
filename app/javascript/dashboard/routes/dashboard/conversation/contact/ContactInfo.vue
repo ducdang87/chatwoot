@@ -36,6 +36,7 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    // eslint-disable-next-line vue/no-unused-properties
     showAvatar: {
       type: Boolean,
       default: true,
@@ -193,7 +194,7 @@ export default {
       </div> -->
 
       <div class="flex flex-col items-start gap-1.5 min-w-0 w-full">
-        <div v-if="showAvatar" class="flex items-center w-full min-w-0 gap-3">
+        <div class="flex items-center w-full min-w-0 gap-3">
           <h3
             class="flex-shrink max-w-full min-w-0 my-0 text-base capitalize break-words text-n-slate-12"
           >
@@ -225,6 +226,7 @@ export default {
         </p>
         <div class="flex flex-col items-start w-full gap-2">
           <ContactInfoRow
+            v-if="contact.email"
             :href="contact.email ? `mailto:${contact.email}` : ''"
             :value="contact.email"
             icon="mail"
@@ -233,6 +235,7 @@ export default {
             show-copy
           />
           <ContactInfoRow
+            v-if="contact.phone_number"
             :href="contact.phone_number ? `tel:${contact.phone_number}` : ''"
             :value="contact.phone_number"
             icon="call"
@@ -248,6 +251,7 @@ export default {
             :title="$t('CONTACT_PANEL.IDENTIFIER')"
           />
           <ContactInfoRow
+            v-if="additionalAttributes.company_name"
             :value="additionalAttributes.company_name"
             icon="building-bank"
             emoji="🏢"

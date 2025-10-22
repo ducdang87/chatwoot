@@ -73,7 +73,7 @@ class ShipXanhAPIService {
 
       // Sử dụng shipxanhAxios thay vì global axios để tránh interceptors của Chatwoot
       const response = await shipxanhAxios(config);
-      return response.data;
+      return response.data?.data;
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error('ShipXanh API Error:', error);
@@ -111,11 +111,6 @@ class ShipXanhAPIService {
   // PATCH request
   async patch(endpoint, data, customHeaders = {}) {
     return this.request('PATCH', endpoint, data, customHeaders);
-  }
-
-  // Specific method để lấy order info
-  async getOrderInfo(orderId) {
-    return this.get(`orders/${orderId}`);
   }
 
   // Method để kiểm tra token có hợp lệ không

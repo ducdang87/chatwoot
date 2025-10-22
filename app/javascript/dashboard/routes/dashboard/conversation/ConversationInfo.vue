@@ -14,7 +14,13 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
+  contactCustomAttributes: {
+    type: Object,
+    default: () => ({}),
+  },
 });
+
+const shopBuyerId = computed(() => props.contactCustomAttributes.shopBuyerId);
 
 const referer = computed(() => props.conversationAttributes.referer);
 const initiatedAt = computed(
@@ -87,7 +93,7 @@ const staticElements = computed(() =>
 
 <template>
   <div class="conversation--details">
-    <OrderInfo />
+    <OrderInfo :shop-buyer-id="shopBuyerId" />
     <!-- Tạm thời ẩn custom attributes -->
     <CustomAttributes
       v-if="false"
