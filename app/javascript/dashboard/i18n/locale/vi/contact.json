@@ -557,7 +557,8 @@
         "EXPAND": "Mở rộng",
         "COLLAPSE": "Thu gọn",
         "NO_NOTES": "Không có ghi chú, bạn có thể thêm ghi chú từ trang chi tiết liên hệ.",
-        "EMPTY_STATE": "Không có ghi chú nào liên quan đến liên hệ này. Bạn có thể thêm ghi chú bằng cách gõ vào hộp bên trên."
+        "EMPTY_STATE": "Không có ghi chú nào liên quan đến liên hệ này. Bạn có thể thêm ghi chú bằng cách gõ vào hộp bên trên.",
+        "CONVERSATION_EMPTY_STATE": "There are no notes yet. Use the Add note button to create one."
       }
     },
     "EMPTY_STATE": {
