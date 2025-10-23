@@ -40,6 +40,7 @@
       "BUTTON_LABEL": "Nút bấm {index}",
       "COUPON_CODE": "Nhập mã giảm giá (tối đa 15 ký tự)",
       "MEDIA_URL_LABEL": "Nhập URL {type}",
+      "DOCUMENT_NAME_PLACEHOLDER": "Nhập tên file (e.g., Invoice_2025.pdf)",
       "BUTTON_PARAMETER": "Nhập tham số nút bấm"
     }
   }

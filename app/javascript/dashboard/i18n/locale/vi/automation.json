@@ -171,7 +171,8 @@
       "REFERER_LINK": "Link tham chiếu",
       "ASSIGNEE_NAME": "Người được phân công",
       "TEAM_NAME": "Nhóm",
-      "PRIORITY": "Mức độ ưu tiên"
+      "PRIORITY": "Mức độ ưu tiên",
+      "LABELS": "Nhãn"
     }
   }
 }
