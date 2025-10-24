@@ -3,6 +3,7 @@ import { computed } from 'vue';
 import { getLanguageName } from 'dashboard/components/widgets/conversation/advancedFilterItems/languages';
 import ContactDetailsItem from './ContactDetailsItem.vue';
 import CustomAttributes from './customAttributes/CustomAttributes.vue';
+import OrderInfo from './contact/orders-info/OrderInfo.vue';
 
 const props = defineProps({
   conversationAttributes: {
@@ -13,7 +14,13 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
+  contactCustomAttributes: {
+    type: Object,
+    default: () => ({}),
+  },
 });
+
+const shopBuyerId = computed(() => props.contactCustomAttributes.shopBuyerId);
 
 const referer = computed(() => props.conversationAttributes.referer);
 const initiatedAt = computed(
@@ -86,29 +93,41 @@ const staticElements = computed(() =>
 
 <template>
   <div class="conversation--details">
+    <OrderInfo :shop-buyer-id="shopBuyerId" />
+    <!-- Tạm thời ẩn custom attributes -->
     <CustomAttributes
+      v-if="false"
       :static-elements="staticElements"
       attribute-class="conversation--attribute"
       attribute-from="conversation_panel"
       attribute-type="conversation_attribute"
     >
       <template #staticItem="{ element }">
-        <ContactDetailsItem
-          :key="element.title"
-          :title="$t(element.title)"
-          :value="element.content.value"
-        >
-          <a
-            v-if="element.key === 'static-referer'"
-            :href="element.content.value"
-            rel="noopener noreferrer nofollow"
-            target="_blank"
-            class="text-n-brand"
+        <div class="conversation--details-item-wrapper">
+          <ContactDetailsItem
+            :key="element.title"
+            :title="$t(element.title)"
+            :value="element.content.value"
+            class="mb-4"
           >
-            {{ element.content.value }}
-          </a>
-        </ContactDetailsItem>
+            <a
+              v-if="element.key === 'static-referer'"
+              :href="element.content.value"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+              class="text-n-brand"
+            >
+              {{ element.content.value }}
+            </a>
+          </ContactDetailsItem>
+        </div>
       </template>
     </CustomAttributes>
   </div>
 </template>
+
+<style scoped>
+.conversation--details {
+  @apply flex flex-col gap-2 py-2 px-2;
+}
+</style>

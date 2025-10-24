@@ -1,8 +1,8 @@
 {
   "AUTOMATION": {
     "HEADER": "Tự động hoá",
-    "DESCRIPTION": "Automation can replace and streamline existing processes that require manual effort, such as adding labels and assigning conversations to the most suitable agent. This allows the team to focus on their strengths while reducing time spent on routine tasks.",
-    "LEARN_MORE": "Learn more about automation",
+    "DESCRIPTION": "Tự động hóa có thể thay thế và tối ưu hóa các quy trình hiện tại yêu cầu nỗ lực thủ công, chẳng hạn như thêm nhãn và phân công cuộc trò chuyện cho nhân viên phù hợp nhất. Điều này cho phép nhóm tập trung vào điểm mạnh của họ đồng thời giảm thời gian dành cho các công việc thường ngày.",
+    "LEARN_MORE": "Tìm hiểu thêm về tự động hóa",
     "HEADER_BTN_TXT": "Thêm luật Tự động hoá",
     "LOADING": "Đang lấy luật tự động hoá",
     "ADD": {
@@ -28,14 +28,12 @@
         "CONDITIONS": {
           "LABEL": "Điều kiện"
         },
-        "ACTIONS": {
-          "LABEL": "Hành động"
-        }
+        "ACTIONS": {}
       },
       "CONDITION_BUTTON_LABEL": "Thêm Điều kiện",
       "ACTION_BUTTON_LABEL": "Thêm Hành động",
       "API": {
-        "SUCCESS_MESSAGE": "Luật tự động hoá thêm thành công",
+        "SUCCESS_MESSAGE": "Luật tự động hoá được cập nhật thành công",
         "ERROR_MESSAGE": "Không thể tạo luật tự động hoá, Vui lòng thử lại sau"
       }
     },
@@ -49,7 +47,7 @@
       "404": "Không tìm thấy luật tự động hoá"
     },
     "DELETE": {
-      "TITLE": "Xoá luật Tự động hoá",
+      "TITLE": "Xoá Luật Tự động hoá",
       "SUBMIT": "Xoá",
       "CANCEL_BUTTON_TEXT": "Huỷ",
       "CONFIRM": {
@@ -59,7 +57,7 @@
         "NO": "Không, giữ "
       },
       "API": {
-        "SUCCESS_MESSAGE": "Luật\u001d tự động hoá được xoá thành công",
+        "SUCCESS_MESSAGE": "Luật tự động hoá được xoá thành công",
         "ERROR_MESSAGE": "Không thể xoá luật tự động hoá, Vui lòng thử lại sau"
       }
     },
@@ -69,14 +67,14 @@
       "CANCEL_BUTTON_TEXT": "Huỷ",
       "API": {
         "SUCCESS_MESSAGE": "Luật\u001d tự động hoá được thêm thành công",
-        "ERROR_MESSAGE": "Không thể cập nhật \bluật tự động hoá, Vui lòng thử lại sau"
+        "ERROR_MESSAGE": "Không thể cập nhật luật tự động hoá, Vui lòng thử lại sau"
       }
     },
     "CLONE": {
       "TOOLTIP": "Nhân bản",
       "API": {
-        "SUCCESS_MESSAGE": "Luật tự động hoá mô phỏng thành công",
-        "ERROR_MESSAGE": "Không thể mô phỏng luật tự động hoá, Vui lòng thử lại sau"
+        "SUCCESS_MESSAGE": "Nhân bản luật tự động hoá thành công",
+        "ERROR_MESSAGE": "Không thể nhân bản luật tự động hoá, Vui lòng thử lại sau"
       }
     },
     "FORM": {
@@ -94,19 +92,17 @@
     "ACTION": {
       "DELETE_MESSAGE": "Bạn cần có ít nhất một hành động để lưu",
       "TEAM_MESSAGE_INPUT_PLACEHOLDER": "Viết tin nhắn ở đây",
-      "TEAM_DROPDOWN_PLACEHOLDER": "Chọn nhóm",
-      "EMAIL_INPUT_PLACEHOLDER": "Enter email",
-      "URL_INPUT_PLACEHOLDER": "Enter URL"
+      "EMAIL_INPUT_PLACEHOLDER": "Nhập email",
+      "URL_INPUT_PLACEHOLDER": "Nhập URL"
     },
     "TOGGLE": {
       "ACTIVATION_TITLE": "Kích hoạt Luật Tự động hoá",
-      "DEACTIVATION_TITLE": "Vô hiệu hoá \bLuật Tự động hoá",
+      "DEACTIVATION_TITLE": "Vô hiệu hoá Luật Tự động hoá",
       "ACTIVATION_DESCRIPTION": "Thao tác này sẽ kích hoạt luật tự động hoá tên '{automationName}'. Bạn có chắc là muốn tiếp tục?",
       "DEACTIVATION_DESCRIPTION": "Thao tác này sẽ vô hiệu hoá luật tự động hoá tên '{automationName}'. Bạn có chắc là muốn tiếp tục?",
-      "ACTIVATION_SUCCESFUL": "Luật tự động hoá đã được kích hoạt thành công",
-      "DEACTIVATION_SUCCESFUL": "Luật tự động hoá đã vô hiệu hoá thành công",
+      "ACTIVATION_SUCCESSFUL": "Luật tự động hoá đã được kích hoạt thành công",
+      "DEACTIVATION_SUCCESSFUL": "Luật tự động hoá đã vô hiệu hoá thành công",
       "ACTIVATION_ERROR": "Không thể kích hoạt luật tự động hoá, Vui lòng thử lại sau",
-      "DEACTIVATION_ERROR": "Không thể vô hiệu hoá luật tự động hoá, Vui lòng thử lại sau",
       "CONFIRMATION_LABEL": "Có",
       "CANCEL_LABEL": "Không"
     },
@@ -118,43 +114,41 @@
       "LABEL_UPLOAD_FAILED": "Không tải lên được"
     },
     "ERRORS": {
-      "ATTRIBUTE_KEY_REQUIRED": "Attribute key is required",
-      "FILTER_OPERATOR_REQUIRED": "Filter operator is required",
+      "ATTRIBUTE_KEY_REQUIRED": "Khóa thuộc tính là bắt buộc",
+      "FILTER_OPERATOR_REQUIRED": "Toán tử lọc là bắt buộc",
       "VALUE_REQUIRED": "Giá trị bắt buộc có",
-      "VALUE_MUST_BE_BETWEEN_1_AND_998": "Value must be between 1 and 998",
-      "ACTION_PARAMETERS_REQUIRED": "Action parameters are required",
-      "ATLEAST_ONE_CONDITION_REQUIRED": "At least one condition is required",
-      "ATLEAST_ONE_ACTION_REQUIRED": "At least one action is required"
+      "VALUE_MUST_BE_BETWEEN_1_AND_998": "Giá trị phải từ 1 đến 998",
+      "ACTION_PARAMETERS_REQUIRED": "Tham số hành động là bắt buộc",
+      "ATLEAST_ONE_CONDITION_REQUIRED": "Cần ít nhất một điều kiện",
+      "ATLEAST_ONE_ACTION_REQUIRED": "Cần ít nhất một hành động"
     },
     "NONE_OPTION": "Không có",
     "EVENTS": {
       "CONVERSATION_CREATED": "Tin nhắn đã được tạo",
       "CONVERSATION_UPDATED": "Tin nhắn đã được cập nhật",
-      "MESSAGE_CREATED": "Message Created",
-      "CONVERSATION_RESOLVED": "Conversation Resolved",
-      "CONVERSATION_OPENED": "Conversation Opened"
+      "MESSAGE_CREATED": "Tin nhắn được tạo",
+      "CONVERSATION_RESOLVED": "Cuộc trò chuyện được giải quyết",
+      "CONVERSATION_OPENED": "Cuộc trò chuyện được mở"
     },
     "ACTIONS": {
-      "ASSIGN_AGENT": "Assign to Agent",
-      "ASSIGN_TEAM": "Assign a Team",
-      "ADD_LABEL": "Add a Label",
-      "REMOVE_LABEL": "Remove a Label",
-      "SEND_EMAIL_TO_TEAM": "Send an Email to Team",
-      "SEND_EMAIL_TRANSCRIPT": "Send an Email Transcript",
+      "ASSIGN_AGENT": "Phân công cho Nhân viên",
+      "ADD_LABEL": "Thêm Nhãn",
+      "REMOVE_LABEL": "Xóa Nhãn",
+      "SEND_EMAIL_TO_TEAM": "Gửi Email cho Nhóm",
+      "SEND_EMAIL_TRANSCRIPT": "Gửi Bản ghi Email",
       "MUTE_CONVERSATION": "Tắt tiếng cuộc trò chuyện",
-      "SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
+      "SNOOZE_CONVERSATION": "Tạm dừng hội thoại",
       "RESOLVE_CONVERSATION": "Giải quyết cuộc trò chuyện",
-      "SEND_WEBHOOK_EVENT": "Send Webhook Event",
-      "SEND_ATTACHMENT": "Send Attachment",
-      "SEND_MESSAGE": "Send a Message",
-      "ADD_PRIVATE_NOTE": "Add a Private Note",
-      "CHANGE_PRIORITY": "Change Priority",
-      "ADD_SLA": "Add SLA",
+      "SEND_WEBHOOK_EVENT": "Gửi Sự kiện Webhook",
+      "SEND_ATTACHMENT": "Gửi Tệp đính kèm",
+      "SEND_MESSAGE": "Gửi Tin nhắn",
+      "ADD_PRIVATE_NOTE": "Thêm Ghi chú Riêng",
+      "ADD_SLA": "Thêm SLA",
       "OPEN_CONVERSATION": "Mở cuộc trò chuyện"
     },
     "MESSAGE_TYPES": {
-      "INCOMING": "Incoming Message",
-      "OUTGOING": "Outgoing Message"
+      "INCOMING": "Tin nhắn đến",
+      "OUTGOING": "Tin nhắn đi"
     },
     "PRIORITY_TYPES": {
       "NONE": "Không có",
@@ -164,18 +158,18 @@
       "URGENT": "Cấp bách"
     },
     "ATTRIBUTES": {
-      "MESSAGE_TYPE": "Message Type",
-      "MESSAGE_CONTAINS": "Message Contains",
+      "MESSAGE_TYPE": "Loại tin nhắn",
+      "MESSAGE_CONTAINS": "Tin nhắn chứa",
       "EMAIL": "Email",
       "INBOX": "Hộp thư đến",
-      "CONVERSATION_LANGUAGE": "Conversation Language",
+      "CONVERSATION_LANGUAGE": "Ngôn ngữ của cuộc trò chuyện",
       "PHONE_NUMBER": "Số điện thoại",
       "STATUS": "Trạng thái",
       "BROWSER_LANGUAGE": "Ngôn ngữ của Trình duyệt",
-      "MAIL_SUBJECT": "Email Subject",
+      "MAIL_SUBJECT": "Tiêu đề Email",
       "COUNTRY_NAME": "Quốc gia",
-      "REFERER_LINK": "Referrer Link",
-      "ASSIGNEE_NAME": "Assignee",
+      "REFERER_LINK": "Link tham chiếu",
+      "ASSIGNEE_NAME": "Người được phân công",
       "TEAM_NAME": "Nhóm",
       "PRIORITY": "Mức độ ưu tiên",
       "LABELS": "Nhãn"

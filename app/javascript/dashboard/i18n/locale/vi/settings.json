@@ -20,54 +20,54 @@
         "TITLE": "Hồ sơ cá nhân",
         "NOTE": "Địa chỉ email của bạn là danh tính của bạn và được sử dụng để đăng nhập."
       },
-      "SEND_MESSAGE": {
+      "HOTKEY_SECTION": {
         "TITLE": "Phím nóng để gửi tin nhắn",
         "NOTE": "Bạn có thể chọn một phím nóng (Enter hoặc Cmd/Ctrl+Enter) dựa trên sở thích viết của bạn.",
         "UPDATE_SUCCESS": "Cài đặt của bạn đã được cập nhật thành công",
         "CARD": {
           "ENTER_KEY": {
-            "HEADING": "Enter (↵)",
+            "HEADING": "Enter (↑)",
             "CONTENT": "Gửi tin nhắn bằng cách nhấn phím Enter thay vì nhấp vào nút gửi."
           },
           "CMD_ENTER_KEY": {
-            "HEADING": "Cmd/Ctrl + Enter (⌘ + ↵)",
+            "HEADING": "Cmd/Ctrl + Enter (⌘ + ↑)",
             "CONTENT": "Gửi tin nhắn bằng cách nhấn phím Cmd/Ctrl + enter thay vì nhấp vào nút gửi."
           }
         }
       },
       "INTERFACE_SECTION": {
-        "TITLE": "Interface",
-        "NOTE": "Customize the look and feel of your Chatwoot dashboard.",
+        "TITLE": "Giao diện",
+        "NOTE": "Tùy chỉnh giao diện và cảm giác của bảng điều khiển Chatwoot của bạn.",
         "FONT_SIZE": {
-          "TITLE": "Font size",
-          "NOTE": "Adjust the text size across the dashboard based on your preference.",
-          "UPDATE_SUCCESS": "Your font settings have been updated successfully",
-          "UPDATE_ERROR": "There is an error while updating the font settings, please try again",
+          "TITLE": "Kích thước phông chữ",
+          "NOTE": "Điều chỉnh kích thước văn bản trên toàn bộ bảng điều khiển theo sở thích của bạn.",
+          "UPDATE_SUCCESS": "Cài đặt phông chữ của bạn đã được cập nhật thành công",
+          "UPDATE_ERROR": "Có lỗi khi cập nhật cài đặt phông chữ, vui lòng thử lại",
           "OPTIONS": {
-            "SMALLER": "Smaller",
-            "SMALL": "Small",
+            "SMALLER": "Nhỏ hơn",
+            "SMALL": "Nhỏ",
             "DEFAULT": "Mặc định",
-            "LARGE": "Large",
-            "LARGER": "Larger",
-            "EXTRA_LARGE": "Extra Large"
+            "LARGE": "Lớn",
+            "LARGER": "Lớn hơn",
+            "EXTRA_LARGE": "Rất lớn"
           }
         },
         "LANGUAGE": {
-          "TITLE": "Preferred Language",
-          "NOTE": "Choose the language you want to use.",
-          "UPDATE_SUCCESS": "Your Language settings have been updated successfully",
-          "UPDATE_ERROR": "There is an error while updating the language settings, please try again",
-          "USE_ACCOUNT_DEFAULT": "Use account default"
+          "TITLE": "Ngôn ngữ ưa thích",
+          "NOTE": "Chọn ngôn ngữ bạn muốn sử dụng.",
+          "UPDATE_SUCCESS": "Cài đặt ngôn ngữ của bạn đã được cập nhật thành công",
+          "UPDATE_ERROR": "Có lỗi khi cập nhật cài đặt ngôn ngữ, vui lòng thử lại",
+          "USE_ACCOUNT_DEFAULT": "Sử dụng mặc định của tài khoản"
         }
       },
       "MESSAGE_SIGNATURE_SECTION": {
         "TITLE": "Chữ ký tin nhắn cá nhân",
-        "NOTE": "Create a unique message signature to appear at the end of every message you send from any inbox. You can also include an inline image, which is supported in live-chat, email, and API inboxes.",
+        "NOTE": "Tạo chữ ký tin nhắn duy nhất để xuất hiện ở cuối mỗi tin nhắn bạn gửi từ bất kỳ hộp thư đến nào. Bạn cũng có thể bao gồm hình ảnh nội tuyến, được hỗ trợ trong chat trực tiếp, email và hộp thư đến API.",
         "BTN_TEXT": "Lưu chữ ký tin nhắn",
         "API_ERROR": "Không thể lưu chữ ký! Thử lại",
         "API_SUCCESS": "Chữ ký được lưu thành công",
-        "IMAGE_UPLOAD_ERROR": "Couldn't upload image! Try again",
-        "IMAGE_UPLOAD_SUCCESS": "Image added successfully. Please click on save to save the signature",
+        "IMAGE_UPLOAD_ERROR": "Không thể tải lên hình ảnh! Thử lại",
+        "IMAGE_UPLOAD_SUCCESS": "Thêm hình ảnh thành công. Vui lòng nhấp vào lưu để lưu chữ ký",
         "IMAGE_UPLOAD_SIZE_ERROR": "Kích thước ảnh phải nhỏ hơn {size}MB"
       },
       "MESSAGE_SIGNATURE": {
@@ -89,36 +89,36 @@
         "TITLE": "Token truy cập",
         "NOTE": "Có thể sử dụng Token này nếu bạn đang xây dựng tích hợp dựa trên API",
         "COPY": "Sao Chép",
-        "RESET": "Reset",
-        "CONFIRM_RESET": "Are you sure?",
-        "CONFIRM_HINT": "Click again to confirm",
-        "RESET_SUCCESS": "Access token regenerated successfully",
-        "RESET_ERROR": "Unable to regenerate access token. Please try again"
+        "RESET": "Đặt lại",
+        "CONFIRM_RESET": "Bạn có chắc chắn?",
+        "CONFIRM_HINT": "Nhấp lại để xác nhận",
+        "RESET_SUCCESS": "Tạo lại token truy cập thành công",
+        "RESET_ERROR": "Không thể tạo lại token truy cập. Vui lòng thử lại"
       },
       "AUDIO_NOTIFICATIONS_SECTION": {
-        "TITLE": "Audio Alerts",
-        "NOTE": "Enable audio alerts in dashboard for new messages and conversations.",
-        "PLAY": "Play sound",
+        "TITLE": "Cảnh báo âm thanh",
+        "NOTE": "Bật cảnh báo âm thanh trong bảng điều khiển cho tin nhắn và cuộc trò chuyện mới.",
+        "PLAY": "Phát âm thanh",
         "ALERT_TYPES": {
           "NONE": "Không có",
-          "MINE": "Assigned",
+          "MINE": "Được phân công",
           "ALL": "Tất cả",
-          "ASSIGNED": "My assigned conversations",
-          "UNASSIGNED": "Unassigned conversations",
-          "NOTME": "Open conversations assigned to others"
+          "ASSIGNED": "Cuộc trò chuyện được phân công cho tôi",
+          "UNASSIGNED": "Cuộc trò chuyện chưa được phân công",
+          "NOTME": "Cuộc trò chuyện mở được phân công cho người khác"
         },
         "ALERT_COMBINATIONS": {
-          "NONE": "You haven't selected any options, you won't receive any audio alerts.",
-          "ASSIGNED": "You'll receive alerts for conversations assigned to you.",
-          "UNASSIGNED": "You'll receive alerts for any unassigned conversations.",
-          "NOTME": "You'll receive alerts for conversations assigned to others.",
-          "ASSIGNED+UNASSIGNED": "You'll receive alerts for your assigned conversations and any unattended ones.",
-          "ASSIGNED+NOTME": "You'll receive alerts for conversations assigned to you and to others, but not for unassigned ones.",
-          "NOTME+UNASSIGNED": "You'll receive alerts for unattended conversations and those assigned to others.",
-          "ASSIGNED+NOTME+UNASSIGNED": "You'll receive alerts for all conversations."
+          "NONE": "Bạn chưa chọn tùy chọn nào, bạn sẽ không nhận được cảnh báo âm thanh nào.",
+          "ASSIGNED": "Bạn sẽ nhận cảnh báo cho các cuộc trò chuyện được phân công cho bạn.",
+          "UNASSIGNED": "Bạn sẽ nhận cảnh báo cho bất kỳ cuộc trò chuyện nào chưa được phân công.",
+          "NOTME": "Bạn sẽ nhận cảnh báo cho các cuộc trò chuyện được phân công cho người khác.",
+          "ASSIGNED+UNASSIGNED": "Bạn sẽ nhận cảnh báo cho các cuộc trò chuyện được phân công cho bạn và bất kỳ cuộc trò chuyện nào chưa được xử lý.",
+          "ASSIGNED+NOTME": "Bạn sẽ nhận cảnh báo cho các cuộc trò chuyện được phân công cho bạn và cho người khác, nhưng không cho các cuộc trò chuyện chưa được phân công.",
+          "NOTME+UNASSIGNED": "Bạn sẽ nhận cảnh báo cho các cuộc trò chuyện chưa được xử lý và những cuộc trò chuyện được phân công cho người khác.",
+          "ASSIGNED+NOTME+UNASSIGNED": "Bạn sẽ nhận cảnh báo cho tất cả các cuộc trò chuyện."
         },
         "ALERT_TYPE": {
-          "TITLE": "Alert events for conversations",
+          "TITLE": "Sự kiện cảnh báo cho cuộc trò chuyện",
           "NONE": "Không có",
           "ASSIGNED": "Tin nhắn được phân công",
           "ALL_CONVERSATIONS": "Tất cả tin nhắn"
@@ -131,7 +131,7 @@
           "CONDITION_ONE": "Chỉ gửi cảnh báo âm thanh nếu cửa sổ trình duyệt không hoạt động",
           "CONDITION_TWO": "Gửi thông báo cứ sau 30 giây cho đến khi tất cả các tin nhắn được chỉ định được đọc"
         },
-        "SOUND_PERMISSION_ERROR": "Autoplay is disabled in your browser. To hear alerts automatically, enable sound permission in your browser settings or interact with the page.",
+        "SOUND_PERMISSION_ERROR": "Tự động phát bị tắt trong trình duyệt của bạn. Để nghe cảnh báo tự động, hãy bật quyền âm thanh trong cài đặt trình duyệt hoặc tương tác với trang.",
         "READ_MORE": "Xem thêm"
       },
       "EMAIL_NOTIFICATIONS_SECTION": {
@@ -141,25 +141,25 @@
         "CONVERSATION_CREATION": "Gửi thông báo qua email khi cuộc trò chuyện mới được tạo",
         "CONVERSATION_MENTION": "Gửi thông báo email khi bạn được nhắc đến trong 1 cuộc trò chuyện",
         "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Gửi thông báo email khi có một tin nhắn mới được tạo trong cuộc trò chuyện được phân công",
-        "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Send email notifications when a new message is created in a participating conversation",
-        "SLA_MISSED_FIRST_RESPONSE": "Send email notifications when a conversation misses first response SLA",
-        "SLA_MISSED_NEXT_RESPONSE": "Send email notifications when a conversation misses next response SLA",
-        "SLA_MISSED_RESOLUTION": "Send email notifications when a conversation misses resolution SLA"
+        "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Gửi thông báo email khi có tin nhắn mới được tạo trong cuộc trò chuyện đang tham gia",
+        "SLA_MISSED_FIRST_RESPONSE": "Gửi thông báo email khi cuộc trò chuyện lỡ SLA phản hồi đầu tiên",
+        "SLA_MISSED_NEXT_RESPONSE": "Gửi thông báo email khi cuộc trò chuyện lỡ SLA phản hồi tiếp theo",
+        "SLA_MISSED_RESOLUTION": "Gửi thông báo email khi cuộc trò chuyện lỡ SLA giải quyết"
       },
       "NOTIFICATIONS": {
-        "TITLE": "Notification preferences",
-        "TYPE_TITLE": "Notification type",
+        "TITLE": "Tùy chọn thông báo",
+        "TYPE_TITLE": "Loại thông báo",
         "EMAIL": "Email",
-        "PUSH": "Push notification",
+        "PUSH": "Thông báo đẩy",
         "TYPES": {
-          "CONVERSATION_CREATED": "A new conversation is created",
-          "CONVERSATION_ASSIGNED": "A conversation is assigned to you",
-          "CONVERSATION_MENTION": "You are mentioned in a conversation",
-          "ASSIGNED_CONVERSATION_NEW_MESSAGE": "A new message is created in an assigned conversation",
-          "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "A new message is created in a participating conversation",
-          "SLA_MISSED_FIRST_RESPONSE": "A conversation misses first response SLA",
-          "SLA_MISSED_NEXT_RESPONSE": "A conversation misses next response SLA",
-          "SLA_MISSED_RESOLUTION": "A conversation misses resolution SLA"
+          "CONVERSATION_CREATED": "Cuộc trò chuyện mới được tạo",
+          "CONVERSATION_ASSIGNED": "Cuộc trò chuyện được phân công cho bạn",
+          "CONVERSATION_MENTION": "Bạn được nhắc đến trong cuộc trò chuyện",
+          "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Tin nhắn mới được tạo trong cuộc trò chuyện được phân công",
+          "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Tin nhắn mới được tạo trong cuộc trò chuyện đang tham gia",
+          "SLA_MISSED_FIRST_RESPONSE": "Cuộc trò chuyện lỡ SLA phản hồi đầu tiên",
+          "SLA_MISSED_NEXT_RESPONSE": "Cuộc trò chuyện lỡ SLA phản hồi tiếp theo",
+          "SLA_MISSED_RESOLUTION": "Cuộc trò chuyện lỡ SLA giải quyết"
         },
         "BROWSER_PERMISSION": "Enable push notifications for your browser so you’re able to receive them"
       },
@@ -174,12 +174,12 @@
         "CONVERSATION_CREATION": "Gửi thông báo khi cuộc trò chuyện mới được tạo",
         "CONVERSATION_MENTION": "Gửi thông báo đẩy khi bạn được nhắc đến trong 1 cuộc trò chuyện",
         "ASSIGNED_CONVERSATION_NEW_MESSAGE": "Gửi thông báo đẩy khi có một tin nhắn mới được tạo trong cuộc trò chuyện được phân công",
-        "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Send push notifications when a new message is created in a participating conversation",
+        "PARTICIPATING_CONVERSATION_NEW_MESSAGE": "Gửi thông báo đẩy khi có tin nhắn mới được tạo trong cuộc trò chuyện đang tham gia",
         "HAS_ENABLED_PUSH": "Bạn đã bật tính năng thông báo cho trình duyệt này.",
         "REQUEST_PUSH": "Bật thông báo",
-        "SLA_MISSED_FIRST_RESPONSE": "Send push notifications when a conversation misses first response SLA",
-        "SLA_MISSED_NEXT_RESPONSE": "Send push notifications when a conversation misses next response SLA",
-        "SLA_MISSED_RESOLUTION": "Send push notifications when a conversation misses resolution SLA"
+        "SLA_MISSED_FIRST_RESPONSE": "Gửi thông báo đẩy khi cuộc trò chuyện lỡ SLA phản hồi đầu tiên",
+        "SLA_MISSED_NEXT_RESPONSE": "Gửi thông báo đẩy khi cuộc trò chuyện lỡ SLA phản hồi tiếp theo",
+        "SLA_MISSED_RESOLUTION": "Gửi thông báo đẩy khi cuộc trò chuyện lỡ SLA giải quyết"
       },
       "PROFILE_IMAGE": {
         "LABEL": "Hình ảnh hồ sơ cá nhân"
@@ -197,13 +197,13 @@
       "AVAILABILITY": {
         "LABEL": "Khả dụng",
         "STATUS": {
-          "ONLINE": "Online",
+          "ONLINE": "Trực tuyến",
           "BUSY": "Bận",
-          "OFFLINE": "Offline"
+          "OFFLINE": "Ngoại tuyến"
         },
         "SET_AVAILABILITY_SUCCESS": "Tính khả dụng đã được thiết lập thành công",
         "SET_AVAILABILITY_ERROR": "Không thể đặt, vui lòng thử lại",
-        "IMPERSONATING_ERROR": "Cannot change availability while impersonating a user"
+        "IMPERSONATING_ERROR": "Không thể thay đổi tình trạng khả dụng khi đang mạo danh người dùng"
       },
       "EMAIL": {
         "LABEL": "Địa chỉ email của bạn",
@@ -223,7 +223,7 @@
       "PASSWORD_CONFIRMATION": {
         "LABEL": "Xác nhận mật khẩu mới",
         "ERROR": "Xác nhận mật khẩu phải khớp với mật khẩu",
-        "PLACEHOLDER": "Vui lòng nhập lại mật khẩu \bmới"
+        "PLACEHOLDER": "Vui lòng nhập lại mật khẩu mới"
       }
     }
   },
@@ -306,7 +306,7 @@
     "CAPTAIN_RESPONSES": "Câu hỏi thường gặp",
     "CAPTAIN_TOOLS": "Caption Tools",
     "HOME": "Trang Chủ",
-    "AGENTS": "Đại lý",
+    "AGENTS": "Thành viên",
     "AGENT_BOTS": "Bots",
     "AUDIT_LOGS": "Nhật ký kiểm toán",
     "INBOXES": "Hộp thư đến",
@@ -339,7 +339,7 @@
     "ONE_OFF": "Một lần",
     "REPORTS_SLA": "SLA",
     "REPORTS_BOT": "Bot",
-    "REPORTS_AGENT": "Nhà cung cấp",
+    "REPORTS_AGENT": "Thành viên",
     "REPORTS_LABEL": "Nhãn",
     "REPORTS_INBOX": "Kênh",
     "REPORTS_TEAM": "Nhóm",

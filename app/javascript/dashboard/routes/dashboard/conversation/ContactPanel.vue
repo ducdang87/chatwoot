@@ -94,6 +94,7 @@ const contact = computed(() => contactGetter.value(contactId.value));
 const contactAdditionalAttributes = computed(
   () => contact.value.additional_attributes || {}
 );
+const customAttributes = computed(() => contact.value.custom_attributes || {});
 
 const getContactDetails = () => {
   if (contactId.value) {
@@ -136,7 +137,11 @@ onMounted(() => {
       :title="$t('CONVERSATION.SIDEBAR.CONTACT')"
       @close="closeContactPanel"
     />
-    <ContactInfo :contact="contact" :channel-type="channelType" />
+    <ContactInfo
+      :contact="contact"
+      :channel-type="channelType"
+      :show-avatar="false"
+    />
     <div class="pb-8 list-group px-2">
       <Draggable
         :list="conversationSidebarItems"
@@ -149,8 +154,24 @@ onMounted(() => {
         @end="onDragEnd"
       >
         <template #item="{ element }">
+          <div v-if="element.name === 'conversation_info'">
+            <AccordionItem
+              :title="$t('CONVERSATION_SIDEBAR.ACCORDION.CONVERSATION_INFO')"
+              :is-open="isContactSidebarItemOpen('is_conv_details_open')"
+              compact
+              @toggle="
+                value => toggleSidebarUIState('is_conv_details_open', value)
+              "
+            >
+              <ConversationInfo
+                :conversation-attributes="conversationAdditionalAttributes"
+                :contact-attributes="contactAdditionalAttributes"
+                :contact-custom-attributes="customAttributes"
+              />
+            </AccordionItem>
+          </div>
           <div
-            v-if="element.name === 'conversation_actions'"
+            v-else-if="element.name === 'conversation_actions'"
             class="conversation--actions"
           >
             <AccordionItem
@@ -184,21 +205,7 @@ onMounted(() => {
               />
             </AccordionItem>
           </div>
-          <div v-else-if="element.name === 'conversation_info'">
-            <AccordionItem
-              :title="$t('CONVERSATION_SIDEBAR.ACCORDION.CONVERSATION_INFO')"
-              :is-open="isContactSidebarItemOpen('is_conv_details_open')"
-              compact
-              @toggle="
-                value => toggleSidebarUIState('is_conv_details_open', value)
-              "
-            >
-              <ConversationInfo
-                :conversation-attributes="conversationAdditionalAttributes"
-                :contact-attributes="contactAdditionalAttributes"
-              />
-            </AccordionItem>
-          </div>
+
           <div v-else-if="element.name === 'contact_attributes'">
             <AccordionItem
               :title="$t('CONVERSATION_SIDEBAR.ACCORDION.CONTACT_ATTRIBUTES')"

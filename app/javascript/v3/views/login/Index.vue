@@ -337,6 +337,7 @@ export default {
             :label="$t('LOGIN.SUBMIT')"
             :disabled="loginApi.showLoading"
             :is-loading="loginApi.showLoading"
+            icon="lucide:arrow-right"
           />
         </form>
       </div>

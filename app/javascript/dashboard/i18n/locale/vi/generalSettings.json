@@ -1,250 +1,251 @@
 {
-  "GENERAL_SETTINGS": {
-    "LIMIT_MESSAGES": {
-      "CONVERSATION": "Bạn đã vượt quá giới hạn tin nhắn. Gói Hacker chỉ cho phép 500 tin nhắn.",
-      "INBOXES": "Bạn đã vượt quá giới hạn hộp thư đến. Gói Hacker chỉ hỗ trợ chat trực tiếp trên website. Các hộp thư đến khác như email, WhatsApp... yêu cầu gói trả phí.",
-      "AGENTS": "Bạn đã vượt quá giới hạn tổng đài viên. Gói của bạn chỉ cho phép {allowedAgents} tổng đài viên.",
-      "NON_ADMIN": "Vui lòng liên hệ quản trị viên để nâng cấp gói và tiếp tục sử dụng tất cả tính năng."
-    },
-    "TITLE": "Cài đặt tài khoản",
-    "SUBMIT": "Cập nhật cài đặt",
-    "BACK": "Trờ về",
-    "DISMISS": "Bỏ qua",
-    "UPDATE": {
-      "ERROR": "Không thể cập nhật cài đặt, hãy thử lại!",
-      "SUCCESS": "Đã cập nhật thành công cài đặt tài khoản"
-    },
-    "ACCOUNT_DELETE_SECTION": {
-      "TITLE": "Xóa tài khoản của bạn",
-      "NOTE": "Khi bạn xóa tài khoản, tất cả dữ liệu của bạn sẽ bị xóa.",
-      "BUTTON_TEXT": "Xóa tài khoản của bạn",
-      "CONFIRM": {
-        "TITLE": "Xóa tài khoản",
-        "MESSAGE": "Việc xóa tài khoản không thể hoàn tác. Nhập tên tài khoản bên dưới để xác nhận bạn muốn xóa vĩnh viễn.",
-        "BUTTON_TEXT": "Xoá",
-        "DISMISS": "Huỷ",
-        "PLACE_HOLDER": "Vui lòng điền {accountName} để xác nhận"
-      },
-      "SUCCESS": "Tài khoản đã được đánh dấu để xóa",
-      "FAILURE": "Không thể xóa tài khoản, vui lòng thử lại!",
-      "SCHEDULED_DELETION": {
-        "TITLE": "Tài khoản được lên lịch xóa",
-        "MESSAGE_MANUAL": "Tài khoản này được lên lịch xóa vào {deletionDate}. Điều này được yêu cầu bởi quản trị viên. Bạn có thể hủy việc xóa trước ngày này.",
-        "MESSAGE_INACTIVITY": "Tài khoản này được lên lịch xóa vào {deletionDate} do không hoạt động. Bạn có thể hủy việc xóa trước ngày này.",
-        "CLEAR_BUTTON": "Hủy lịch xóa"
-      }
-    },
-    "FORM": {
-      "ERROR": "Vui lòng sửa lỗi biểu mẫu",
-      "GENERAL_SECTION": {
-        "TITLE": "Cài đặt chung",
-        "NOTE": ""
-      },
-      "ACCOUNT_ID": {
-        "TITLE": "Tài khoản SID",
-        "NOTE": "ID này là bắt buộc nếu bạn đang xây dựng tích hợp dựa trên API"
-      },
-      "AUTO_RESOLVE": {
-        "TITLE": "Tự động giải quyết tin nhắn",
-        "NOTE": "Cấu hình này cho phép bạn tự động giải quyết tin nhắn sau một khoảng thời gian không hoạt động.",
-        "DURATION": {
-          "LABEL": "Thời gian không hoạt động",
-          "HELP": "Khoảng thời gian không hoạt động sau đó tin nhắn sẽ được tự động giải quyết",
-          "PLACEHOLDER": "30",
-          "ERROR": "Thời gian tự động giải quyết phải từ 10 phút đến 999 ngày",
-          "API": {
-            "SUCCESS": "Cập nhật cài đặt tự động giải quyết thành công",
-            "ERROR": "Không thể cập nhật cài đặt tự động giải quyết"
-          }
-        },
-        "MESSAGE": {
-          "PLACEHOLDER": "Cuộc hội thoại đã được đánh dấu là đã giải quyết bởi hệ thống do 15 ngày không hoạt động",
-          "HELP": "Tin nhắn gửi cho khách hàng sau khi tin nhắn được tự động giải quyết"
-        },
-        "PREFERENCES": "Tùy chọn",
-        "LABEL": {
-          "LABEL": "Thêm nhãn sau khi tự động giải quyết",
-          "PLACEHOLDER": "Chọn một nhãn"
-        },
-        "IGNORE_WAITING": {
-          "LABEL": "Bỏ qua các tin nhắn đang chờ phản hồi của tổng đài viên"
-        },
-        "UPDATE_BUTTON": "Lưu thay đổi"
-      },
-      "NAME": {
-        "LABEL": "Tên tài khoản",
-        "PLACEHOLDER": "Tên tài khoản của bạn",
-        "ERROR": "Vui lòng nhập tên tài khoản hợp lệ"
-      },
-      "LANGUAGE": {
-        "LABEL": "Ngôn ngữ",
-        "PLACEHOLDER": "Tên tài khoản của bạn",
-        "ERROR": ""
-      },
-      "DOMAIN": {
-        "LABEL": "Tên miền email đến",
-        "PLACEHOLDER": "Miền mà bạn sẽ nhận được email",
-        "ERROR": ""
-      },
-      "SUPPORT_EMAIL": {
-        "LABEL": "Email hỗ trợ",
-        "PLACEHOLDER": "Email hỗ trợ của công ty bạn",
-        "ERROR": ""
-      },
-      "AUTO_RESOLVE_IGNORE_WAITING": {
-        "LABEL": "Loại trừ các tin nhắn chưa được xử lý",
-        "HELP": "Khi bật, hệ thống sẽ bỏ qua việc giải quyết các tin nhắn vẫn đang chờ phản hồi của tổng đài viên."
-      },
-      "AUDIO_TRANSCRIPTION": {
-        "TITLE": "Chuyển đổi tin nhắn âm thanh thành văn bản",
-        "NOTE": "Tự động chuyển đổi tin nhắn âm thanh trong tin nhắn thành văn bản. Tạo bản ghi văn bản mỗi khi tin nhắn âm thanh được gửi hoặc nhận, và hiển thị cùng với tin nhắn.",
-        "API": {
-          "SUCCESS": "Cập nhật cài đặt chuyển đổi âm thanh thành công",
-          "ERROR": "Không thể cập nhật cài đặt chuyển đổi âm thanh"
-        }
-      },
-      "AUTO_RESOLVE_DURATION": {
-        "LABEL": "Thời gian không hoạt động để giải quyết",
-        "HELP": "Thời gian sau đó tin nhắn sẽ tự động giải quyết nếu không có hoạt động",
-        "PLACEHOLDER": "30",
-        "ERROR": "Thời gian tự động giải quyết phải từ 10 phút đến 999 ngày",
-        "API": {
-          "SUCCESS": "Cập nhật cài đặt tự động giải quyết thành công",
-          "ERROR": "Không thể cập nhật cài đặt tự động giải quyết"
-        },
-        "UPDATE_BUTTON": "Cập nhật",
-        "MESSAGE_LABEL": "Tin nhắn giải quyết tùy chỉnh",
-        "MESSAGE_PLACEHOLDER": "Cuộc hội thoại đã được đánh dấu là đã giải quyết bởi hệ thống do 15 ngày không hoạt động",
-        "MESSAGE_HELP": "Tin nhắn này được gửi cho khách hàng khi tin nhắn được hệ thống tự động giải quyết do không hoạt động."
-      },
-      "FEATURES": {
-        "INBOUND_EMAIL_ENABLED": "Tính liên tục của cuộc trò chuyện với email được kích hoạt cho tài khoản của bạn.",
-        "CUSTOM_EMAIL_DOMAIN_ENABLED": "Bạn có thể nhận email trong miền tùy chỉnh của mình ngay bây giờ."
-      }
-    },
-    "UPDATE_CHATWOOT": "Đã có bản cập nhật {latestChatwootVersion} cho Chatwoot. Vui lòng cập nhật phiên bản của bạn.",
-    "LEARN_MORE": "Tìm hiểu thêm",
-    "PAYMENT_PENDING": "Thanh toán của bạn đang chờ xử lý. Vui lòng cập nhật thông tin thanh toán để tiếp tục sử dụng Chatwoot",
-    "UPGRADE": "Nâng cấp để tiếp tục sử dụng Chatwoot",
-    "LIMITS_UPGRADE": "Tài khoản của bạn đã vượt quá giới hạn sử dụng, vui lòng nâng cấp gói để tiếp tục sử dụng Chatwoot",
-    "OPEN_BILLING": "Mở thanh toán"
-  },
-  "FORMS": {
-    "MULTISELECT": {
-      "ENTER_TO_SELECT": "Bấm enter để chọn",
-      "ENTER_TO_REMOVE": "Bấm enter để xoá",
-      "NO_OPTIONS": "Danh sách trống",
-      "SELECT_ONE": "Chọn một",
-      "SELECT": "Chọn"
-    }
-  },
-  "NOTIFICATIONS_PAGE": {
-    "HEADER": "Thông báo",
-    "MARK_ALL_DONE": "Đánh dấu tất cả đã xong",
-    "DELETE_TITLE": "đã xoá",
-    "UNREAD_NOTIFICATION": {
-      "TITLE": "Thông báo tin chưa đọc",
-      "ALL_NOTIFICATIONS": "Xem tất cả thông báo",
-      "LOADING_UNREAD_MESSAGE": "Đang tải thông báo tin chưa đọc...",
-      "EMPTY_MESSAGE": "Bạn không có thông báo tin chưa đọc"
-    },
-    "LIST": {
-      "LOADING_MESSAGE": "Đang tải thông báo...",
-      "404": "Không có thông báo",
-      "TABLE_HEADER": [
-        "Tên",
-        "Số điện thoại",
-        "Các tin nhắn",
-        "Liên hệ lần cuối"
-      ]
-    },
-    "TYPE_LABEL": {
-      "conversation_creation": "Hội thoại mới mới",
-      "conversation_assignment": "Hội thoại đã được phân công",
-      "assigned_conversation_new_message": "Tin nhắn mới",
-      "participating_conversation_new_message": "Tin nhắn mới",
-      "conversation_mention": "Nhắc đến",
-      "sla_missed_first_response": "SLA Missed",
-      "sla_missed_next_response": "SLA Missed",
-      "sla_missed_resolution": "SLA Missed"
-    }
-  },
-  "NETWORK": {
-    "NOTIFICATION": {
-      "OFFLINE": "Không Trực Tuyến",
-      "RECONNECTING": "Đang kết nối lại...",
-      "RECONNECT_SUCCESS": "Đã kết nối lại"
-    },
-    "BUTTON": {
-      "REFRESH": "Làm mới"
-    }
-  },
-  "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Tìm kiếm hoặc nhảy đến",
-    "SECTIONS": {
-      "GENERAL": "Chung",
-      "REPORTS": "Báo cáo",
-      "CONVERSATION": "Hội thoại",
-      "BULK_ACTIONS": "Hành động hàng loạt",
-      "CHANGE_ASSIGNEE": "Thay đổi người được phân công",
-      "CHANGE_PRIORITY": "Thay đổi độ ưu tiên",
-      "CHANGE_TEAM": "Thay đổi nhóm",
-      "SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
-      "ADD_LABEL": "Thêm nhãn vào hội thoại",
-      "REMOVE_LABEL": "Xoá nhãn khỏi hội thoại",
-      "SETTINGS": "Cài đặt",
-      "AI_ASSIST": "AI Assist",
-      "APPEARANCE": "Giao diện",
-      "SNOOZE_NOTIFICATION": "Tạm dừng thông báo"
-    },
-    "COMMANDS": {
-      "GO_TO_CONVERSATION_DASHBOARD": "Đi tới Trang tổng quan hội thoại",
-      "GO_TO_CONTACTS_DASHBOARD": "Đi tới Trang tổng quan liên hệ",
-      "GO_TO_REPORTS_OVERVIEW": "Đi đến Tổng quan Báo cáo",
-      "GO_TO_CONVERSATION_REPORTS": "Đi tới Trang Báo cáo hội thoại",
-      "GO_TO_AGENT_REPORTS": "Đi đến Báo cáo Tổng đài viên",
-      "GO_TO_LABEL_REPORTS": "Đi đến Báo cáo Nhãn",
-      "GO_TO_INBOX_REPORTS": "Đi đến Báo cáo Kênh",
-      "GO_TO_TEAM_REPORTS": "Đi đến Báo cáo Nhóm",
-      "GO_TO_SETTINGS_AGENTS": "Đi đến Cài đặt Tổng đài viên",
-      "GO_TO_SETTINGS_TEAMS": "Đi đến Cài đặt Nhóm",
-      "GO_TO_SETTINGS_INBOXES": "Đi đến Cài đặt Kênh",
-      "GO_TO_SETTINGS_LABELS": "Đi đến Cài đặt Nhãn",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Đi đến Cài đặt Tin trả lời mẫu",
-      "GO_TO_SETTINGS_APPLICATIONS": "Đi đến Cài đặt Ứng dụng",
-      "GO_TO_SETTINGS_ACCOUNT": "Đi đến Cài đặt Tài khoản",
-      "GO_TO_SETTINGS_PROFILE": "Đi đến Cài đặt Hồ sơ",
-      "GO_TO_NOTIFICATIONS": "Đi đến Thông báo",
-      "ADD_LABELS_TO_CONVERSATION": "Thêm nhãn vào hội thoại",
-      "ASSIGN_AN_AGENT": "Gán cho tổng đài viên",
-      "AI_ASSIST": "AI Assist",
-      "ASSIGN_PRIORITY": "Gán độ ưu tiên",
-      "ASSIGN_A_TEAM": "Phân công một nhóm",
-      "MUTE_CONVERSATION": "Tắt tiếng hội thoại",
-      "UNMUTE_CONVERSATION": "Bật tiếng hội thoại",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Xoá nhãn khỏi hội thoại",
-      "REOPEN_CONVERSATION": "Mở lại hội thoại",
-      "RESOLVE_CONVERSATION": "Giải quyết hội thoại",
-      "SEND_TRANSCRIPT": "Gửi bản ghi qua email",
-      "SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
-      "UNTIL_NEXT_REPLY": "Cho đến phản hồi kế tiếp",
-      "UNTIL_NEXT_WEEK": "Cho đến tuần sau",
-      "UNTIL_TOMORROW": "Cho đến ngày mai",
-      "UNTIL_NEXT_MONTH": "Cho đến tháng sau",
-      "AN_HOUR_FROM_NOW": "Cho đến một giờ nữa",
-      "UNTIL_CUSTOM_TIME": "Tùy chỉnh...",
-      "CHANGE_APPEARANCE": "Thay đổi giao diện",
-      "LIGHT_MODE": "Sáng",
-      "DARK_MODE": "Tối",
-      "SYSTEM_MODE": "Hệ thống",
-      "SNOOZE_NOTIFICATION": "Tạm dừng thông báo"
-    }
-  },
-  "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Đang tải dữ liệu..."
-  },
-  "COMMON": {
-    "OR": "Hoặc",
-    "CLICK_HERE": "click vào đây"
-  }
+	"COMMAND_BAR": {
+		"COMMANDS": {
+			"ADD_LABELS_TO_CONVERSATION": "Thêm nhãn vào hội thoại",
+			"AI_ASSIST": "AI Assist",
+			"AN_HOUR_FROM_NOW": "Cho đến một giờ nữa",
+			"ASSIGN_A_TEAM": "Phân công một nhóm",
+			"ASSIGN_AN_AGENT": "Gán cho tổng đài viên",
+			"ASSIGN_PRIORITY": "Gán độ ưu tiên",
+			"CHANGE_APPEARANCE": "Thay đổi giao diện",
+			"DARK_MODE": "Tối",
+			"GO_TO_AGENT_REPORTS": "Đi đến Báo cáo Tổng đài viên",
+			"GO_TO_CONTACTS_DASHBOARD": "Đi tới Trang tổng quan liên hệ",
+			"GO_TO_CONVERSATION_DASHBOARD": "Đi tới Trang tổng quan hội thoại",
+			"GO_TO_CONVERSATION_REPORTS": "Đi tới Trang Báo cáo hội thoại",
+			"GO_TO_INBOX_REPORTS": "Đi đến Báo cáo Kênh",
+			"GO_TO_LABEL_REPORTS": "Đi đến Báo cáo Nhãn",
+			"GO_TO_NOTIFICATIONS": "Đi đến Thông báo",
+			"GO_TO_REPORTS_OVERVIEW": "Đi đến Tổng quan Báo cáo",
+			"GO_TO_SETTINGS_ACCOUNT": "Đi đến Cài đặt Tài khoản",
+			"GO_TO_SETTINGS_AGENTS": "Đi đến Cài đặt Tổng đài viên",
+			"GO_TO_SETTINGS_APPLICATIONS": "Đi đến Cài đặt Ứng dụng",
+			"GO_TO_SETTINGS_CANNED_RESPONSES": "Đi đến Cài đặt Tin trả lời mẫu",
+			"GO_TO_SETTINGS_INBOXES": "Đi đến Cài đặt Kênh",
+			"GO_TO_SETTINGS_LABELS": "Đi đến Cài đặt Nhãn",
+			"GO_TO_SETTINGS_PROFILE": "Đi đến Cài đặt Hồ sơ",
+			"GO_TO_SETTINGS_TEAMS": "Đi đến Cài đặt Nhóm",
+			"GO_TO_TEAM_REPORTS": "Đi đến Báo cáo Nhóm",
+			"LIGHT_MODE": "Sáng",
+			"MUTE_CONVERSATION": "Tắt tiếng hội thoại",
+			"REMOVE_LABEL_FROM_CONVERSATION": "Xoá nhãn khỏi hội thoại",
+			"REOPEN_CONVERSATION": "Mở lại hội thoại",
+			"RESOLVE_CONVERSATION": "Giải quyết hội thoại",
+			"SEND_TRANSCRIPT": "Gửi bản ghi qua email",
+			"SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
+			"SNOOZE_NOTIFICATION": "Tạm dừng thông báo",
+			"SYSTEM_MODE": "Hệ thống",
+			"UNMUTE_CONVERSATION": "Bật tiếng hội thoại",
+			"UNTIL_CUSTOM_TIME": "Tùy chỉnh...",
+			"UNTIL_NEXT_MONTH": "Cho đến tháng sau",
+			"UNTIL_NEXT_REPLY": "Cho đến phản hồi kế tiếp",
+			"UNTIL_NEXT_WEEK": "Cho đến tuần sau",
+			"UNTIL_TOMORROW": "Cho đến ngày mai"
+		},
+		"SEARCH_PLACEHOLDER": "Tìm kiếm hoặc nhảy đến",
+		"SECTIONS": {
+			"ADD_LABEL": "Thêm nhãn vào hội thoại",
+			"AI_ASSIST": "AI Assist",
+			"APPEARANCE": "Giao diện",
+			"BULK_ACTIONS": "Hành động hàng loạt",
+			"CHANGE_ASSIGNEE": "Thay đổi người được phân công",
+			"CHANGE_PRIORITY": "Thay đổi độ ưu tiên",
+			"CHANGE_TEAM": "Thay đổi nhóm",
+			"CONVERSATION": "Hội thoại",
+			"GENERAL": "Chung",
+			"REMOVE_LABEL": "Xoá nhãn khỏi hội thoại",
+			"REPORTS": "Báo cáo",
+			"SETTINGS": "Cài đặt",
+			"SNOOZE_CONVERSATION": "Tạm dừng \bhội thoại",
+			"SNOOZE_NOTIFICATION": "Tạm dừng thông báo"
+		}
+	},
+	"COMMON": {
+		"CLICK_HERE": "click vào đây",
+		"OR": "Hoặc"
+	},
+	"DASHBOARD_APPS": {
+		"LOADING_MESSAGE": "Đang tải dữ liệu..."
+	},
+	"FORMS": {
+		"MULTISELECT": {
+			"ENTER_TO_REMOVE": "Bấm enter để xoá",
+			"ENTER_TO_SELECT": "Bấm enter để chọn",
+			"NO_OPTIONS": "Danh sách trống",
+			"SELECT": "Chọn",
+			"SELECT_ONE": "Chọn một"
+		}
+	},
+	"GENERAL_SETTINGS": {
+		"ACCOUNT_DELETE_SECTION": {
+			"BUTTON_TEXT": "Xóa tài khoản của bạn",
+			"CONFIRM": {
+				"BUTTON_TEXT": "Xoá",
+				"DISMISS": "Huỷ",
+				"MESSAGE": "Việc xóa tài khoản không thể hoàn tác. Nhập tên tài khoản bên dưới để xác nhận bạn muốn xóa vĩnh viễn.",
+				"PLACE_HOLDER": "Vui lòng điền {accountName} để xác nhận",
+				"TITLE": "Xóa tài khoản"
+			},
+			"FAILURE": "Không thể xóa tài khoản, vui lòng thử lại!",
+			"NOTE": "Khi bạn xóa tài khoản, tất cả dữ liệu của bạn sẽ bị xóa.",
+			"SCHEDULED_DELETION": {
+				"CLEAR_BUTTON": "Hủy lịch xóa",
+				"MESSAGE_INACTIVITY": "Tài khoản này được lên lịch xóa vào {deletionDate} do không hoạt động. Bạn có thể hủy việc xóa trước ngày này.",
+				"MESSAGE_MANUAL": "Tài khoản này được lên lịch xóa vào {deletionDate}. Điều này được yêu cầu bởi quản trị viên. Bạn có thể hủy việc xóa trước ngày này.",
+				"TITLE": "Tài khoản được lên lịch xóa"
+			},
+			"SUCCESS": "Tài khoản đã được đánh dấu để xóa",
+			"TITLE": "Xóa tài khoản của bạn"
+		},
+		"BACK": "Trờ về",
+		"DISMISS": "Bỏ qua",
+		"FORM": {
+			"ACCOUNT_ID": {
+				"NOTE": "ID này là bắt buộc nếu bạn đang xây dựng tích hợp dựa trên API",
+				"TITLE": "Tài khoản SID"
+			},
+			"AUDIO_TRANSCRIPTION": {
+				"API": {
+					"ERROR": "Không thể cập nhật cài đặt chuyển đổi âm thanh",
+					"SUCCESS": "Cập nhật cài đặt chuyển đổi âm thanh thành công"
+				},
+				"NOTE": "Tự động chuyển đổi tin nhắn âm thanh trong tin nhắn thành văn bản. Tạo bản ghi văn bản mỗi khi tin nhắn âm thanh được gửi hoặc nhận, và hiển thị cùng với tin nhắn.",
+				"TITLE": "Chuyển đổi tin nhắn âm thanh thành văn bản"
+			},
+			"AUTO_RESOLVE": {
+				"DURATION": {
+					"API": {
+						"ERROR": "Không thể cập nhật cài đặt tự động giải quyết",
+						"SUCCESS": "Cập nhật cài đặt tự động giải quyết thành công"
+					},
+					"ERROR": "Thời gian tự động giải quyết phải từ 10 phút đến 999 ngày",
+					"HELP": "Khoảng thời gian không hoạt động sau đó tin nhắn sẽ được tự động giải quyết",
+					"LABEL": "Thời gian không hoạt động",
+					"PLACEHOLDER": "30"
+				},
+				"IGNORE_WAITING": {
+					"LABEL": "Bỏ qua các tin nhắn đang chờ phản hồi của tổng đài viên"
+				},
+				"LABEL": {
+					"LABEL": "Thêm nhãn sau khi tự động giải quyết",
+					"PLACEHOLDER": "Chọn một nhãn"
+				},
+				"MESSAGE": {
+					"HELP": "Tin nhắn gửi cho khách hàng sau khi tin nhắn được tự động giải quyết",
+					"LABEL": "",
+					"PLACEHOLDER": "Cuộc hội thoại đã được đánh dấu là đã giải quyết bởi hệ thống do 15 ngày không hoạt động"
+				},
+				"NOTE": "Cấu hình này cho phép bạn tự động giải quyết tin nhắn sau một khoảng thời gian không hoạt động.",
+				"PREFERENCES": "Tùy chọn",
+				"TITLE": "Tự động giải quyết tin nhắn",
+				"UPDATE_BUTTON": "Lưu thay đổi"
+			},
+			"AUTO_RESOLVE_DURATION": {
+				"API": {
+					"ERROR": "Không thể cập nhật cài đặt tự động giải quyết",
+					"SUCCESS": "Cập nhật cài đặt tự động giải quyết thành công"
+				},
+				"ERROR": "Thời gian tự động giải quyết phải từ 10 phút đến 999 ngày",
+				"HELP": "Thời gian sau đó tin nhắn sẽ tự động giải quyết nếu không có hoạt động",
+				"LABEL": "Thời gian không hoạt động để giải quyết",
+				"MESSAGE_HELP": "Tin nhắn này được gửi cho khách hàng khi tin nhắn được hệ thống tự động giải quyết do không hoạt động.",
+				"MESSAGE_LABEL": "Tin nhắn giải quyết tùy chỉnh",
+				"MESSAGE_PLACEHOLDER": "Cuộc hội thoại đã được đánh dấu là đã giải quyết bởi hệ thống do 15 ngày không hoạt động",
+				"PLACEHOLDER": "30",
+				"UPDATE_BUTTON": "Cập nhật"
+			},
+			"AUTO_RESOLVE_IGNORE_WAITING": {
+				"HELP": "Khi bật, hệ thống sẽ bỏ qua việc giải quyết các tin nhắn vẫn đang chờ phản hồi của tổng đài viên.",
+				"LABEL": "Loại trừ các tin nhắn chưa được xử lý"
+			},
+			"DOMAIN": {
+				"ERROR": "",
+				"LABEL": "Tên miền email đến",
+				"PLACEHOLDER": "Miền mà bạn sẽ nhận được email"
+			},
+			"ERROR": "Vui lòng sửa lỗi biểu mẫu",
+			"FEATURES": {
+				"CUSTOM_EMAIL_DOMAIN_ENABLED": "Bạn có thể nhận email trong miền tùy chỉnh của mình ngay bây giờ.",
+				"INBOUND_EMAIL_ENABLED": "Tính liên tục của cuộc trò chuyện với email được kích hoạt cho tài khoản của bạn."
+			},
+			"GENERAL_SECTION": {
+				"NOTE": "",
+				"TITLE": "Cài đặt chung"
+			},
+			"LANGUAGE": {
+				"ERROR": "",
+				"LABEL": "Ngôn ngữ",
+				"PLACEHOLDER": "Tên tài khoản của bạn"
+			},
+			"NAME": {
+				"ERROR": "Vui lòng nhập tên tài khoản hợp lệ",
+				"LABEL": "Tên tài khoản",
+				"PLACEHOLDER": "Tên tài khoản của bạn"
+			},
+			"SUPPORT_EMAIL": {
+				"ERROR": "",
+				"LABEL": "Email hỗ trợ",
+				"PLACEHOLDER": "Email hỗ trợ của công ty bạn"
+			}
+		},
+		"LEARN_MORE": "Tìm hiểu thêm",
+		"LIMIT_MESSAGES": {
+			"AGENTS": "Bạn đã vượt quá giới hạn tổng đài viên. Gói của bạn chỉ cho phép {allowedAgents} tổng đài viên.",
+			"CONVERSATION": "Bạn đã vượt quá giới hạn tin nhắn. Gói Hacker chỉ cho phép 500 tin nhắn.",
+			"INBOXES": "Bạn đã vượt quá giới hạn hộp thư đến. Gói Hacker chỉ hỗ trợ chat trực tiếp trên website. Các hộp thư đến khác như email, WhatsApp... yêu cầu gói trả phí.",
+			"NON_ADMIN": "Vui lòng liên hệ quản trị viên để nâng cấp gói và tiếp tục sử dụng tất cả tính năng."
+		},
+		"LIMITS_UPGRADE": "Tài khoản của bạn đã vượt quá giới hạn sử dụng, vui lòng nâng cấp gói để tiếp tục sử dụng",
+		"OPEN_BILLING": "Mở thanh toán",
+		"PAYMENT_PENDING": "Thanh toán của bạn đang chờ xử lý. Vui lòng cập nhật thông tin thanh toán để tiếp tục sử dụng",
+		"SUBMIT": "Cập nhật cài đặt",
+		"TITLE": "Cài đặt tài khoản",
+		"UPDATE": {
+			"ERROR": "Không thể cập nhật cài đặt, hãy thử lại!",
+			"SUCCESS": "Đã cập nhật thành công cài đặt tài khoản"
+		},
+		"UPDATE_CHATWOOT": "Đã có bản cập nhật {latestChatwootVersion}.",
+		"UPGRADE": "Nâng cấp để tiếp tục sử dụng"
+	},
+	"NETWORK": {
+		"BUTTON": {
+			"REFRESH": "Làm mới"
+		},
+		"NOTIFICATION": {
+			"OFFLINE": "Không Trực Tuyến",
+			"RECONNECT_SUCCESS": "Đã kết nối lại",
+			"RECONNECTING": "Đang kết nối lại..."
+		}
+	},
+	"NOTIFICATIONS_PAGE": {
+		"DELETE_TITLE": "đã xoá",
+		"HEADER": "Thông báo",
+		"LIST": {
+			"404": "Không có thông báo",
+			"LOADING_MESSAGE": "Đang tải thông báo...",
+			"TABLE_HEADER": [
+				"Tên",
+				"Số điện thoại",
+				"Các tin nhắn",
+				"Liên hệ lần cuối"
+			]
+		},
+		"MARK_ALL_DONE": "Đánh dấu tất cả đã xong",
+		"TYPE_LABEL": {
+			"assigned_conversation_new_message": "Tin nhắn mới",
+			"conversation_assignment": "Hội thoại đã được phân công",
+			"conversation_creation": "Hội thoại mới mới",
+			"conversation_mention": "Nhắc đến",
+			"participating_conversation_new_message": "Tin nhắn mới",
+			"sla_missed_first_response": "SLA Missed",
+			"sla_missed_next_response": "SLA Missed",
+			"sla_missed_resolution": "SLA Missed"
+		},
+		"UNREAD_NOTIFICATION": {
+			"ALL_NOTIFICATIONS": "Xem tất cả thông báo",
+			"EMPTY_MESSAGE": "Bạn không có thông báo tin chưa đọc",
+			"LOADING_UNREAD_MESSAGE": "Đang tải thông báo tin chưa đọc...",
+			"TITLE": "Thông báo tin chưa đọc"
+		}
+	}
 }

@@ -13,15 +13,15 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Chọn kênh",
-        "BODY": "Chọn nhà cung cấp bạn muốn tích hợp với ShipXanh Chat."
+        "BODY": "Chọn thành viên bạn muốn tích hợp với ShipXanh Chat."
       },
       "INBOX": {
         "TITLE": "Tạo Hộp thư đến",
         "BODY": "Xác thực tài khoản của bạn và tạo hộp thư đến."
       },
       "AGENT": {
-        "TITLE": "Thêm đại lý",
-        "BODY": "Thêm đại lý vào hộp thư đến đã tạo."
+        "TITLE": "Thêm nhân viên",
+        "BODY": "Thêm nhân viên vào hộp thư đến đã tạo."
       },
       "FINISH": {
         "TITLE": "Voilà!",
@@ -170,7 +170,7 @@
         "TITLE": "Kênh SMS",
         "DESC": "Bắt đầu hỗ trợ khách hàng thông qua SMS.",
         "PROVIDERS": {
-          "LABEL": "Nhà cung cấp API",
+          "LABEL": "Thành viên API",
           "TWILIO": "Twilio",
           "BANDWIDTH": "Bandwidth"
         },
@@ -222,7 +222,7 @@
         "TITLE": "Kênh WhatsApp",
         "DESC": "Bắt đầu hỗ trợ khách hàng thông qua WhatsApp.",
         "PROVIDERS": {
-          "LABEL": "Nhà cung cấp API",
+          "LABEL": "Thành viên API",
           "WHATSAPP_EMBEDDED": "WhatsApp Business",
           "TWILIO": "Twilio",
           "WHATSAPP_CLOUD": "Đám mây WhatsApp",
@@ -231,8 +231,8 @@
           "360_DIALOG": "360Dialog"
         },
         "SELECT_PROVIDER": {
-          "TITLE": "Chọn nhà cung cấp API của bạn",
-          "DESCRIPTION": "Chọn nhà cung cấp WhatsApp của bạn. Bạn có thể kết nối trực tiếp qua Meta không cần thiết lập, hoặc kết nối qua Twilio sử dụng thông tin xác thực tài khoản của bạn."
+          "TITLE": "Chọn thành viên API của bạn",
+          "DESCRIPTION": "Chọn thành viên WhatsApp của bạn. Bạn có thể kết nối trực tiếp qua Meta không cần thiết lập, hoặc kết nối qua Twilio sử dụng thông tin xác thực tài khoản của bạn."
         },
         "INBOX_NAME": {
           "LABEL": "Tên hộp thư đến",
@@ -455,7 +455,7 @@
           },
           "EMAIL": {
             "TITLE": "Email",
-            "DESCRIPTION": "Kết nối với Gmail, Outlook hoặc các nhà cung cấp khác"
+            "DESCRIPTION": "Kết nối với Gmail, Outlook hoặc các thành viên khác"
           },
           "SMS": {
             "TITLE": "SMS",
@@ -485,9 +485,9 @@
       },
       "AGENTS": {
         "TITLE": "Nhà Cung Cấp",
-        "DESC": "Tại đây bạn có thể thêm các tác nhân để quản lý hộp thư đến mới tạo của mình. Chỉ những đại lý được chọn này mới có quyền truy cập vào hộp thư đến của bạn. Các nhân viên không thuộc hộp thư đến này sẽ không thể xem hoặc trả lời thư trong hộp thư đến này khi họ đăng nhập. <br> <b>PS:</b> Với tư cách là quản trị viên, nếu bạn cần quyền truy cập vào tất cả các hộp thư đến, bạn nên thêm mình làm đại lý cho tất cả các hộp thư đến mà bạn tạo.",
+        "DESC": "Tại đây bạn có thể thêm các tác nhân để quản lý hộp thư đến mới tạo của mình. Chỉ những nhân viên được chọn này mới có quyền truy cập vào hộp thư đến của bạn. Các nhân viên không thuộc hộp thư đến này sẽ không thể xem hoặc trả lời thư trong hộp thư đến này khi họ đăng nhập. <br> <b>PS:</b> Với tư cách là quản trị viên, nếu bạn cần quyền truy cập vào tất cả các hộp thư đến, bạn nên thêm mình làm nhân viên cho tất cả các hộp thư đến mà bạn tạo.",
         "VALIDATION_ERROR": "Thêm ít nhất một tổng đài viên vào hộp thư đến mới của bạn",
-        "PICK_AGENTS": "Chọn đại lý cho hộp thư đến"
+        "PICK_AGENTS": "Chọn nhân viên cho hộp thư đến"
       },
       "DETAILS": {
         "TITLE": "Chi tiết Hộp thư đến",
@@ -498,8 +498,8 @@
         "DESC": "Bạn đã tích hợp thành công Trang Facebook của mình với ShipXanh Chat. Lần tới khi khách hàng nhắn tin cho Trang của bạn, cuộc trò chuyện sẽ tự động xuất hiện trong hộp thư đến của bạn.<br>Chúng tôi cũng đang cung cấp cho bạn tập lệnh widget mà bạn có thể dễ dàng thêm vào trang web của mình. Khi điều này xuất hiện trên trang web của bạn, khách hàng có thể nhắn tin cho bạn ngay từ trang web của bạn mà không cần sự trợ giúp của bất kỳ công cụ bên ngoài nào và cuộc trò chuyện sẽ xuất hiện ngay tại đây, trên ShipXanh Chat.<br>Cool, huh? Well :)"
       },
       "EMAIL_PROVIDER": {
-        "TITLE": "Chọn nhà cung cấp email của bạn",
-        "DESCRIPTION": "Chọn nhà cung cấp email từ danh sách bên dưới. Nếu bạn không thấy nhà cung cấp email của mình trong danh sách, bạn có thể chọn tùy chọn nhà cung cấp khác và cung cấp thông tin xác thực IMAP và SMTP."
+        "TITLE": "Chọn thành viên email của bạn",
+        "DESCRIPTION": "Chọn thành viên email từ danh sách bên dưới. Nếu bạn không thấy thành viên email của mình trong danh sách, bạn có thể chọn tùy chọn thành viên khác và cung cấp thông tin xác thực IMAP và SMTP."
       },
       "MICROSOFT": {
         "TITLE": "Microsoft Email",
@@ -527,8 +527,8 @@
       "DESC": ""
     },
     "AGENTS": {
-      "BUTTON_TEXT": "Thêm các nhà cung cấp",
-      "ADD_AGENTS": "Thêm các nhà cung cấp vào hộp thư đến của bạn..."
+      "BUTTON_TEXT": "Thêm các thành viên",
+      "ADD_AGENTS": "Thêm các thành viên vào hộp thư đến của bạn..."
     },
     "FINISH": {
       "TITLE": "Hộp thư đến của bạn đã sẵn sàng!",
@@ -687,11 +687,11 @@
       "MESSENGER_HEADING": "Tập lệnh Messenger",
       "MESSENGER_SUB_HEAD": "Đặt nút này bên trong thẻ body của bạn",
       "ALLOWED_DOMAINS": {
-        "TITLE": "Allowed Domains",
-        "SUBTITLE": "Add wildcard or regular domains separated by commas (leave blank to allow all), e.g. *.chatwoot.dev, chatwoot.com.",
-        "PLACEHOLDER": "Enter domains separated by commas (eg: *.chatwoot.dev, chatwoot.com)"
+        "TITLE": "Tên miền cho phép",
+        "SUBTITLE": "Thêm tên miền dấu gạch ngược hoặc tên miền thường tách bằng dấu phẩy (để để trống để cho phép tất cả), ví dụ: *.shipxanh.dev, shipxanh.com.",
+        "PLACEHOLDER": "Nhập các tên miền tách bằng dấu phẩy (ví dụ: *.shipxanh.dev, shipxanh.com)"
       },
-      "INBOX_AGENTS": "Nhà cung cấp",
+      "INBOX_AGENTS": "Thành viên",
       "INBOX_AGENTS_SUB_TEXT": "Thêm hoặc xóa tác nhân khỏi hộp thư đến này",
       "AGENT_ASSIGNMENT": "Phân công cuộc trò chuyện",
       "AGENT_ASSIGNMENT_SUB_TEXT": "Cập nhật phân công cuộc trò chuyện",

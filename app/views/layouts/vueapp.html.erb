@@ -56,6 +56,9 @@
         selectedLocale: '<%= I18n.locale %>'
       }
       window.globalConfig = <%= raw @global_config.to_json %>
+      <% if ENV['RECAPTCHA_SITE_KEY'].present? %>
+      window.RECAPTCHA_SITE_KEY = '<%= ENV['RECAPTCHA_SITE_KEY'] %>'
+      <% end %>
       window.browserConfig = {
         browser_name: '<%= browser.name %>',
       }
@@ -67,6 +70,10 @@
         token: '<%= @global_config['ANALYTICS_TOKEN'] %>',
       }
     </script>
+    <% end %>
+    <% if ENV['RECAPTCHA_SITE_KEY'].present? %>
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=<%= ENV['RECAPTCHA_SITE_KEY'] %>" async defer></script>
     <% end %>
     <%= vite_client_tag %>
     <%= vite_javascript_tag @application_pack %>

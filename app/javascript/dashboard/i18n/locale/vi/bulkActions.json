@@ -11,31 +11,31 @@
     "ASSIGN_AGENT_TOOLTIP": "Gán tổng đài viên",
     "ASSIGN_TEAM_TOOLTIP": "Gán nhóm",
     "ASSIGN_SUCCESFUL": "Cuộc hội thoại đã được phân công thành công.",
-    "ASSIGN_FAILED": "Failed to assign conversations. Please try again.",
+    "ASSIGN_FAILED": "Không thể phân công cuộc trò chuyện. Vui lòng thử lại.",
     "RESOLVE_SUCCESFUL": "Cuộc hội thoại đã được giải quyết thành công.",
-    "RESOLVE_FAILED": "Failed to resolve conversations. Please try again.",
+    "RESOLVE_FAILED": "Không thể giải quyết cuộc trò chuyện. Vui lòng thử lại.",
     "ALL_CONVERSATIONS_SELECTED_ALERT": "Chỉ những tin nhắn hiển thị trên trang này mới có thể được chọn.",
     "AGENT_LIST_LOADING": "Đang tải điện thoại viên",
     "UPDATE": {
       "CHANGE_STATUS": "Thay đổi trạng thái",
       "SNOOZE_UNTIL": "Báo lại",
       "UPDATE_SUCCESFUL": "Đã cập nhật trạng thái tin nhắn thành công.",
-      "UPDATE_FAILED": "Failed to update conversations. Please try again."
+      "UPDATE_FAILED": "Không thể cập nhật cuộc trò chuyện. Vui lòng thử lại."
     },
     "LABELS": {
-      "ASSIGN_LABELS": "Assign labels",
+      "ASSIGN_LABELS": "Gán nhãn",
       "NO_LABELS_FOUND": "Không tìm thấy nhãn nào cho",
       "ASSIGN_SELECTED_LABELS": "Gán các nhãn đã chọn",
       "ASSIGN_SUCCESFUL": "Các nhãn được gán thành công.",
-      "ASSIGN_FAILED": "Failed to assign labels. Please try again."
+      "ASSIGN_FAILED": "Không thể gán nhãn. Vui lòng thử lại."
     },
     "TEAMS": {
       "TEAM_SELECT_LABEL": "Chọn nhóm",
       "NONE": "Không có",
       "NO_TEAMS_AVAILABLE": "Chưa có nhóm nào được thêm vào tài khoản này.",
       "ASSIGN_SELECTED_TEAMS": "Chỉ định nhóm đã chọn.",
-      "ASSIGN_SUCCESFUL": "Teams assigned successfully.",
-      "ASSIGN_FAILED": "Failed to assign team. Please try again."
+      "ASSIGN_SUCCESFUL": "Gán nhóm thành công.",
+      "ASSIGN_FAILED": "Không thể gán nhóm. Vui lòng thử lại."
     }
   }
 }
