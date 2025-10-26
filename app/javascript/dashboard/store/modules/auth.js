@@ -184,6 +184,8 @@ export const actions = {
       // Kiểm tra xem grecaptcha đã ready chưa
       window.grecaptcha.ready(() => {
         // Thực hiện reCAPTCHA invisible
+        // eslint-disable-next-line no-console
+        console.log('reCAPTCHA ready', window.RECAPTCHA_SITE_KEY);
         window.grecaptcha
           .execute(window.RECAPTCHA_SITE_KEY || '', {
             action: 'shipxanh_auth',
@@ -196,6 +198,8 @@ export const actions = {
             }
           })
           .catch(error => {
+            // eslint-disable-next-line no-console
+            console.log('Failed to get reCAPTCHA token', error);
             reject(error);
           });
       });
