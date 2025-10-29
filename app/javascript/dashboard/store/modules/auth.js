@@ -160,13 +160,19 @@ export const actions = {
       currentUser.email ||
       'default';
 
+    // eslint-disable-next-line no-console
+    console.log('autoStartShipXanhAuth: Starting for user:', shipxanhUserId);
+
     try {
-      // Lấy reCAPTCHA token (invisible)
-      const captchaToken = await dispatch('getCaptchaToken');
+      // Đợi reCAPTCHA script load xong với retry mechanism
+      const captchaToken = await dispatch('getCaptchaTokenWithRetry');
+      // eslint-disable-next-line no-console
+      console.log('autoStartShipXanhAuth: Got token:', captchaToken ? 'SUCCESS' : 'EMPTY');
+
       shipxanhTokenScheduler.start(shipxanhUserId.toString(), captchaToken);
     } catch (error) {
       // eslint-disable-next-line no-console
-      console.warn('reCAPTCHA failed, starting without token:', error);
+      console.warn('autoStartShipXanhAuth: reCAPTCHA failed, starting without token:', error.message);
       // Fallback: start without captcha token
       shipxanhTokenScheduler.start(shipxanhUserId.toString(), '');
     }
@@ -204,6 +210,53 @@ export const actions = {
           });
       });
     });
+  },
+
+  // Lấy reCAPTCHA token với retry mechanism để xử lý timing issue
+  getCaptchaTokenWithRetry: async ({ dispatch }) => {
+    const maxRetries = 5;
+    const baseDelay = 1000; // 1 giây
+
+    // eslint-disable-next-line no-plusplus
+    for (let attempt = 1; attempt <= maxRetries; attempt += 1) {
+      try {
+        // eslint-disable-next-line no-console
+        console.log(`getCaptchaTokenWithRetry: Attempt ${attempt}/${maxRetries}`);
+        
+        // Kiểm tra xem reCAPTCHA có sẵn sàng không
+        if (typeof window.grecaptcha === 'undefined' || !window.RECAPTCHA_SITE_KEY) {
+          throw new Error('reCAPTCHA not ready');
+        }
+
+        // eslint-disable-next-line no-await-in-loop
+        const token = await dispatch('getCaptchaToken');
+        if (token) {
+          // eslint-disable-next-line no-console
+          console.log(`getCaptchaTokenWithRetry: Success on attempt ${attempt}`);
+          return token;
+        }
+        throw new Error('Empty token received');
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.warn(`getCaptchaTokenWithRetry: Attempt ${attempt} failed:`, error.message);
+        
+        if (attempt === maxRetries) {
+          throw new Error(`reCAPTCHA failed after ${maxRetries} attempts: ${error.message}`);
+        }
+        
+        // Exponential backoff: 1s, 2s, 4s, 8s
+        const delay = baseDelay * (2 ** (attempt - 1));
+        // eslint-disable-next-line no-console
+        console.log(`getCaptchaTokenWithRetry: Waiting ${delay}ms before retry...`);
+        // eslint-disable-next-line no-await-in-loop
+        await new Promise(resolve => {
+          setTimeout(resolve, delay);
+        });
+      }
+    }
+    
+    // Fallback return nếu không có attempt nào thành công
+    throw new Error('reCAPTCHA retry mechanism exhausted');
   },
 
   updateProfile: async ({ commit }, params) => {
