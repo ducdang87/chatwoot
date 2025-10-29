@@ -1,10 +1,10 @@
-# Google reCAPTCHA Invisible Setup Guide
+# Google reCAPTCHA v2 Invisible Setup Guide
 
 ## 1. Cấu hình reCAPTCHA
 
 ### Bước 1: Lấy Site Key từ Google reCAPTCHA Console
 1. Truy cập: https://www.google.com/recaptcha/admin
-2. Tạo site mới với reCAPTCHA v2 Invisible hoặc v3
+2. Tạo site mới với **reCAPTCHA v2 Invisible** 
 3. Lấy Site Key
 
 ### Bước 2: Thêm Site Key vào ứng dụng
@@ -15,14 +15,14 @@ window.RECAPTCHA_SITE_KEY = 'your-site-key-here';
 ```
 
 ### Bước 3: Load Google reCAPTCHA Script
-Thêm vào HTML layout (thường trong `app/views/layouts/application.html.erb`):
+Thêm vào HTML layout (thường trong `app/views/layouts/vueapp.html.erb`):
 
 ```html
-<!-- Cho reCAPTCHA v2 Invisible -->
+<!-- reCAPTCHA v2 Invisible -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!-- Hoặc cho reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY" async defer></script>
+<!-- Container cho invisible widget -->
+<div id="recaptcha-container" style="display: none;"></div>
 ```
 
 ## 2. Cách hoạt động

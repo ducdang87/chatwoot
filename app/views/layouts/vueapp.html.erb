@@ -72,14 +72,16 @@
     </script>
     <% end %>
     <% if ENV['RECAPTCHA_SITE_KEY'].present? %>
-    <!-- Google reCAPTCHA v3 -->
-    <script src="https://www.google.com/recaptcha/api.js?render=<%= ENV['RECAPTCHA_SITE_KEY'] %>" async defer></script>
+    <!-- Google reCAPTCHA v2 Invisible -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <% end %>
     <%= vite_client_tag %>
     <%= vite_javascript_tag @application_pack %>
   </head>
   <body class="text-slate-600">
     <div id="app"></div>
+    <!-- reCAPTCHA v2 invisible container -->
+    <div id="recaptcha-container" style="display: none;"></div>
     <noscript id="noscript">This app works best with JavaScript enabled.</noscript>
     <%= yield %>
     <% if @dashboard_scripts.present? %>
