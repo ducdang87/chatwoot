@@ -178,7 +178,7 @@ export const actions = {
     }
   },
 
-  // Lấy Google reCAPTCHA token (invisible)
+  // Lấy Google reCAPTCHA v2 token (invisible)
   getCaptchaToken: () => {
     return new Promise((resolve, reject) => {
       // Kiểm tra xem grecaptcha có sẵn không
@@ -189,25 +189,107 @@ export const actions = {
 
       // Kiểm tra xem grecaptcha đã ready chưa
       window.grecaptcha.ready(() => {
-        // Thực hiện reCAPTCHA invisible
-        // eslint-disable-next-line no-console
-        console.log('reCAPTCHA ready', window.RECAPTCHA_SITE_KEY);
-        window.grecaptcha
-          .execute(window.RECAPTCHA_SITE_KEY || '', {
-            action: 'shipxanh_auth',
-          })
-          .then(token => {
+        try {
+          // eslint-disable-next-line no-console
+          console.log('reCAPTCHA v2 ready', window.RECAPTCHA_SITE_KEY);
+          
+          // Tạo callback function cho lần này
+          const callbackName = `recaptchaCallback_${Date.now()}`;
+          window[callbackName] = (token) => {
             if (token) {
+              // eslint-disable-next-line no-console
+              console.log('reCAPTCHA v2 token received');
+              // Cleanup callback
+              delete window[callbackName];
               resolve(token);
             } else {
+              delete window[callbackName];
               reject(new Error('Failed to get reCAPTCHA token'));
             }
-          })
-          .catch(error => {
-            // eslint-disable-next-line no-console
-            console.log('Failed to get reCAPTCHA token', error);
-            reject(error);
+          };
+
+          // Kiểm tra xem widget đã tồn tại chưa
+          if (window.recaptchaWidgetId !== undefined) {
+            try {
+              // Reset widget cũ và execute lại
+              window.grecaptcha.reset(window.recaptchaWidgetId);
+              // Update callback cho widget hiện tại - không thể thay đổi callback sau khi render
+              // Nên ta sẽ sử dụng global callback
+              window.currentRecaptchaResolve = resolve;
+              window.currentRecaptchaReject = reject;
+              window.grecaptcha.execute(window.recaptchaWidgetId);
+              return;
+            } catch (resetError) {
+              // eslint-disable-next-line no-console
+              console.log('Reset failed, recreating widget:', resetError);
+              // Clear container và tạo lại
+              const container = document.getElementById('recaptcha-container');
+              if (container) {
+                container.innerHTML = '';
+              }
+              window.recaptchaWidgetId = undefined;
+            }
+          }
+          
+          // Tạo invisible reCAPTCHA widget mới
+          const container = document.getElementById('recaptcha-container');
+          if (!container) {
+            reject(new Error('reCAPTCHA container not found'));
+            return;
+          }
+
+          // Clear container trước khi render
+          container.innerHTML = '';
+          
+          window.recaptchaWidgetId = window.grecaptcha.render(container, {
+            sitekey: window.RECAPTCHA_SITE_KEY || '',
+            size: 'invisible',
+            callback: (token) => {
+              if (token) {
+                // eslint-disable-next-line no-console
+                console.log('reCAPTCHA v2 token received');
+                // Sử dụng current resolve nếu có, fallback về callback name
+                if (window.currentRecaptchaResolve) {
+                  window.currentRecaptchaResolve(token);
+                  window.currentRecaptchaResolve = null;
+                  window.currentRecaptchaReject = null;
+                } else if (window[callbackName]) {
+                  window[callbackName](token);
+                }
+              } else {
+                const errorMsg = 'Failed to get reCAPTCHA token';
+                if (window.currentRecaptchaReject) {
+                  window.currentRecaptchaReject(new Error(errorMsg));
+                  window.currentRecaptchaResolve = null;
+                  window.currentRecaptchaReject = null;
+                } else if (window[callbackName]) {
+                  delete window[callbackName];
+                  reject(new Error(errorMsg));
+                }
+              }
+            },
+            'error-callback': () => {
+              // eslint-disable-next-line no-console
+              console.log('reCAPTCHA v2 error occurred');
+              const errorMsg = 'reCAPTCHA error occurred';
+              if (window.currentRecaptchaReject) {
+                window.currentRecaptchaReject(new Error(errorMsg));
+                window.currentRecaptchaResolve = null;
+                window.currentRecaptchaReject = null;
+              } else {
+                delete window[callbackName];
+                reject(new Error(errorMsg));
+              }
+            }
           });
+
+          // Thực hiện reCAPTCHA invisible
+          window.grecaptcha.execute(window.recaptchaWidgetId);
+        } catch (error) {
+          // eslint-disable-next-line no-console
+          console.log('Failed to setup reCAPTCHA v2', error);
+          reject(error);
+        }
       });
     });
   },
