@@ -30,7 +30,7 @@
       },
       "WIZARD_FINISH": {
         "TITLE": "Hoàn tất",
-        "BODY": "Bạn đã sẵn sàng để đi!"
+        "BODY": "Sẵn sàng"
       }
     },
     "EDIT_FLOW": {
@@ -57,7 +57,7 @@
       "EDIT_WIZARD_FINISH": {
         "TITLE": "Hoàn tất",
         "ROUTE": "settings_teams_edit_finish",
-        "BODY": "Bạn đã sẵn sàng để đi!"
+        "BODY": "Sẵn sàng"
       }
     },
     "TEAM_FORM": {

@@ -161,7 +161,7 @@
           "SLA_MISSED_NEXT_RESPONSE": "Cuộc trò chuyện lỡ SLA phản hồi tiếp theo",
           "SLA_MISSED_RESOLUTION": "Cuộc trò chuyện lỡ SLA giải quyết"
         },
-        "BROWSER_PERMISSION": "Enable push notifications for your browser so you’re able to receive them"
+        "BROWSER_PERMISSION": "Bật thông báo đẩy cho trình duyệt của bạn để bạn có thể nhận được chúng"
       },
       "API": {
         "UPDATE_SUCCESS": "Tùy chọn thông báo của bạn đã được cập nhật thành công",

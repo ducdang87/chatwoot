@@ -18,7 +18,7 @@ import ChangePassword from './ChangePassword.vue';
 import NotificationPreferences from './NotificationPreferences.vue';
 import AudioNotifications from './AudioNotifications.vue';
 import FormSection from 'dashboard/components/FormSection.vue';
-import AccessToken from './AccessToken.vue';
+// import AccessToken from './AccessToken.vue';
 import MfaSettingsCard from './MfaSettingsCard.vue';
 import Policy from 'dashboard/components/policy.vue';
 import {
@@ -39,7 +39,7 @@ export default {
     ChangePassword,
     NotificationPreferences,
     AudioNotifications,
-    AccessToken,
+    // AccessToken,
     MfaSettingsCard,
   },
   setup() {
@@ -311,7 +311,7 @@ export default {
         <NotificationPreferences />
       </FormSection>
     </Policy>
-    <FormSection
+    <!-- <FormSection
       :title="$t('PROFILE_SETTINGS.FORM.ACCESS_TOKEN.TITLE')"
       :description="
         replaceInstallationName($t('PROFILE_SETTINGS.FORM.ACCESS_TOKEN.NOTE'))
@@ -322,6 +322,6 @@ export default {
         @on-copy="onCopyToken"
         @on-reset="resetAccessToken"
       />
-    </FormSection>
+    </FormSection> -->
   </div>
 </template>

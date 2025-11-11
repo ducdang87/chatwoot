@@ -230,6 +230,7 @@ module.exports = {
     'vue/no-v-html': 'off',
     'vue/component-definition-name-casing': 'off',
     'vue/singleline-html-element-content-newline': 'off',
+    'vue/html-closing-bracket-newline': 'off',
     'import/extensions': ['off'],
     'no-console': 'error',
     '@intlify/vue-i18n/no-dynamic-keys': 'warn',

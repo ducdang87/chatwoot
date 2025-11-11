@@ -95,7 +95,8 @@ export default {
       return import.meta.env.DEV;
     },
     showSamlLogin() {
-      return this.globalConfig.isEnterprise;
+      return false;
+      // return this.globalConfig.isEnterprise;
     },
   },
   created() {

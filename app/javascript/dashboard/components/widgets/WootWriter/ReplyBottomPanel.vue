@@ -344,7 +344,7 @@ export default {
         :label="recordingAudioDurationText"
         @click="toggleAudioRecorderPlayPause"
       />
-      <NextButton
+      <!-- <NextButton
         v-if="showMessageSignatureButton"
         v-tooltip.top-end="signatureToggleTooltip"
         icon="i-ph-signature"
@@ -352,7 +352,7 @@ export default {
         faded
         sm
         @click="toggleMessageSignature"
-      />
+      /> -->
       <NextButton
         v-if="showQuotedReplyToggle"
         v-tooltip.top-end="quotedReplyToggleTooltip"
