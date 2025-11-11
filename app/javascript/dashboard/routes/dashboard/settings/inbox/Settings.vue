@@ -547,7 +547,7 @@ export default {
             "
             @blur="v$.selectedInboxName.$touch"
           />
-          <woot-input
+          <!-- <woot-input
             v-if="isAPIInbox"
             v-model="webhookUrl"
             class="pb-4"
@@ -566,7 +566,7 @@ export default {
                 : ''
             "
             @blur="v$.webhookUrl.$touch"
-          />
+          /> -->
           <woot-input
             v-if="isAWebWidgetInbox"
             v-model="channelWebsiteUrl"
