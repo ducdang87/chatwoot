@@ -13,10 +13,17 @@ import AIAssistanceButton from '../AIAssistanceButton.vue';
 import { INBOX_TYPES } from 'dashboard/helper/inbox';
 import { mapGetters } from 'vuex';
 import NextButton from 'dashboard/components-next/button/Button.vue';
+import MarketplaceItemSearchButton from './MarketplaceItemSearch/MarketplaceItemSearchButton.vue';
 
 export default {
   name: 'ReplyBottomPanel',
-  components: { NextButton, FileUpload, VideoCallButton, AIAssistanceButton },
+  components: {
+    NextButton,
+    FileUpload,
+    VideoCallButton,
+    AIAssistanceButton,
+    MarketplaceItemSearchButton,
+  },
   mixins: [inboxMixin],
   props: {
     isNote: {
@@ -125,6 +132,14 @@ export default {
     quotedReplyEnabled: {
       type: Boolean,
       default: false,
+    },
+    currentContact: {
+      type: Object,
+      default: () => ({}),
+    },
+    sendMarketplaceItem: {
+      type: Function,
+      default: () => {},
     },
   },
   emits: [
@@ -411,6 +426,10 @@ export default {
         faded
         sm
         @click="toggleInsertArticle"
+      />
+      <MarketplaceItemSearchButton
+        :current-contact="currentContact"
+        @send-marketplace-item="sendMarketplaceItem"
       />
     </div>
     <div class="right-wrap">

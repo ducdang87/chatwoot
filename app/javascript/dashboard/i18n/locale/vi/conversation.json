@@ -1,429 +1,431 @@
 {
-  "CONVERSATION": {
-    "SELECT_A_CONVERSATION": "Vui lòng chọn một cuộc trò chuyện từ ngăn bên trái",
-    "CSAT_REPLY_MESSAGE": "Bạn hãy vui lòng đánh giá hội thoại",
-    "404": "Xin lỗi, chúng tôi không thể tìm thấy hội thoại. Vui lòng thử lại",
-    "SWITCH_VIEW_LAYOUT": "Chuyển đổi bố cục",
-    "DASHBOARD_APP_TAB_MESSAGES": "Tin nhắn",
-    "UNVERIFIED_SESSION": "Danh tính của người dùng này không được xác thực",
-    "NO_MESSAGE_1": "Uh oh! Có vẻ như không có tin nhắn nào từ khách hàng trong hộp thư đến của bạn.",
-    "NO_MESSAGE_2": " gửi tin nhắn đến trang của bạn!",
-    "NO_INBOX_1": "Hola! Có vẻ như bạn chưa thêm bất kỳ hộp thư đến nào.",
-    "NO_INBOX_2": " để bắt đầu",
-    "NO_INBOX_AGENT": "Uh Oh! Có vẻ như bạn không thuộc bất kỳ hộp thư đến nào. Vui lòng liên hệ với quản trị viên của bạn",
-    "SEARCH_MESSAGES": "Tìm kiếm tin nhắn trong các hội thoại",
-    "VIEW_ORIGINAL": "Xem bản gốc",
-    "VIEW_TRANSLATED": "Xem bản dịch",
-    "EMPTY_STATE": {
-      "CMD_BAR": "để mở menu lệnh",
-      "KEYBOARD_SHORTCUTS": "để xem phím tắt"
-    },
-    "SEARCH": {
-      "TITLE": "Tìm kiếm tin nhắn",
-      "RESULT_TITLE": "Các kết quả tìm kiếm",
-      "LOADING_MESSAGE": "Định dạng dữ liệu...",
-      "PLACEHOLDER": "Nhập bất kỳ văn bản nào để tìm kiếm tin nhắn",
-      "NO_MATCHING_RESULTS": "Không tìm thấy kết quả."
-    },
-    "UNREAD_MESSAGES": "Tin nhắn chưa đọc",
-    "UNREAD_MESSAGE": "Tin nhắn chưa đọc",
-    "CLICK_HERE": "Click vào đây",
-    "LOADING_INBOXES": "Đang tải hộp thư đến",
-    "LOADING_CONVERSATIONS": "Đang tải cuộc trò chuyện",
-    "CANNOT_REPLY": "Bạn không thể trả lời do",
-    "24_HOURS_WINDOW": "Giới hạn thời lượng tin nhắn 24 giờ",
-    "API_HOURS_WINDOW": "Bạn chỉ có thể trả lời tin nhắn này trong vòng {hours} giờ",
-    "NOT_ASSIGNED_TO_YOU": "Hội thoại này không được phân công cho bạn. Bạn có muốn phân công hội thoại này cho chính mình?",
-    "ASSIGN_TO_ME": "Phân công cho tôi",
-    "BOT_HANDOFF_MESSAGE": "Bạn đang trả lời tin nhắn hiện đang được xử lý bởi trợ lý hoặc bot.",
-    "BOT_HANDOFF_REOPEN_ACTION": "Đánh dấu tin nhắn mở",
-    "BOT_HANDOFF_SUCCESS": "Cuộc hội thoại đã được chuyển giao cho bạn",
-    "BOT_HANDOFF_ACTION": "Đánh dấu mở và gán cho bạn",
-    "BOT_HANDOFF_ERROR": "Không thể tiếp quản tin nhắn. Vui lòng thử lại.",
-    "TWILIO_WHATSAPP_CAN_REPLY": "Bạn chỉ có thể phản hồi hội thoại này bằng tin nhắn mẫu vì",
-    "TWILIO_WHATSAPP_24_HOURS_WINDOW": "Giới hạn thời lượng tin nhắn 24 giờ",
-    "OLD_INSTAGRAM_INBOX_REPLY_BANNER": "Tài khoản Instagram này đã được chuyển sang hộp thư đến kênh Instagram mới. Tất cả tin nhắn mới sẽ hiển thị ở đó. Bạn sẽ không thể gửi tin nhắn từ tin nhắn này nữa.",
-    "REPLYING_TO": "Bạn đang trả lời:",
-    "REMOVE_SELECTION": "Xóa lựa chọn",
-    "DOWNLOAD": "Tải xuống",
-    "UNKNOWN_FILE_TYPE": "Tập tin chưa xác định",
-    "SAVE_CONTACT": "Lưu liên hệ",
-    "NO_CONTENT": "Không có nội dung để hiển thị",
-    "SHARED_ATTACHMENT": {
-      "CONTACT": "{sender} đã chia sẻ một liên hệ",
-      "LOCATION": "{sender} đã chia sẻ một vị trí",
-      "FILE": "{sender} đã chia sẻ một tệp",
-      "MEETING": "{sender} đã bắt đầu một cuộc họp"
-    },
-    "UPLOADING_ATTACHMENTS": "Đang tải file đính kèm...",
-    "REPLIED_TO_STORY": "Đã trả lời story của bạn",
-    "UNSUPPORTED_MESSAGE": "Tin nhắn này không được hỗ trợ. Bạn có thể xem tin nhắn này trên ứng dụng Facebook / Instagram.",
-    "UNSUPPORTED_MESSAGE_FACEBOOK": "Tin nhắn này không được hỗ trợ. Bạn có thể xem tin nhắn này trên ứng dụng Facebook Messenger.",
-    "UNSUPPORTED_MESSAGE_INSTAGRAM": "Tin nhắn này không được hỗ trợ. Bạn có thể xem tin nhắn này trên ứng dụng Instagram.",
-    "SUCCESS_DELETE_MESSAGE": "Tin nhắn được xoá thành công",
-    "FAIL_DELETE_MESSSAGE": "Không thể xoá tin nhắn! Thử lại",
-    "NO_RESPONSE": "Không có phản hồi",
-    "RESPONSE": "Phản hồi",
-    "RATING_TITLE": "Đánh giá",
-    "FEEDBACK_TITLE": "Phản hồi",
-    "REPLY_MESSAGE_NOT_FOUND": "Tin nhắn không có sẵn",
-    "CARD": {
-      "SHOW_LABELS": "Hiển thị nhãn",
-      "HIDE_LABELS": "Ẩn nhãn"
-    },
-    "VOICE_CALL": {
-      "INCOMING_CALL": "Cuộc gọi đến",
-      "OUTGOING_CALL": "Cuộc gọi đi",
-      "CALL_IN_PROGRESS": "Cuộc gọi đang diễn ra",
-      "NO_ANSWER": "Không trả lời",
-      "MISSED_CALL": "Cuộc gọi nhỡ",
-      "CALL_ENDED": "Cuộc gọi kết thúc",
-      "NOT_ANSWERED_YET": "Chưa trả lời",
-      "THEY_ANSWERED": "Họ đã trả lời",
-      "YOU_ANSWERED": "Bạn đã trả lời"
-    },
-    "HEADER": {
-      "RESOLVE_ACTION": "Giải quyết",
-      "REOPEN_ACTION": "Mở lại",
-      "OPEN_ACTION": "Mở",
-      "MORE_ACTIONS": "Thêm hành động",
-      "OPEN": "Nhiều",
-      "CLOSE": "Đóng",
-      "DETAILS": "chi tiết",
-      "SNOOZED_UNTIL": "Tạm dừng đến",
-      "SNOOZED_UNTIL_TOMORROW": "Tạm dừng đến ngày mai",
-      "SNOOZED_UNTIL_NEXT_WEEK": "Tạm dừng đến tuần sau",
-      "SNOOZED_UNTIL_NEXT_REPLY": "Tạm dừng đến khi có phản hồi",
-      "SLA_STATUS": {
-        "FRT": "FRT {status}",
-        "NRT": "NRT {status}",
-        "RT": "RT {status}",
-        "MISSED": "bị lỡ",
-        "DUE": "quá hạn"
-      }
-    },
-    "RESOLVE_DROPDOWN": {
-      "MARK_PENDING": "Đánh dấu chưa giải quyết",
-      "SNOOZE_UNTIL": "Báo lại",
-      "SNOOZE": {
-        "TITLE": "Tạm dừng đến khi",
-        "NEXT_REPLY": "Phản hồi kế tiếp",
-        "TOMORROW": "Ngày mai",
-        "NEXT_WEEK": "Tuần sau"
-      }
-    },
-    "MENTION": {
-      "AGENTS": "Thành viên",
-      "TEAMS": "Nhóm"
-    },
-    "CUSTOM_SNOOZE": {
-      "TITLE": "Tạm dừng đến khi",
-      "APPLY": "Báo lại",
-      "CANCEL": "Huỷ"
-    },
-    "PRIORITY": {
-      "TITLE": "Mức độ ưu tiên",
-      "OPTIONS": {
-        "NONE": "Không có",
-        "URGENT": "Cấp bách",
-        "HIGH": "Cao",
-        "MEDIUM": "Trung bình",
-        "LOW": "Thấp"
-      },
-      "CHANGE_PRIORITY": {
-        "SELECT_PLACEHOLDER": "Không có",
-        "INPUT_PLACEHOLDER": "Chọc mức ưu tiên",
-        "NO_RESULTS": "Không tìm thấy kết quả",
-        "SUCCESSFUL": "Đã thay đổi độ ưu tiên của tin nhắn id {conversationId} thành {priority}",
-        "FAILED": "Không thể thay đổi độ ưu tiên. Vui lòng thử lại."
-      }
-    },
-    "DELETE_CONVERSATION": {
-      "TITLE": "Xóa tin nhắn #{conversationId}",
-      "DESCRIPTION": "Bạn có chắc chắn muốn xóa tin nhắn này?",
-      "CONFIRM": "Xoá"
-    },
-    "CARD_CONTEXT_MENU": {
-      "PENDING": "Đánh dấu chưa giải quyết",
-      "RESOLVED": "Đánh dấu là đã giải quyết",
-      "MARK_AS_UNREAD": "Đánh dấu là chưa đọc",
-      "MARK_AS_READ": "Đánh dấu là đã đọc",
-      "REOPEN": "Mở lại hội thoại",
-      "SNOOZE": {
-        "TITLE": "Báo lại",
-        "NEXT_REPLY": "Cho đến phản hồi kế tiếp",
-        "TOMORROW": "Cho đến ngày mai",
-        "NEXT_WEEK": "Cho đến tuần sau"
-      },
-      "ASSIGN_AGENT": "Gán tổng đài viên",
-      "ASSIGN_LABEL": "Gán nhãn",
-      "AGENTS_LOADING": "Đang tải điện thoại viên...",
-      "ASSIGN_TEAM": "Gán nhóm",
-      "DELETE": "Xóa tin nhắn",
-      "OPEN_IN_NEW_TAB": "Mở trong tab mới",
-      "COPY_LINK": "Sao chép liên kết tin nhắn",
-      "COPY_LINK_SUCCESS": "Liên kết tin nhắn đã được sao chép vào clipboard",
-      "API": {
-        "AGENT_ASSIGNMENT": {
-          "SUCCESFUL": "Id hội thoại {conversationId} được gán cho \"{agentName}\"",
-          "FAILED": "Không thể gán điện thoại viên. Vui lòng thử lại."
-        },
-        "LABEL_ASSIGNMENT": {
-          "SUCCESFUL": "Đã gán nhãn #{labelName} cho tin nhắn id {conversationId}",
-          "FAILED": "Không thể gán nhãn. Vui lòng thử lại."
-        },
-        "TEAM_ASSIGNMENT": {
-          "SUCCESFUL": "Đã gán nhóm \"{team}\" cho hội thoại id {conversationId}",
-          "FAILED": "Không thể gán nhóm. Vui lòng thử lại."
-        }
-      }
-    },
-    "FOOTER": {
-      "MESSAGE_SIGN_TOOLTIP": "Chữ ký tin nhắn",
-      "ENABLE_SIGN_TOOLTIP": "Bật chữ ký",
-      "DISABLE_SIGN_TOOLTIP": "Tắt chữ ký",
-      "MSG_INPUT": "Shift + enter cho dòng mới. Bắt đầu với '/' để chọn Câu trả lời soạn trước.",
-      "PRIVATE_MSG_INPUT": "Shift + enter cho dòng mới. Điều này sẽ chỉ hiển thị cho Thành viên",
-      "MESSAGE_SIGNATURE_NOT_CONFIGURED": "Chứ ký cuối tin nhắn chưa được cài đặt, xin hãy cài đặt một chữ ký trong phần cài đặt hồ sơ.",
-      "CLICK_HERE": "Bấm vào đây để cập nhật",
-      "WHATSAPP_TEMPLATES": "Mẫu Whatsapp"
-    },
-    "REPLYBOX": {
-      "REPLY": "Trả lời",
-      "PRIVATE_NOTE": "Ghi chú",
-      "SEND": "Gửi",
-      "CREATE": "Thêm ghi chú",
-      "INSERT_READ_MORE": "Đọc thêm",
-      "DISMISS_REPLY": "Bỏ qua phản hồi",
-      "REPLYING_TO": "Đang trả lời:",
-      "TIP_FORMAT_ICON": "Hiển thị trình soạn thảo văn bản đa dạng thức",
-      "TIP_EMOJI_ICON": "Hiển thị chọn emoji",
-      "TIP_ATTACH_ICON": "Đính kèm tệp",
-      "TIP_AUDIORECORDER_ICON": "Ghi âm thanh",
-      "TIP_AUDIORECORDER_PERMISSION": "Cho phép truy cập ghi âm",
-      "TIP_AUDIORECORDER_ERROR": "Không thể mở bản ghi âm",
-      "DRAG_DROP": "Kéo thả vào đây để đính kèm",
-      "START_AUDIO_RECORDING": "Bắt đầu ghi âm",
-      "STOP_AUDIO_RECORDING": "Dừng ghi âm",
-      "": "",
-      "EMAIL_HEAD": {
-        "TO": "TO",
-        "ADD_BCC": "Thêm bcc",
-        "CC": {
-          "LABEL": "CC",
-          "PLACEHOLDER": "Các e\u001dmail phân biệt bởi dấu phẩy",
-          "ERROR": "Vui lòng điền địa chỉ email hợp lệ"
-        },
-        "BCC": {
-          "LABEL": "BCC",
-          "PLACEHOLDER": "Các e\u001dmail phân biệt bởi dấu phẩy",
-          "ERROR": "Vui lòng điền địa chỉ email hợp lệ"
-        }
-      },
-      "UNDEFINED_VARIABLES": {
-        "TITLE": "Undefined variables",
-        "MESSAGE": "You have {undefinedVariablesCount} undefined variables in your message: {undefinedVariables}. Would you like to send the message anyway?",
-        "CONFIRM": {
-          "YES": "Gửi",
-          "CANCEL": "Huỷ"
-        }
-      },
-      "QUOTED_REPLY": {
-        "ENABLE_TOOLTIP": "Include quoted email thread",
-        "DISABLE_TOOLTIP": "Don't include quoted email thread",
-        "REMOVE_PREVIEW": "Remove quoted email thread",
-        "COLLAPSE": "Collapse preview",
-        "EXPAND": "Expand preview"
-      }
-    },
-    "VISIBLE_TO_AGENTS": "Ghi chú: Chỉ hiển thị với bạn và nhóm của bạn",
-    "CHANGE_STATUS": "Trạng thái cuộc trò chuyện đã thay đổi",
-    "CHANGE_STATUS_FAILED": "Thay đổi trạng thái hội thoại không thành công",
-    "CHANGE_AGENT": "Người Được Chỉ Định Cuộc Hội Thoại đã thay đổi",
-    "CHANGE_AGENT_FAILED": "Thay đổi người được gán không thành công",
-    "ASSIGN_LABEL_SUCCESFUL": "Đã gán nhãn thành công",
-    "ASSIGN_LABEL_FAILED": "Gán nhãn không thành công",
-    "CHANGE_TEAM": "Nhóm hội thoại đã được thay đổi",
-    "SUCCESS_DELETE_CONVERSATION": "Xóa tin nhắn thành công",
-    "FAIL_DELETE_CONVERSATION": "Không thể xóa tin nhắn! Thử lại",
-    "FILE_SIZE_LIMIT": "Tệp vượt quá {MAXIMUM_SUPPORTED_FILE_UPLOAD_SIZE} MB mức hạn chế",
-    "MESSAGE_ERROR": "Không thể gửi tin nhắn này, vui lòng thử lại sau",
-    "SENT_BY": "Gửi bởi:",
-    "BOT": "Bot",
-    "SEND_FAILED": "Không thể gửi tin nhắn! Thử lại",
-    "TRY_AGAIN": "thử lại",
-    "ASSIGNMENT": {
-      "SELECT_AGENT": "Chọn tổng đài viên",
-      "REMOVE": "Xoá",
-      "ASSIGN": "Gán"
-    },
-    "CONTEXT_MENU": {
-      "COPY": "Sao Chép",
-      "REPLY_TO": "Trả lời tin nhắn này",
-      "DELETE": "Xoá",
-      "CREATE_A_CANNED_RESPONSE": "Thêm vào câu trả lời soạn sẵn",
-      "TRANSLATE": "Dịch",
-      "COPY_PERMALINK": "Sao chép liên kết đến tin nhắn",
-      "LINK_COPIED": "URL tin nhắn đã được sao chép vào clipboard",
-      "DELETE_CONFIRMATION": {
-        "TITLE": "Bạn có chắc chắn muốn xóa tin nhắn này?",
-        "MESSAGE": "Bạn không thể hoàn tác hành động này",
-        "DELETE": "Xoá",
-        "CANCEL": "Huỷ"
-      }
-    },
-    "SIDEBAR": {
-      "CONTACT": "Liên hệ",
-      "COPILOT": "Copilot"
-    }
-  },
-  "EMAIL_TRANSCRIPT": {
-    "TITLE": "Gửi bản ghi cuộc trò chuyện",
-    "DESC": "Gửi bản sao của bản ghi cuộc trò chuyện đến địa chỉ email được chỉ định",
-    "SUBMIT": "Gửi",
-    "CANCEL": "Huỷ",
-    "SEND_EMAIL_SUCCESS": "Bản ghi cuộc trò chuyện đã được gửi thành công",
-    "SEND_EMAIL_ERROR": "Có lỗi, xin vui lòng thử lại",
-    "FORM": {
-      "SEND_TO_CONTACT": "Gửi bảng điểm cho khách hàng",
-      "SEND_TO_AGENT": "Gửi bản ghi cho tổng đài viên được phân công",
-      "SEND_TO_OTHER_EMAIL_ADDRESS": "Gửi bản ghi tới một địa chỉ email khác",
-      "EMAIL": {
-        "PLACEHOLDER": "Nhập địa chỉ emai",
-        "ERROR": "Vui lòng nhập một địa chỉ email hợp lệ"
-      }
-    }
-  },
-  "ONBOARDING": {
-    "TITLE": "Xin chào 👋, Chào mừng đến với {installationName}!",
-    "DESCRIPTION": "Cảm ơn bạn đã đăng ký. Chúng tôi muốn bạn khai thác tối đa {installationName}. Dưới đây là một số điều bạn có thể làm trong {installationName} để mang lại trải nghiệm thú vị.",
-    "GREETING_MORNING": "👋 Good morning, {name}. Welcome to {installationName}.",
-    "GREETING_AFTERNOON": "👋 Good afternoon, {name}. Welcome to {installationName}.",
-    "GREETING_EVENING": "👋 Good evening, {name}. Welcome to {installationName}.",
-    "READ_LATEST_UPDATES": "Đọc cập nhật mới nhất của chúng tôi",
-    "ALL_CONVERSATION": {
-      "TITLE": "Tất cả hội thoại của bạn ở cùng một chỗ",
-      "DESCRIPTION": "Xem tất cả hội thoại từ khách hàng của bạn trong cùng một trang. Bạn có thể lọc các hội thoại theo kênh, nhãn và trạng thái.",
-      "NEW_LINK": "Bấm vào đây để tạo mới một kênh"
-    },
-    "TEAM_MEMBERS": {
-      "TITLE": "Mời các thành viên trong nhóm của bạn",
-      "DESCRIPTION": "Vì bạn đã sẵn sàng để chào và đón tiếp khách hàng của mình, hãy lôi kéo đồng đội để hỗ trợ bạn. Bạn có thể mời đồng đội của mình bằng cách thêm địa chỉ email của họ vào danh sách tổng đài viên.",
-      "NEW_LINK": "Bấm vào đây để mời đồng đội"
-    },
-    "LABELS": {
-      "TITLE": "Tổ chức hội thoại theo nhãn",
-      "DESCRIPTION": "Nhãn cung cấp một cách để phân loại các hội thoại của bạn dễ dàng hơn. Tạo một số nhãn như #ho-tro, #\byeu-cau-bao-gia, v. v. để bạn có thể sử dụng chúng trong hội thoại sau này.",
-      "NEW_LINK": "Bấm vào đây để tạo nhãn"
-    },
-    "CANNED_RESPONSES": {
-      "TITLE": "Tạo câu trả lời soạn sẵn",
-      "DESCRIPTION": "Các mẫu trả lời nhanh được viết sẵn giúp bạn phản hồi nhanh chóng trong tin nhắn. Tổng đài viên có thể gõ ký tự '/' theo sau là mã rút gọn để chèn phản hồi.",
-      "NEW_LINK": "Bấm vào đây để tạo câu trả lời soạn sẵn"
-    }
-  },
-  "CONVERSATION_SIDEBAR": {
-    "ASSIGNEE_LABEL": "Tổng đài viên được phân công",
-    "SELF_ASSIGN": "Phân công cho tôi",
-    "TEAM_LABEL": "Nhóm được phân công",
-    "SELECT": {
-      "PLACEHOLDER": "Không có"
-    },
-    "ACCORDION": {
-      "CONTACT_DETAILS": "Chi tiết liên hệ",
-      "CONVERSATION_ACTIONS": "Hành động của \bhội thoại",
-      "CONVERSATION_LABELS": "Nhãn hội thoại",
-      "CONVERSATION_INFO": "Thông tin hội thoại",
-      "CONTACT_NOTES": "Ghi chú liên hệ",
-      "CONTACT_ATTRIBUTES": "Thuộc tính của liên hệ",
-      "PREVIOUS_CONVERSATION": "Tin nhắn trước đó",
-      "MACROS": "Macro",
-      "LINEAR_ISSUES": "Các vấn đề Linear liên kết",
-      "SHOPIFY_ORDERS": "Đơn hàng Shopify"
-    },
-    "SHOPIFY": {
-      "ORDER_ID": "Đơn hàng #{id}",
-      "ERROR": "Lỗi khi tải đơn hàng",
-      "NO_SHOPIFY_ORDERS": "Không tìm thấy đơn hàng",
-      "FINANCIAL_STATUS": {
-        "PENDING": "Chờ giải quyết",
-        "AUTHORIZED": "Đã ủy quyền",
-        "PARTIALLY_PAID": "Đã thanh toán một phần",
-        "PAID": "Đã thanh toán",
-        "PARTIALLY_REFUNDED": "Đã hoàn tiền một phần",
-        "REFUNDED": "Đã hoàn tiền",
-        "VOIDED": "Đã hủy"
-      },
-      "FULFILLMENT_STATUS": {
-        "FULFILLED": "Đã hoàn thành",
-        "PARTIALLY_FULFILLED": "Đã hoàn thành một phần",
-        "UNFULFILLED": "Chưa hoàn thành"
-      }
-    }
-  },
-  "CONVERSATION_CUSTOM_ATTRIBUTES": {
-    "ADD_BUTTON_TEXT": "Tạo thuộc tính",
-    "NO_RECORDS_FOUND": "Không có thuộc tính nào được tìm thấy",
-    "UPDATE": {
-      "SUCCESS": "Thuộc tính cập nhật thành công",
-      "ERROR": "Không thể cập nhật thuộc tính. Vui lòng thử lại sau"
-    },
-    "ADD": {
-      "TITLE": "Thêm",
-      "SUCCESS": "Thuộc tính được thêm thành công",
-      "ERROR": "Không thể thêm thuộc tính. Vui lòng thử lại sau"
-    },
-    "DELETE": {
-      "SUCCESS": "Thuộc tính xoá thành công",
-      "ERROR": "Không thể xoá thuộc tính. Vui lòng thử lại sau"
-    },
-    "ATTRIBUTE_SELECT": {
-      "TITLE": "Thêm thuộc tính",
-      "PLACEHOLDER": "Tìm kiếm thuộc tính",
-      "NO_RESULT": "Không có thuộc tính nào được tìm thấy"
-    }
-  },
-  "EMAIL_HEADER": {
-    "FROM": "Từ",
-    "TO": "Đến",
-    "BCC": "Bcc",
-    "CC": "Cc",
-    "SUBJECT": "Chủ đề",
-    "EXPAND": "Mở rộng email"
-  },
-  "CONVERSATION_PARTICIPANTS": {
-    "SIDEBAR_MENU_TITLE": "Tham gia",
-    "SIDEBAR_TITLE": "Người tham gia tin nhắn",
-    "NO_RECORDS_FOUND": "Không tìm thấy kết quả",
-    "ADD_PARTICIPANTS": "Chọn người tham gia",
-    "REMANING_PARTICIPANTS_TEXT": "+{count} người khác",
-    "REMANING_PARTICIPANT_TEXT": "+{count} người khác",
-    "TOTAL_PARTICIPANTS_TEXT": "{count} người đang tham gia.",
-    "TOTAL_PARTICIPANT_TEXT": "{count} người đang tham gia.",
-    "NO_PARTICIPANTS_TEXT": "Không có ai tham gia!.",
-    "WATCH_CONVERSATION": "Tham gia tin nhắn",
-    "YOU_ARE_WATCHING": "Bạn đang tham gia",
-    "API": {
-      "ERROR_MESSAGE": "Không thể cập nhật, thử lại!",
-      "SUCCESS_MESSAGE": "Người tham gia đã được cập nhật!"
-    }
-  },
-  "TRANSLATE_MODAL": {
-    "TITLE": "Xem nội dung đã dịch",
-    "DESC": "Bạn có thể xem nội dung đã dịch trong từng ngôn ngữ.",
-    "ORIGINAL_CONTENT": "Nội dung gốc",
-    "TRANSLATED_CONTENT": "Nội dung đã dịch",
-    "NO_TRANSLATIONS_AVAILABLE": "Không có bản dịch nào cho nội dung này"
-  },
-  "TYPING": {
-    "ONE": "{user} đang gõ",
-    "TWO": "{user} và {secondUser} đang gõ",
-    "MULTIPLE": "{user} và {count} người khác đang gõ"
-  },
-  "COPILOT": {
-    "TRY_THESE_PROMPTS": "Thử các gợi ý này"
-  },
-  "GALLERY_VIEW": {
-    "ERROR_DOWNLOADING": "Không thể tải xuống tệp đính kèm. Vui lòng thử lại"
-  }
+	"CONVERSATION": {
+		"404": "Xin lỗi, chúng tôi không thể tìm thấy hội thoại. Vui lòng thử lại",
+		"24_HOURS_WINDOW": "Giới hạn thời lượng tin nhắn 24 giờ",
+		"API_HOURS_WINDOW": "Bạn chỉ có thể trả lời tin nhắn này trong vòng {hours} giờ",
+		"ASSIGN_LABEL_FAILED": "Gán nhãn không thành công",
+		"ASSIGN_LABEL_SUCCESFUL": "Đã gán nhãn thành công",
+		"ASSIGN_TO_ME": "Phân công cho tôi",
+		"ASSIGNMENT": {
+			"ASSIGN": "Gán",
+			"REMOVE": "Xoá",
+			"SELECT_AGENT": "Chọn tổng đài viên"
+		},
+		"BOT": "Bot",
+		"BOT_HANDOFF_ACTION": "Đánh dấu mở và gán cho bạn",
+		"BOT_HANDOFF_ERROR": "Không thể tiếp quản tin nhắn. Vui lòng thử lại.",
+		"BOT_HANDOFF_MESSAGE": "Bạn đang trả lời tin nhắn hiện đang được xử lý bởi trợ lý hoặc bot.",
+		"BOT_HANDOFF_REOPEN_ACTION": "Đánh dấu tin nhắn mở",
+		"BOT_HANDOFF_SUCCESS": "Cuộc hội thoại đã được chuyển giao cho bạn",
+		"CANNOT_REPLY": "Bạn không thể trả lời do",
+		"CARD": {
+			"HIDE_LABELS": "Ẩn nhãn",
+			"SHOW_LABELS": "Hiển thị nhãn"
+		},
+		"CARD_CONTEXT_MENU": {
+			"AGENTS_LOADING": "Đang tải điện thoại viên...",
+			"API": {
+				"AGENT_ASSIGNMENT": {
+					"FAILED": "Không thể gán điện thoại viên. Vui lòng thử lại.",
+					"SUCCESFUL": "Id hội thoại {conversationId} được gán cho \"{agentName}\""
+				},
+				"LABEL_ASSIGNMENT": {
+					"FAILED": "Không thể gán nhãn. Vui lòng thử lại.",
+					"SUCCESFUL": "Đã gán nhãn #{labelName} cho tin nhắn id {conversationId}"
+				},
+				"TEAM_ASSIGNMENT": {
+					"FAILED": "Không thể gán nhóm. Vui lòng thử lại.",
+					"SUCCESFUL": "Đã gán nhóm \"{team}\" cho hội thoại id {conversationId}"
+				}
+			},
+			"ASSIGN_AGENT": "Gán tổng đài viên",
+			"ASSIGN_LABEL": "Gán nhãn",
+			"ASSIGN_TEAM": "Gán nhóm",
+			"COPY_LINK": "Sao chép liên kết tin nhắn",
+			"COPY_LINK_SUCCESS": "Liên kết tin nhắn đã được sao chép vào clipboard",
+			"DELETE": "Xóa tin nhắn",
+			"MARK_AS_READ": "Đánh dấu là đã đọc",
+			"MARK_AS_UNREAD": "Đánh dấu là chưa đọc",
+			"OPEN_IN_NEW_TAB": "Mở trong tab mới",
+			"PENDING": "Đánh dấu chưa giải quyết",
+			"REOPEN": "Mở lại hội thoại",
+			"RESOLVED": "Đánh dấu là đã giải quyết",
+			"SNOOZE": {
+				"NEXT_REPLY": "Cho đến phản hồi kế tiếp",
+				"NEXT_WEEK": "Cho đến tuần sau",
+				"TITLE": "Báo lại",
+				"TOMORROW": "Cho đến ngày mai"
+			}
+		},
+		"CHANGE_AGENT": "Người Được Chỉ Định Cuộc Hội Thoại đã thay đổi",
+		"CHANGE_AGENT_FAILED": "Thay đổi người được gán không thành công",
+		"CHANGE_STATUS": "Trạng thái cuộc trò chuyện đã thay đổi",
+		"CHANGE_STATUS_FAILED": "Thay đổi trạng thái hội thoại không thành công",
+		"CHANGE_TEAM": "Nhóm hội thoại đã được thay đổi",
+		"CLICK_HERE": "Click vào đây",
+		"CONTEXT_MENU": {
+			"COPY": "Sao Chép",
+			"COPY_PERMALINK": "Sao chép liên kết đến tin nhắn",
+			"CREATE_A_CANNED_RESPONSE": "Thêm vào câu trả lời soạn sẵn",
+			"DELETE": "Xoá",
+			"DELETE_CONFIRMATION": {
+				"CANCEL": "Huỷ",
+				"DELETE": "Xoá",
+				"MESSAGE": "Bạn không thể hoàn tác hành động này",
+				"TITLE": "Bạn có chắc chắn muốn xóa tin nhắn này?"
+			},
+			"LINK_COPIED": "URL tin nhắn đã được sao chép vào clipboard",
+			"REPLY_TO": "Trả lời tin nhắn này",
+			"TRANSLATE": "Dịch"
+		},
+		"CSAT_REPLY_MESSAGE": "Bạn hãy vui lòng đánh giá hội thoại",
+		"CUSTOM_SNOOZE": {
+			"APPLY": "Báo lại",
+			"CANCEL": "Huỷ",
+			"TITLE": "Tạm dừng đến khi"
+		},
+		"DASHBOARD_APP_TAB_MESSAGES": "Tin nhắn",
+		"DELETE_CONVERSATION": {
+			"CONFIRM": "Xoá",
+			"DESCRIPTION": "Bạn có chắc chắn muốn xóa tin nhắn này?",
+			"TITLE": "Xóa tin nhắn #{conversationId}"
+		},
+		"DOWNLOAD": "Tải xuống",
+		"EMPTY_STATE": {
+			"CMD_BAR": "để mở menu lệnh",
+			"KEYBOARD_SHORTCUTS": "để xem phím tắt"
+		},
+		"FAIL_DELETE_CONVERSATION": "Không thể xóa tin nhắn! Thử lại",
+		"FAIL_DELETE_MESSSAGE": "Không thể xoá tin nhắn! Thử lại",
+		"FEEDBACK_TITLE": "Phản hồi",
+		"FILE_SIZE_LIMIT": "Tệp vượt quá {MAXIMUM_SUPPORTED_FILE_UPLOAD_SIZE} MB mức hạn chế",
+		"FOOTER": {
+			"CLICK_HERE": "Bấm vào đây để cập nhật",
+			"DISABLE_SIGN_TOOLTIP": "Tắt chữ ký",
+			"ENABLE_SIGN_TOOLTIP": "Bật chữ ký",
+			"INSERT_PRODUCT": "Gửi sản phẩm",
+			"MESSAGE_SIGN_TOOLTIP": "Chữ ký tin nhắn",
+			"MESSAGE_SIGNATURE_NOT_CONFIGURED": "Chứ ký cuối tin nhắn chưa được cài đặt, xin hãy cài đặt một chữ ký trong phần cài đặt hồ sơ.",
+			"MSG_INPUT": "Shift + enter cho dòng mới. Bắt đầu với '/' để chọn Câu trả lời soạn trước.",
+			"PRIVATE_MSG_INPUT": "Shift + enter cho dòng mới. Điều này sẽ chỉ hiển thị cho Thành viên",
+			"WHATSAPP_TEMPLATES": "Mẫu Whatsapp"
+		},
+		"HEADER": {
+			"CLOSE": "Đóng",
+			"DETAILS": "chi tiết",
+			"MORE_ACTIONS": "Thêm hành động",
+			"OPEN": "Nhiều",
+			"OPEN_ACTION": "Mở",
+			"REOPEN_ACTION": "Mở lại",
+			"RESOLVE_ACTION": "Giải quyết",
+			"SLA_STATUS": {
+				"DUE": "quá hạn",
+				"FRT": "FRT {status}",
+				"MISSED": "bị lỡ",
+				"NRT": "NRT {status}",
+				"RT": "RT {status}"
+			},
+			"SNOOZED_UNTIL": "Tạm dừng đến",
+			"SNOOZED_UNTIL_NEXT_REPLY": "Tạm dừng đến khi có phản hồi",
+			"SNOOZED_UNTIL_NEXT_WEEK": "Tạm dừng đến tuần sau",
+			"SNOOZED_UNTIL_TOMORROW": "Tạm dừng đến ngày mai"
+		},
+		"LAST_INCOMING_TWEET": "",
+		"LOADING_CONVERSATIONS": "Đang tải cuộc trò chuyện",
+		"LOADING_INBOXES": "Đang tải hộp thư đến",
+		"MENTION": {
+			"AGENTS": "Thành viên",
+			"TEAMS": "Nhóm"
+		},
+		"MESSAGE_ERROR": "Không thể gửi tin nhắn này, vui lòng thử lại sau",
+		"NO_CONTENT": "Không có nội dung để hiển thị",
+		"NO_INBOX_1": "Hola! Có vẻ như bạn chưa thêm bất kỳ hộp thư đến nào.",
+		"NO_INBOX_2": " để bắt đầu",
+		"NO_INBOX_AGENT": "Uh Oh! Có vẻ như bạn không thuộc bất kỳ hộp thư đến nào. Vui lòng liên hệ với quản trị viên của bạn",
+		"NO_MESSAGE_1": "Uh oh! Có vẻ như không có tin nhắn nào từ khách hàng trong hộp thư đến của bạn.",
+		"NO_MESSAGE_2": " gửi tin nhắn đến trang của bạn!",
+		"NO_RESPONSE": "Không có phản hồi",
+		"NOT_ASSIGNED_TO_YOU": "Hội thoại này không được phân công cho bạn. Bạn có muốn phân công hội thoại này cho chính mình?",
+		"OLD_INSTAGRAM_INBOX_REPLY_BANNER": "Tài khoản Instagram này đã được chuyển sang hộp thư đến kênh Instagram mới. Tất cả tin nhắn mới sẽ hiển thị ở đó. Bạn sẽ không thể gửi tin nhắn từ tin nhắn này nữa.",
+		"PRIORITY": {
+			"CHANGE_PRIORITY": {
+				"FAILED": "Không thể thay đổi độ ưu tiên. Vui lòng thử lại.",
+				"INPUT_PLACEHOLDER": "Chọc mức ưu tiên",
+				"NO_RESULTS": "Không tìm thấy kết quả",
+				"SELECT_PLACEHOLDER": "Không có",
+				"SUCCESSFUL": "Đã thay đổi độ ưu tiên của tin nhắn id {conversationId} thành {priority}"
+			},
+			"OPTIONS": {
+				"HIGH": "Cao",
+				"LOW": "Thấp",
+				"MEDIUM": "Trung bình",
+				"NONE": "Không có",
+				"URGENT": "Cấp bách"
+			},
+			"TITLE": "Mức độ ưu tiên"
+		},
+		"RATING_TITLE": "Đánh giá",
+		"REMOVE_SELECTION": "Xóa lựa chọn",
+		"REPLIED_TO_STORY": "Đã trả lời story của bạn",
+		"REPLY_MESSAGE_NOT_FOUND": "Tin nhắn không có sẵn",
+		"REPLYBOX": {
+			"CREATE": "Thêm ghi chú",
+			"DISMISS_REPLY": "Bỏ qua phản hồi",
+			"DRAG_DROP": "Kéo thả vào đây để đính kèm",
+			"EMAIL_HEAD": {
+				"ADD_BCC": "Thêm bcc",
+				"BCC": {
+					"ERROR": "Vui lòng điền địa chỉ email hợp lệ",
+					"LABEL": "BCC",
+					"PLACEHOLDER": "Các e\u001dmail phân biệt bởi dấu phẩy"
+				},
+				"CC": {
+					"ERROR": "Vui lòng điền địa chỉ email hợp lệ",
+					"LABEL": "CC",
+					"PLACEHOLDER": "Các e\u001dmail phân biệt bởi dấu phẩy"
+				},
+				"TO": "TO"
+			},
+			"INSERT_READ_MORE": "Đọc thêm",
+			"PRIVATE_NOTE": "Ghi chú",
+			"QUOTED_REPLY": {
+				"COLLAPSE": "Collapse preview",
+				"DISABLE_TOOLTIP": "Don't include quoted email thread",
+				"ENABLE_TOOLTIP": "Include quoted email thread",
+				"EXPAND": "Expand preview",
+				"REMOVE_PREVIEW": "Remove quoted email thread"
+			},
+			"REPLY": "Trả lời",
+			"REPLYING_TO": "Đang trả lời:",
+			"SEND": "Gửi",
+			"START_AUDIO_RECORDING": "Bắt đầu ghi âm",
+			"STOP_AUDIO_RECORDING": "Dừng ghi âm",
+			"TIP_ATTACH_ICON": "Đính kèm tệp",
+			"TIP_AUDIORECORDER_ERROR": "Không thể mở bản ghi âm",
+			"TIP_AUDIORECORDER_ICON": "Ghi âm thanh",
+			"TIP_AUDIORECORDER_PERMISSION": "Cho phép truy cập ghi âm",
+			"TIP_EMOJI_ICON": "Hiển thị chọn emoji",
+			"TIP_FORMAT_ICON": "Hiển thị trình soạn thảo văn bản đa dạng thức",
+			"TWEET": "",
+			"UNDEFINED_VARIABLES": {
+				"CONFIRM": {
+					"CANCEL": "Huỷ",
+					"YES": "Gửi"
+				},
+				"MESSAGE": "You have {undefinedVariablesCount} undefined variables in your message: {undefinedVariables}. Would you like to send the message anyway?",
+				"TITLE": "Undefined variables"
+			}
+		},
+		"REPLYING_TO": "Bạn đang trả lời:",
+		"RESOLVE_DROPDOWN": {
+			"MARK_PENDING": "Đánh dấu chưa giải quyết",
+			"SNOOZE": {
+				"NEXT_REPLY": "Phản hồi kế tiếp",
+				"NEXT_WEEK": "Tuần sau",
+				"TITLE": "Tạm dừng đến khi",
+				"TOMORROW": "Ngày mai"
+			},
+			"SNOOZE_UNTIL": "Báo lại"
+		},
+		"RESPONSE": "Phản hồi",
+		"SAVE_CONTACT": "Lưu liên hệ",
+		"SEARCH": {
+			"LOADING_MESSAGE": "Định dạng dữ liệu...",
+			"NO_MATCHING_RESULTS": "Không tìm thấy kết quả.",
+			"PLACEHOLDER": "Nhập bất kỳ văn bản nào để tìm kiếm tin nhắn",
+			"RESULT_TITLE": "Các kết quả tìm kiếm",
+			"TITLE": "Tìm kiếm tin nhắn"
+		},
+		"SEARCH_MESSAGES": "Tìm kiếm tin nhắn trong các hội thoại",
+		"SELECT_A_CONVERSATION": "Vui lòng chọn một cuộc trò chuyện từ ngăn bên trái",
+		"SEND_FAILED": "Không thể gửi tin nhắn! Thử lại",
+		"SENT_BY": "Gửi bởi:",
+		"SHARED_ATTACHMENT": {
+			"CONTACT": "{sender} đã chia sẻ một liên hệ",
+			"FILE": "{sender} đã chia sẻ một tệp",
+			"LOCATION": "{sender} đã chia sẻ một vị trí",
+			"MEETING": "{sender} đã bắt đầu một cuộc họp"
+		},
+		"SIDEBAR": {
+			"CONTACT": "Liên hệ",
+			"COPILOT": "Copilot"
+		},
+		"SUCCESS_DELETE_CONVERSATION": "Xóa tin nhắn thành công",
+		"SUCCESS_DELETE_MESSAGE": "Tin nhắn được xoá thành công",
+		"SWITCH_VIEW_LAYOUT": "Chuyển đổi bố cục",
+		"TRY_AGAIN": "thử lại",
+		"TWILIO_WHATSAPP_24_HOURS_WINDOW": "Giới hạn thời lượng tin nhắn 24 giờ",
+		"TWILIO_WHATSAPP_CAN_REPLY": "Bạn chỉ có thể phản hồi hội thoại này bằng tin nhắn mẫu vì",
+		"UNKNOWN_FILE_TYPE": "Tập tin chưa xác định",
+		"UNREAD_MESSAGE": "Tin nhắn chưa đọc",
+		"UNREAD_MESSAGES": "Tin nhắn chưa đọc",
+		"UNSUPPORTED_MESSAGE": "Tin nhắn này không được hỗ trợ. Bạn có thể xem tin nhắn này trên ứng dụng Facebook / Instagram.",
+		"UNSUPPORTED_MESSAGE_FACEBOOK": "Tin nhắn này không được hỗ trợ. Bạn có thể xem tin nhắn này trên ứng dụng Facebook Messenger.",
+		"UNSUPPORTED_MESSAGE_INSTAGRAM": "Tin nhắn này không được hỗ trợ. Bạn có thể xem tin nhắn này trên ứng dụng Instagram.",
+		"UNVERIFIED_SESSION": "Danh tính của người dùng này không được xác thực",
+		"UPLOADING_ATTACHMENTS": "Đang tải file đính kèm...",
+		"VIEW_ORIGINAL": "Xem bản gốc",
+		"VIEW_TRANSLATED": "Xem bản dịch",
+		"VISIBLE_TO_AGENTS": "Ghi chú: Chỉ hiển thị với bạn và nhóm của bạn",
+		"VOICE_CALL": {
+			"CALL_ENDED": "Cuộc gọi kết thúc",
+			"CALL_IN_PROGRESS": "Cuộc gọi đang diễn ra",
+			"INCOMING_CALL": "Cuộc gọi đến",
+			"MISSED_CALL": "Cuộc gọi nhỡ",
+			"NO_ANSWER": "Không trả lời",
+			"NOT_ANSWERED_YET": "Chưa trả lời",
+			"OUTGOING_CALL": "Cuộc gọi đi",
+			"THEY_ANSWERED": "Họ đã trả lời",
+			"YOU_ANSWERED": "Bạn đã trả lời"
+		}
+	},
+	"CONVERSATION_CUSTOM_ATTRIBUTES": {
+		"ADD": {
+			"ERROR": "Không thể thêm thuộc tính. Vui lòng thử lại sau",
+			"SUCCESS": "Thuộc tính được thêm thành công",
+			"TITLE": "Thêm"
+		},
+		"ADD_BUTTON_TEXT": "Tạo thuộc tính",
+		"ATTRIBUTE_SELECT": {
+			"NO_RESULT": "Không có thuộc tính nào được tìm thấy",
+			"PLACEHOLDER": "Tìm kiếm thuộc tính",
+			"TITLE": "Thêm thuộc tính"
+		},
+		"DELETE": {
+			"ERROR": "Không thể xoá thuộc tính. Vui lòng thử lại sau",
+			"SUCCESS": "Thuộc tính xoá thành công"
+		},
+		"NO_RECORDS_FOUND": "Không có thuộc tính nào được tìm thấy",
+		"UPDATE": {
+			"ERROR": "Không thể cập nhật thuộc tính. Vui lòng thử lại sau",
+			"SUCCESS": "Thuộc tính cập nhật thành công"
+		}
+	},
+	"CONVERSATION_PARTICIPANTS": {
+		"ADD_PARTICIPANTS": "Chọn người tham gia",
+		"API": {
+			"ERROR_MESSAGE": "Không thể cập nhật, thử lại!",
+			"SUCCESS_MESSAGE": "Người tham gia đã được cập nhật!"
+		},
+		"NO_PARTICIPANTS_TEXT": "Không có ai tham gia!.",
+		"NO_RECORDS_FOUND": "Không tìm thấy kết quả",
+		"REMANING_PARTICIPANT_TEXT": "+{count} người khác",
+		"REMANING_PARTICIPANTS_TEXT": "+{count} người khác",
+		"SIDEBAR_MENU_TITLE": "Tham gia",
+		"SIDEBAR_TITLE": "Người tham gia tin nhắn",
+		"TOTAL_PARTICIPANT_TEXT": "{count} người đang tham gia.",
+		"TOTAL_PARTICIPANTS_TEXT": "{count} người đang tham gia.",
+		"WATCH_CONVERSATION": "Tham gia tin nhắn",
+		"YOU_ARE_WATCHING": "Bạn đang tham gia"
+	},
+	"CONVERSATION_SIDEBAR": {
+		"ACCORDION": {
+			"CONTACT_ATTRIBUTES": "Thuộc tính của liên hệ",
+			"CONTACT_DETAILS": "Chi tiết liên hệ",
+			"CONTACT_NOTES": "Ghi chú liên hệ",
+			"CONVERSATION_ACTIONS": "Hành động của \bhội thoại",
+			"CONVERSATION_INFO": "Thông tin hội thoại",
+			"CONVERSATION_LABELS": "Nhãn hội thoại",
+			"LINEAR_ISSUES": "Các vấn đề Linear liên kết",
+			"MACROS": "Macro",
+			"PREVIOUS_CONVERSATION": "Tin nhắn trước đó",
+			"SHOPIFY_ORDERS": "Đơn hàng Shopify"
+		},
+		"ASSIGNEE_LABEL": "Tổng đài viên được phân công",
+		"SELECT": {
+			"PLACEHOLDER": "Không có"
+		},
+		"SELF_ASSIGN": "Phân công cho tôi",
+		"SHOPIFY": {
+			"ERROR": "Lỗi khi tải đơn hàng",
+			"FINANCIAL_STATUS": {
+				"AUTHORIZED": "Đã ủy quyền",
+				"PAID": "Đã thanh toán",
+				"PARTIALLY_PAID": "Đã thanh toán một phần",
+				"PARTIALLY_REFUNDED": "Đã hoàn tiền một phần",
+				"PENDING": "Chờ giải quyết",
+				"REFUNDED": "Đã hoàn tiền",
+				"VOIDED": "Đã hủy"
+			},
+			"FULFILLMENT_STATUS": {
+				"FULFILLED": "Đã hoàn thành",
+				"PARTIALLY_FULFILLED": "Đã hoàn thành một phần",
+				"UNFULFILLED": "Chưa hoàn thành"
+			},
+			"NO_SHOPIFY_ORDERS": "Không tìm thấy đơn hàng",
+			"ORDER_ID": "Đơn hàng #{id}"
+		},
+		"TEAM_LABEL": "Nhóm được phân công"
+	},
+	"COPILOT": {
+		"TRY_THESE_PROMPTS": "Thử các gợi ý này"
+	},
+	"EMAIL_HEADER": {
+		"BCC": "Bcc",
+		"CC": "Cc",
+		"EXPAND": "Mở rộng email",
+		"FROM": "Từ",
+		"SUBJECT": "Chủ đề",
+		"TO": "Đến"
+	},
+	"EMAIL_TRANSCRIPT": {
+		"CANCEL": "Huỷ",
+		"DESC": "Gửi bản sao của bản ghi cuộc trò chuyện đến địa chỉ email được chỉ định",
+		"FORM": {
+			"EMAIL": {
+				"ERROR": "Vui lòng nhập một địa chỉ email hợp lệ",
+				"PLACEHOLDER": "Nhập địa chỉ emai"
+			},
+			"SEND_TO_AGENT": "Gửi bản ghi cho tổng đài viên được phân công",
+			"SEND_TO_CONTACT": "Gửi bảng điểm cho khách hàng",
+			"SEND_TO_OTHER_EMAIL_ADDRESS": "Gửi bản ghi tới một địa chỉ email khác"
+		},
+		"SEND_EMAIL_ERROR": "Có lỗi, xin vui lòng thử lại",
+		"SEND_EMAIL_SUCCESS": "Bản ghi cuộc trò chuyện đã được gửi thành công",
+		"SUBMIT": "Gửi",
+		"TITLE": "Gửi bản ghi cuộc trò chuyện"
+	},
+	"GALLERY_VIEW": {
+		"ERROR_DOWNLOADING": "Không thể tải xuống tệp đính kèm. Vui lòng thử lại"
+	},
+	"ONBOARDING": {
+		"ALL_CONVERSATION": {
+			"DESCRIPTION": "Xem tất cả hội thoại từ khách hàng của bạn trong cùng một trang. Bạn có thể lọc các hội thoại theo kênh, nhãn và trạng thái.",
+			"NEW_LINK": "Bấm vào đây để tạo mới một kênh",
+			"TITLE": "Tất cả hội thoại của bạn ở cùng một chỗ"
+		},
+		"CANNED_RESPONSES": {
+			"DESCRIPTION": "Các mẫu trả lời nhanh được viết sẵn giúp bạn phản hồi nhanh chóng trong tin nhắn. Tổng đài viên có thể gõ ký tự '/' theo sau là mã rút gọn để chèn phản hồi.",
+			"NEW_LINK": "Bấm vào đây để tạo câu trả lời soạn sẵn",
+			"TITLE": "Tạo câu trả lời soạn sẵn"
+		},
+		"DESCRIPTION": "Cảm ơn bạn đã đăng ký. Chúng tôi muốn bạn khai thác tối đa {installationName}. Dưới đây là một số điều bạn có thể làm trong {installationName} để mang lại trải nghiệm thú vị.",
+		"GREETING_AFTERNOON": "👋 Good afternoon, {name}. Welcome to {installationName}.",
+		"GREETING_EVENING": "👋 Good evening, {name}. Welcome to {installationName}.",
+		"GREETING_MORNING": "👋 Good morning, {name}. Welcome to {installationName}.",
+		"LABELS": {
+			"DESCRIPTION": "Nhãn cung cấp một cách để phân loại các hội thoại của bạn dễ dàng hơn. Tạo một số nhãn như #ho-tro, #\byeu-cau-bao-gia, v. v. để bạn có thể sử dụng chúng trong hội thoại sau này.",
+			"NEW_LINK": "Bấm vào đây để tạo nhãn",
+			"TITLE": "Tổ chức hội thoại theo nhãn"
+		},
+		"READ_LATEST_UPDATES": "Đọc cập nhật mới nhất của chúng tôi",
+		"TEAM_MEMBERS": {
+			"DESCRIPTION": "Vì bạn đã sẵn sàng để chào và đón tiếp khách hàng của mình, hãy lôi kéo đồng đội để hỗ trợ bạn. Bạn có thể mời đồng đội của mình bằng cách thêm địa chỉ email của họ vào danh sách tổng đài viên.",
+			"NEW_LINK": "Bấm vào đây để mời đồng đội",
+			"TITLE": "Mời các thành viên trong nhóm của bạn"
+		},
+		"TITLE": "Xin chào 👋, Chào mừng đến với {installationName}!"
+	},
+	"TRANSLATE_MODAL": {
+		"DESC": "Bạn có thể xem nội dung đã dịch trong từng ngôn ngữ.",
+		"NO_TRANSLATIONS_AVAILABLE": "Không có bản dịch nào cho nội dung này",
+		"ORIGINAL_CONTENT": "Nội dung gốc",
+		"TITLE": "Xem nội dung đã dịch",
+		"TRANSLATED_CONTENT": "Nội dung đã dịch"
+	},
+	"TYPING": {
+		"MULTIPLE": "{user} và {count} người khác đang gõ",
+		"ONE": "{user} đang gõ",
+		"TWO": "{user} và {secondUser} đang gõ"
+	}
 }
