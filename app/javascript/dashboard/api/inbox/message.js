@@ -66,8 +66,6 @@ class MessageApi extends ApiClient {
     toEmails = '',
     templateParams,
   }) {
-    console.log('contentAttributes', contentAttributes);
-
     return axios({
       method: 'post',
       url: `${this.url}/${conversationId}/messages`,
