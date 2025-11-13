@@ -275,6 +275,9 @@ export default {
         ? this.$t('CONVERSATION.REPLYBOX.QUOTED_REPLY.DISABLE_TOOLTIP')
         : this.$t('CONVERSATION.REPLYBOX.QUOTED_REPLY.ENABLE_TOOLTIP');
     },
+    showMarketplaceItemSearch() {
+      return this.currentContact.custom_attributes?.shopId;
+    },
   },
   mounted() {
     ActiveStorage.start();
@@ -428,6 +431,7 @@ export default {
         @click="toggleInsertArticle"
       />
       <MarketplaceItemSearchButton
+        v-if="showMarketplaceItemSearch"
         :current-contact="currentContact"
         @send-marketplace-item="sendMarketplaceItem"
       />
