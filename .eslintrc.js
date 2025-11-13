@@ -64,7 +64,7 @@ module.exports = {
       },
     ],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
-    'vue/custom-event-name-casing': ['error', 'camelCase'],
+    'vue/custom-event-name-casing': 'off',
     'vue/define-emits-declaration': ['error'],
     'vue/define-macros-order': [
       'error',

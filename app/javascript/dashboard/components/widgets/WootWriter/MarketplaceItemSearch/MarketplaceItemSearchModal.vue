@@ -15,26 +15,20 @@ import {
   ItemMedia,
   ItemTitle,
 } from 'dashboard/components-shadcn/components/ui/item';
-import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-} from 'dashboard/components-shadcn/components/ui/tabs';
 import { useRequest } from 'dashboard/composables/useRequest';
 import { minBy, maxBy, sumBy } from 'lodash';
 import Button from 'next/button/Button.vue';
 import Icon from 'next/icon/Icon.vue';
 import { ref, watch } from 'vue';
+
 const props = defineProps({
   currentContact: {
     type: Object,
     default: () => ({}),
   },
-  onSendItemId: {
-    type: Function,
-    default: () => {},
-  },
 });
+
+const emit = defineEmits(['send-item-id']);
 const searchQuery = ref('');
 let timeout = null;
 const isInputFocused = ref(false);
@@ -66,7 +60,7 @@ const { data, isLoading, execute } = useRequest(async query => {
     return {
       name: x.name,
       id: x.id,
-      image: x.images?.[0]?.publicUrl,
+      image: x.images?.[0]?.publicUrl?.replace('_tn', ''),
       stock: sumBy(x.models, 'sellableStock').toLocaleString(),
       price:
         maxPrice === minPrice
@@ -95,7 +89,11 @@ watch(
 );
 
 const sendItemId = itemId => {
-  props.onSendItemId(itemId);
+  emit('send-item-id', {
+    content_attributes: {
+      itemId,
+    },
+  });
 };
 const openLinkShop = () => {
   window.open('https://app.shipxanh.com/dashboard/connect/shops', '_self');
@@ -141,16 +139,7 @@ const openLinkShop = () => {
           @input="onInput"
         />
       </div>
-      <Tabs v-model="tab">
-        <TabsList class="grid w-full grid-cols-2 bg-n-slate-2">
-          <TabsTrigger value="shop">
-            {{ $t('Tìm trên shop') }}
-          </TabsTrigger>
-          <TabsTrigger value="shipxanh">
-            {{ $t('Tìm trên ShipXanh') }}
-          </TabsTrigger>
-        </TabsList>
-      </Tabs>
+
       <div
         v-if="data?.length > 0"
         class="flex flex-col gap-2 overflow-y-auto max-h-[600px]"
@@ -163,7 +152,7 @@ const openLinkShop = () => {
                 :alt="item.name"
                 width="80"
                 height="80"
-                class="object-cover grayscale rounded-sm"
+                class="object-cover rounded-sm"
               />
             </ItemMedia>
             <ItemContent>

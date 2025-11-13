@@ -48,6 +48,7 @@ export const createPendingMessage = data => {
   const tempMessageId = getUuid();
   const { message, file } = data;
   const tempAttachments = [{ id: tempMessageId }];
+
   const pendingMessage = {
     ...data,
     content: message || null,

@@ -8,18 +8,13 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
-  sendMarketplaceItem: {
-    type: Function,
-    default: () => {},
-  },
 });
+
+const emit = defineEmits(['send-marketplace-item']);
+
 const showMarketplaceItemSearchModal = ref(false);
 const sendItemId = itemId => {
-  props.sendMarketplaceItem({
-    content_attributes: {
-      itemId,
-    },
-  });
+  emit('send-marketplace-item', itemId);
   showMarketplaceItemSearchModal.value = false;
 };
 </script>

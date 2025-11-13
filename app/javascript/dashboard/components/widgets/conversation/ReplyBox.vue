@@ -1313,7 +1313,7 @@ export default {
       @replace-text="replaceText"
       @toggle-insert-article="toggleInsertArticle"
       @toggle-quoted-reply="toggleQuotedReply"
-      @send-marketplace-item="onSendMarketplaceItem"
+      @send-item-id="onSendMarketplaceItem"
     />
     <WhatsappTemplates
       :inbox-id="inbox.id"

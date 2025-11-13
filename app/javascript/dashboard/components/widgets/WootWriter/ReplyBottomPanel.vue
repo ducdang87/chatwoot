@@ -137,10 +137,6 @@ export default {
       type: Object,
       default: () => ({}),
     },
-    sendMarketplaceItem: {
-      type: Function,
-      default: () => {},
-    },
   },
   emits: [
     'replaceText',
@@ -149,6 +145,7 @@ export default {
     'selectWhatsappTemplate',
     'selectContentTemplate',
     'toggleQuotedReply',
+    'sendItemId',
   ],
   setup() {
     const { setSignatureFlagForInbox, fetchSignatureFlagFromUISettings } =
@@ -291,6 +288,9 @@ export default {
     },
     toggleInsertArticle() {
       this.$emit('toggleInsertArticle');
+    },
+    sendMarketplaceItem(itemId) {
+      this.$emit('sendItemId', itemId);
     },
   },
 };

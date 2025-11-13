@@ -30,6 +30,7 @@ export const buildCreatePayload = ({
     if (toEmails) {
       payload.append('to_emails', toEmails);
     }
+
     if (contentAttributes) {
       payload.append('content_attributes', JSON.stringify(contentAttributes));
     }
@@ -57,7 +58,7 @@ class MessageApi extends ApiClient {
     conversationId,
     message,
     private: isPrivate,
-    contentAttributes,
+    content_attributes: contentAttributes,
     echo_id: echoId,
     files,
     ccEmails = '',
@@ -65,6 +66,8 @@ class MessageApi extends ApiClient {
     toEmails = '',
     templateParams,
   }) {
+    console.log('contentAttributes', contentAttributes);
+
     return axios({
       method: 'post',
       url: `${this.url}/${conversationId}/messages`,
