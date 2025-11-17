@@ -268,6 +268,7 @@ const actions = {
 
   sendMessageWithData: async ({ commit }, pendingMessage) => {
     const { conversation_id: conversationId, id } = pendingMessage;
+
     try {
       commit(types.ADD_MESSAGE, {
         ...pendingMessage,

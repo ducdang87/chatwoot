@@ -12,6 +12,7 @@ import {
 } from 'dashboard/components-shadcn/components/ui/stepper';
 import shipxanhAPI from 'dashboard/api/shipxanhAPI';
 import Icon from 'next/icon/Icon.vue';
+import { messageTimestamp } from 'helpers/timeHelper';
 
 // Props definition
 const props = defineProps({
@@ -34,7 +35,7 @@ const steps = computed(() => {
     return {
       step: index + 1,
       title: item.description,
-      description: item.updateTime,
+      description: messageTimestamp(item.updateTime),
       timestamp: item.updateTime,
     };
   });

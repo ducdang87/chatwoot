@@ -28,13 +28,16 @@ const isActive = computed(() => {
   if (Object.keys(props.enabledFeatures).length === 0) {
     return false;
   }
-  if (key === 'shopee') {
-    return true;
-  }
-  if (key === 'lazada') {
-    return true;
-  }
-  if (key === 'tiktokshop') {
+  if (
+    [
+      'shopee',
+      'lazada',
+      'tiktokshop',
+      'website',
+      'facebook',
+      'instagram',
+    ].includes(key)
+  ) {
     return true;
   }
   if (key === 'website') {

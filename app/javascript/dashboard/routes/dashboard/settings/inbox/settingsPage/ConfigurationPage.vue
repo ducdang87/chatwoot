@@ -165,7 +165,8 @@ export default {
           {{ $t('INBOX_MGMT.SETTINGS_POPUP.WHATSAPP_TEMPLATES_SYNC_BUTTON') }}
         </NextButton>
       </div>
-    </SettingsSection>
+</SettingsSection
+    >-
   </div>
   <div v-else-if="isAVoiceChannel" class="mx-8">
     <SettingsSection

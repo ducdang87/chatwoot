@@ -40,6 +40,7 @@ import VoiceCallBubble from './bubbles/VoiceCall.vue';
 
 import MessageError from './MessageError.vue';
 import ContextMenu from 'dashboard/modules/conversations/components/MessageContextMenu.vue';
+import MarketplaceItem from './bubbles/MarketplaceItem.vue';
 
 /**
  * @typedef {Object} Attachment
@@ -316,6 +317,14 @@ const componentToRender = computed(() => {
     }
     // Attachment content is the name of the contact
     if (fileType === ATTACHMENT_TYPES.CONTACT) return ContactBubble;
+  }
+
+  if (props.contentType === CONTENT_TYPES.CARDS) {
+    if (
+      props.contentAttributes?.items?.some(x => x.title?.includes('###Item:'))
+    ) {
+      return MarketplaceItem;
+    }
   }
 
   return TextBubble;

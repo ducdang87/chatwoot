@@ -58,7 +58,7 @@ export default {
   // Lấy account ID từ URL
   getCurrentAccountId() {
     if (import.meta.env.DEV) {
-      return 1428; // nếu dev thì trả về account id live của acc lihkooll@gmail.com
+      return 26; // nếu dev thì trả về account id live của acc lihkooll@gmail.com: 1426, tunahouseforprincess@gmail.com: 26
     }
     const pathParts = window.location.pathname.split('/');
     const accountIndex = pathParts.indexOf('accounts');

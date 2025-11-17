@@ -834,6 +834,12 @@ export default {
       });
       this.hideContentTemplatesModal();
     },
+    async onSendMarketplaceItem(messagePayload) {
+      this.sendMessage({
+        conversationId: this.currentChat.id,
+        ...messagePayload,
+      });
+    },
     replaceText(message) {
       if (this.sendWithSignature && !this.private) {
         // if signature is enabled, append it to the message
@@ -1300,12 +1306,14 @@ export default {
       :message="message"
       :portal-slug="connectedPortalSlug"
       :new-conversation-modal-active="newConversationModalActive"
+      :current-contact="currentContact"
       @select-whatsapp-template="openWhatsappTemplateModal"
       @select-content-template="openContentTemplateModal"
       @toggle-editor="toggleRichContentEditor"
       @replace-text="replaceText"
       @toggle-insert-article="toggleInsertArticle"
       @toggle-quoted-reply="toggleQuotedReply"
+      @send-item-id="onSendMarketplaceItem"
     />
     <WhatsappTemplates
       :inbox-id="inbox.id"

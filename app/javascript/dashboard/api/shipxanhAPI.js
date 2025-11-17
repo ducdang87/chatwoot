@@ -78,6 +78,12 @@ class ShipXanhAPIService {
       // eslint-disable-next-line no-console
       console.error('ShipXanh API Error:', error);
 
+      alert(
+        error.response?.data?.message ||
+          error.message ||
+          'ERROR FROM SHIPXANH CORE'
+      );
+
       if (error.response?.status === 401) {
         throw new Error(
           'Authentication failed. Please re-authenticate with ShipXanh.'

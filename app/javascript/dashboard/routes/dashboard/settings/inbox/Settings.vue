@@ -17,7 +17,7 @@ import InboxHealthAPI from 'dashboard/api/inboxHealth';
 import PreChatFormSettings from './PreChatForm/Settings.vue';
 import WeeklyAvailability from './components/WeeklyAvailability.vue';
 import GreetingsEditor from 'shared/components/GreetingsEditor.vue';
-import ConfigurationPage from './settingsPage/ConfigurationPage.vue';
+// import ConfigurationPage from './settingsPage/ConfigurationPage.vue';
 import CustomerSatisfactionPage from './settingsPage/CustomerSatisfactionPage.vue';
 import CollaboratorsPage from './settingsPage/CollaboratorsPage.vue';
 import WidgetBuilder from './WidgetBuilder.vue';
@@ -35,7 +35,7 @@ export default {
   components: {
     BotConfiguration,
     CollaboratorsPage,
-    ConfigurationPage,
+    // ConfigurationPage,
     CustomerSatisfactionPage,
     FacebookReauthorize,
     GreetingsEditor,
@@ -547,7 +547,7 @@ export default {
             "
             @blur="v$.selectedInboxName.$touch"
           />
-          <woot-input
+          <!-- <woot-input
             v-if="isAPIInbox"
             v-model="webhookUrl"
             class="pb-4"
@@ -566,7 +566,7 @@ export default {
                 : ''
             "
             @blur="v$.webhookUrl.$touch"
-          />
+          /> -->
           <woot-input
             v-if="isAWebWidgetInbox"
             v-model="channelWebsiteUrl"
@@ -899,9 +899,9 @@ export default {
       <div v-if="selectedTabKey === 'collaborators'" class="mx-8">
         <CollaboratorsPage :inbox="inbox" />
       </div>
-      <div v-if="selectedTabKey === 'configuration'">
+      <!-- <div v-if="selectedTabKey === 'configuration'">
         <ConfigurationPage :inbox="inbox" />
-      </div>
+      </div> -->
       <div v-if="selectedTabKey === 'csat'">
         <CustomerSatisfactionPage :inbox="inbox" />
       </div>

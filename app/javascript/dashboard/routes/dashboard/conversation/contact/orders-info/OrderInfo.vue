@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 import Icon from 'next/icon/Icon.vue';
 import OrderItems from './OrderItems.vue';
 import shipxanhAPI from 'dashboard/api/shipxanhAPI';
@@ -10,6 +10,7 @@ import {
   TabsTrigger,
 } from 'dashboard/components-shadcn/components/ui/tabs';
 import LogisticsHistory from './LogisticsHistory.vue';
+import { messageTimestamp } from 'helpers/timeHelper';
 
 const props = defineProps({
   shopBuyerId: {
@@ -25,6 +26,7 @@ const error = ref(null);
 const fetchOrderInfo = async () => {
   loading.value = true;
   error.value = null;
+  ordersInfo.value = [];
   if (!props.shopBuyerId) return;
   try {
     const res = await shipxanhAPI.get(
@@ -56,6 +58,16 @@ const fetchOrderInfo = async () => {
 onMounted(async () => {
   await fetchOrderInfo();
 });
+
+// Watch for changes in shopBuyerId and refetch orders
+watch(
+  () => props.shopBuyerId,
+  async (newShopBuyerId, oldShopBuyerId) => {
+    if (newShopBuyerId && newShopBuyerId !== oldShopBuyerId) {
+      await fetchOrderInfo();
+    }
+  }
+);
 </script>
 
 <template>
@@ -98,11 +110,15 @@ onMounted(async () => {
         </div>
       </div>
       <div class="flex justify-between items-center">
-        <span class="text-sm text-n-slate-11">{{ $t('Tạo lúc') }}</span>
-        <span class="text-sm">{{ orderInfo?.createTime }}</span>
+        <span class="text-sm text-n-slate-11">{{ $t('ORDER.CREATE_AT') }}</span>
+        <span class="text-sm">{{
+          messageTimestamp(orderInfo?.createTime, 'HH:mm dd/MM')
+        }}</span>
       </div>
       <div class="flex justify-between items-center">
-        <span class="text-sm text-n-slate-11">{{ $t('Trạng thái') }}</span>
+        <span class="text-sm text-n-slate-11">{{
+          $t('ORDER.STATUS.TITLE')
+        }}</span>
         <span
           class="text-base font-semibold uppercase"
           :class="{
@@ -120,31 +136,31 @@ onMounted(async () => {
 
       <div class="flex justify-between items-center">
         <span class="text-sm text-n-slate-11">{{
-          $t('Người mua thanh toán')
+          $t('ORDER.BUYER_AMOUNT')
         }}</span>
         <span class="text-sm text-green-600">{{
           (orderInfo?.paymentInfo?.totalCustomerPaid || 0).toLocaleString()
         }}</span>
       </div>
+
       <div class="flex justify-between items-center">
-        <span class="text-sm text-n-slate-11">{{ $t('Tiền hàng') }}</span>
-        <span class="text-sm">{{
-          (orderInfo?.paymentInfo?.originalOrderValue || 0).toLocaleString()
-        }}</span>
+        <span class="text-sm text-n-slate-11"
+          >{{ orderInfo?.recipientName }} {{ orderInfo?.recipientPhone }}</span
+        >
       </div>
       <div class="flex justify-between items-center">
-        <span class="text-sm text-n-slate-11">{{ $t('Thực nhận') }}</span>
-        <span class="text-sm">{{
-          (orderInfo?.paymentInfo?.totalRevenue || 0).toLocaleString()
-        }}</span>
+        <span class="text-sm text-n-slate-11"
+          >{{ orderInfo?.recipientAddress }}
+        </span>
       </div>
+
       <Tabs default-value="items">
         <TabsList class="w-full justify-between bg-n-slate-2">
           <TabsTrigger value="items" class="flex-1">
-            {{ $t('Mặt hàng') }}
+            {{ $t('ORDER.ITEMS') }}
           </TabsTrigger>
           <TabsTrigger value="logistics">
-            {{ $t('Hành trình đơn') }}
+            {{ $t('ORDER.TRACKING_INFO') }}
           </TabsTrigger>
         </TabsList>
         <TabsContent value="items">
@@ -155,6 +171,11 @@ onMounted(async () => {
           <LogisticsHistory :order-id="orderInfo?.id" />
         </TabsContent>
       </Tabs>
+    </div>
+  </div>
+  <div v-else>
+    <div class="flex items-center justify-center py-4">
+      <span class="text-sm text-n-slate-11">{{ $t('ORDER.NO_DATA') }}</span>
     </div>
   </div>
 </template>

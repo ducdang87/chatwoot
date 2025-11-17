@@ -13,10 +13,17 @@ import AIAssistanceButton from '../AIAssistanceButton.vue';
 import { INBOX_TYPES } from 'dashboard/helper/inbox';
 import { mapGetters } from 'vuex';
 import NextButton from 'dashboard/components-next/button/Button.vue';
+import MarketplaceItemSearchButton from './MarketplaceItemSearch/MarketplaceItemSearchButton.vue';
 
 export default {
   name: 'ReplyBottomPanel',
-  components: { NextButton, FileUpload, VideoCallButton, AIAssistanceButton },
+  components: {
+    NextButton,
+    FileUpload,
+    VideoCallButton,
+    AIAssistanceButton,
+    MarketplaceItemSearchButton,
+  },
   mixins: [inboxMixin],
   props: {
     isNote: {
@@ -126,6 +133,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    currentContact: {
+      type: Object,
+      default: () => ({}),
+    },
   },
   emits: [
     'replaceText',
@@ -134,6 +145,7 @@ export default {
     'selectWhatsappTemplate',
     'selectContentTemplate',
     'toggleQuotedReply',
+    'sendItemId',
   ],
   setup() {
     const { setSignatureFlagForInbox, fetchSignatureFlagFromUISettings } =
@@ -263,6 +275,9 @@ export default {
         ? this.$t('CONVERSATION.REPLYBOX.QUOTED_REPLY.DISABLE_TOOLTIP')
         : this.$t('CONVERSATION.REPLYBOX.QUOTED_REPLY.ENABLE_TOOLTIP');
     },
+    showMarketplaceItemSearch() {
+      return this.currentContact.custom_attributes?.shopId;
+    },
   },
   mounted() {
     ActiveStorage.start();
@@ -276,6 +291,9 @@ export default {
     },
     toggleInsertArticle() {
       this.$emit('toggleInsertArticle');
+    },
+    sendMarketplaceItem(itemId) {
+      this.$emit('sendItemId', itemId);
     },
   },
 };
@@ -344,7 +362,7 @@ export default {
         :label="recordingAudioDurationText"
         @click="toggleAudioRecorderPlayPause"
       />
-      <NextButton
+      <!-- <NextButton
         v-if="showMessageSignatureButton"
         v-tooltip.top-end="signatureToggleTooltip"
         icon="i-ph-signature"
@@ -352,7 +370,7 @@ export default {
         faded
         sm
         @click="toggleMessageSignature"
-      />
+      /> -->
       <NextButton
         v-if="showQuotedReplyToggle"
         v-tooltip.top-end="quotedReplyToggleTooltip"
@@ -411,6 +429,11 @@ export default {
         faded
         sm
         @click="toggleInsertArticle"
+      />
+      <MarketplaceItemSearchButton
+        v-if="showMarketplaceItemSearch"
+        :current-contact="currentContact"
+        @send-marketplace-item="sendMarketplaceItem"
       />
     </div>
     <div class="right-wrap">

@@ -1,6 +1,7 @@
 import {
   format,
   isSameYear,
+  isSameDay,
   fromUnixTime,
   formatDistanceToNow,
   differenceInDays,
@@ -18,19 +19,26 @@ export const messageStamp = (time, dateFormat = 'h:mm a') => {
 };
 
 /**
- * Provides a formatted timestamp, adjusting the format based on the current year.
+ * Provides a formatted timestamp, adjusting the format based on the current day/year.
  * @param {number} time - Unix timestamp.
- * @param {string} [dateFormat='MMM d, yyyy'] - Desired date format.
- * @returns {string} Formatted date string.
+ * @returns {string} Formatted date string (HH:mm for same day, HH:mm dd/MM for different days, HH:mm dd/MM/yyyy for different years).
  */
-export const messageTimestamp = (time, dateFormat = 'MMM d, yyyy') => {
+export const messageTimestamp = (time) => {
   const messageTime = fromUnixTime(time);
   const now = new Date();
-  const messageDate = format(messageTime, dateFormat);
-  if (!isSameYear(messageTime, now)) {
-    return format(messageTime, 'LLL d y, h:mm a');
+  
+  // If same day, show only time (HH:mm)
+  if (isSameDay(messageTime, now)) {
+    return format(messageTime, 'HH:mm');
   }
-  return messageDate;
+  
+  // If different day but same year, show time + date (HH:mm dd/MM)
+  if (isSameYear(messageTime, now)) {
+    return format(messageTime, 'HH:mm dd/MM');
+  }
+  
+  // If different year, show time + date + year (HH:mm dd/MM/yyyy)
+  return format(messageTime, 'HH:mm dd/MM/yyyy');
 };
 
 /**

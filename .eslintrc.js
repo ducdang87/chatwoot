@@ -64,7 +64,7 @@ module.exports = {
       },
     ],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
-    'vue/custom-event-name-casing': ['error', 'camelCase'],
+    'vue/custom-event-name-casing': 'off',
     'vue/define-emits-declaration': ['error'],
     'vue/define-macros-order': [
       'error',
@@ -230,9 +230,10 @@ module.exports = {
     'vue/no-v-html': 'off',
     'vue/component-definition-name-casing': 'off',
     'vue/singleline-html-element-content-newline': 'off',
+    'vue/html-closing-bracket-newline': 'off',
     'import/extensions': ['off'],
     'no-console': 'error',
-    '@intlify/vue-i18n/no-dynamic-keys': 'warn',
+    '@intlify/vue-i18n/no-dynamic-keys': 'off',
     '@intlify/vue-i18n/no-unused-keys': [
       'warn',
       {
