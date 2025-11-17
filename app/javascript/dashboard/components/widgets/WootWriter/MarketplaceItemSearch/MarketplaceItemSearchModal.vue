@@ -168,7 +168,7 @@ const openLinkShop = () => {
                 size="small"
                 label="Gửi"
                 icon="i-lucide-send"
-                @click="sendItemId(item.id)"
+                @click="sendItemId(item.itemId)"
               />
             </ItemActions>
           </Item>
