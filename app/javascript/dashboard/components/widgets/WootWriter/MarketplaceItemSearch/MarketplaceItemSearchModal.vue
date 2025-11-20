@@ -19,6 +19,7 @@ import { useRequest } from 'dashboard/composables/useRequest';
 import { minBy, maxBy, sumBy } from 'lodash';
 import Button from 'next/button/Button.vue';
 import Icon from 'next/icon/Icon.vue';
+import { CONTENT_TYPES } from 'next/message/constants';
 import { ref, watch } from 'vue';
 
 const props = defineProps({
@@ -60,12 +61,15 @@ const { data, isLoading, execute } = useRequest(async query => {
     return {
       name: x.name,
       id: x.id,
+      itemId: x.itemId,
       image: x.images?.[0]?.publicUrl?.replace('_tn', ''),
       stock: sumBy(x.models, 'sellableStock').toLocaleString(),
       price:
         maxPrice === minPrice
           ? `${maxPrice.toLocaleString()}`
           : `${minPrice.toLocaleString()} - ${maxPrice.toLocaleString()}`,
+      shopType: x.shopType,
+      shopId: x.shopId,
     };
   });
 });
@@ -87,12 +91,46 @@ watch(
     immediate: true,
   }
 );
+const getLinkProductMarketplaceView = (productId, shopType, shopId) => {
+  switch (shopType) {
+    case 'shopee':
+      return `https://shopee.com/product/${shopId}/${productId}`;
 
-const sendItemId = itemId => {
+    case 'lazada':
+      return `https://www.lazada.com/products/i${productId}.html`;
+
+    case 'tiktok':
+      return `https://www.tiktok.com/view/product/${productId}`;
+
+    default:
+      return `https://app.shipxanh.com/dashboard/stock/products/${productId}`;
+  }
+};
+const sendItem = id => {
+  const item = data.value.find(x => x.id === id);
   emit('send-item-id', {
     content_attributes: {
-      itemId,
+      items: [
+        {
+          title: `###Item: ${item.itemId}`,
+          description: item.name,
+          media_url: item.image,
+          actions: [
+            {
+              type: 'link',
+              text: 'View',
+              uri: getLinkProductMarketplaceView(
+                item.itemId,
+                item.shopType,
+                item.shopId
+              ),
+            },
+          ],
+        },
+      ],
     },
+    content_type: CONTENT_TYPES.CARDS,
+    // message: `###Item: ${item.itemId}\n`,
   });
 };
 const openLinkShop = () => {
@@ -152,7 +190,7 @@ const openLinkShop = () => {
                 :alt="item.name"
                 width="80"
                 height="80"
-                class="object-cover rounded-sm"
+                class="object-cover rounded-md"
               />
             </ItemMedia>
             <ItemContent>
@@ -168,7 +206,7 @@ const openLinkShop = () => {
                 size="small"
                 label="Gửi"
                 icon="i-lucide-send"
-                @click="sendItemId(item.id)"
+                @click="sendItem(item.id)"
               />
             </ItemActions>
           </Item>

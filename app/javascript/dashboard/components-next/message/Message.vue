@@ -380,6 +380,7 @@ const shouldRenderMessage = computed(() => {
   const hasAttachments = !!(props.attachments && props.attachments.length > 0);
   const isEmailContentType = props.contentType === CONTENT_TYPES.INCOMING_EMAIL;
   const isUnsupported = props.contentAttributes?.isUnsupported;
+  const isMarketplaceItem = props.contentAttributes?.items?.length > 0;
   const isAnIntegrationMessage =
     props.contentType === CONTENT_TYPES.INTEGRATIONS;
 
@@ -388,7 +389,8 @@ const shouldRenderMessage = computed(() => {
     props.content ||
     isEmailContentType ||
     isUnsupported ||
-    isAnIntegrationMessage
+    isAnIntegrationMessage ||
+    isMarketplaceItem
   );
 });
 
